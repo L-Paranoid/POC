@@ -1,0 +1,1224 @@
+{
+  "version": "0.1",
+  "id": "fenbaojiesuandan",
+  "targetURL": "http://10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6",
+  "jsFile": "index.js",
+  "requires": {
+    "fenbaojiesuanjibenxinxi": "../fenbaojiesuanjibenxinxi/index.json",
+    "select_hetongqingdanmingxi": "../select_hetongqingdanmingxi/index.json",
+    "selecthetongqingdan": "../selecthetongqingdan/index.json",
+    "index": "../index/index.json"
+  },
+  "chineseName": "分包结算单",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control30_wacdXa": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "ordinal": [
+              2,
+              3
+            ],
+            "value": {
+              "text": [
+                "分包结算单"
+              ],
+              "visText": [
+                "分包结算单"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              17
+            ],
+            "value": "TR.title_tr01 TABLE.border04 TD.table_title_n"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t  分包结算单  \n\t\t\t\t\t\t\t\t\t\t",
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>",
+      "customJS": "if(elem.textContent.indexOf('分包结算单')!==-1){return true;}return false;"
+    },
+    "control35_4miHcg": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": "descendant::TABLE[@id=\"layouttable\"]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              17
+            ],
+            "value": "TABLE.table_out"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control35_4miHcg"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>"
+    },
+    "control31_aOz6BZ": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control31_aOz6BZ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "ignoreVisibility": false,
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>"
+    },
+    "control49_E7SX8T": {
+      "location": {
+        "data": {
+          "tagName": "FORM"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::TABLE[@id=\"layouttable\"]//FORM[@id=\"Subconbalance_doupdatebalance\"]",
+              "descendant::FORM[@id=\"Subconbalance_doupdatebalance\"]"
+            ]
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control49_E7SX8T"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>//iframe[contains(@id,'iframe')]<<IFRAME>>"
+    },
+    "control54_ST4Jv3": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": "descendant::TABLE[@id=\"layouttable\"]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              17
+            ],
+            "value": "TABLE.table_out"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control54_ST4Jv3"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>"
+    },
+    "control5_NaxMkJ": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control5_NaxMkJ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>"
+    },
+    "control41_L7cJqq": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::TABLE[@id=\"layouttable\"]/TBODY[1]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              18
+            ],
+            "value": "TABLE.table_out TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control41_L7cJqq"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control60_vCwabk": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "input/button/@value",
+            "prob": 3,
+            "value": {
+              "text": [
+                "返回"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": [
+              "descendant::TABLE[@id=\"layouttable\"]//FORM[@id=\"Subconbalance_doadd\"]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[4]/SPAN[1]/INPUT[1]",
+              "descendant::TABLE[@id=\"layouttable\"]//FORM[@id=\"Subconbalance_doadd\"]//INPUT",
+              "descendant::FORM[@id=\"Subconbalance_doadd\"]//INPUT"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "SPAN.btn_right SPAN.btn_left INPUT.button_back"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[4]/SPAN[1]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "button"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control60_vCwabk"
+      },
+      "intendedRole": "custom",
+      "roles": "element,button,custom",
+      "monitored": false,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control64_thxP6X": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": "descendant::TABLE[@id=\"layouttable\"]//FORM[@id=\"Subconbalance_doadd\"]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              18
+            ],
+            "value": "TABLE.table_out TABLE.employee_view_tbl0_title TBODY TR TD"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/DIV[1]/FORM[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              50,
+              88,
+              109
+            ]
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control64_thxP6X"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'mainiframe')][contains(@id,'mainiframe')]<<IFRAME>>//frame[@name='iframe_right'][@id='iframe_right']<<IFRAME>>",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context6_ErkTWw": {
+      "controls": [
+        "control35_4miHcg",
+        "control31_aOz6BZ",
+        "control49_E7SX8T",
+        "control54_ST4Jv3",
+        "control5_NaxMkJ",
+        "control41_L7cJqq",
+        "control60_vCwabk",
+        "control64_thxP6X"
+      ],
+      "anchors": [
+        "control30_wacdXa"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow26_i4xHku": {
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    },
+    "flow23_cUlEdo": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control54_ST4Jv3",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        },
+        {
+          "toContextId": "context0_FrTv6V",
+          "toModelId": "index"
+        }
+      ]
+    },
+    "flow37_u3HKVX": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control49_E7SX8T",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        },
+        {
+          "toContextId": "context11_5AyAk0",
+          "toModelId": "selecthetongqingdan"
+        }
+      ]
+    },
+    "flow13_Vpi6W1": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control31_aOz6BZ",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    },
+    "flow3_FCFovQ": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control5_NaxMkJ",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    },
+    "flow32_cTxNcv": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control41_L7cJqq",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    },
+    "flow40_o2TkSe": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control60_vCwabk",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    },
+    "flow42_xpyZhd": {
+      "fromContextId": "context6_ErkTWw",
+      "fromAction": "doAction",
+      "fromControlId": "control64_thxP6X",
+      "toContexts": [
+        {
+          "toContextId": "context6_ErkTWw"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page6_TXA44p": {
+      "contextId": "context6_ErkTWw",
+      "layout": [
+        {
+          "id": "uiControl39_T3lryG",
+          "controlId": "control60_vCwabk",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl39_T3lryG",
+                "onGetTemplate": "getTemplate_uiControl39_T3lryG"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl31_XiDWgb",
+          "controlId": "control41_L7cJqq",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl31_XiDWgb",
+                "onGetTemplate": "getTemplate_uiControl31_XiDWgb"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl43_MthMok",
+          "controlId": "control54_ST4Jv3",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl43_MthMok",
+                "onGetTemplate": "getTemplate_uiControl43_MthMok"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl27_bWcxrs",
+          "controlId": "control35_4miHcg",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl27_bWcxrs",
+                "onGetTemplate": "getTemplate_uiControl27_bWcxrs"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl41_8vyFox",
+          "controlId": "control64_thxP6X",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl41_8vyFox",
+                "onGetTemplate": "getTemplate_uiControl41_8vyFox"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl38_GRvD4D",
+          "controlId": "control49_E7SX8T",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl38_GRvD4D",
+                "onGetTemplate": "getTemplate_uiControl38_GRvD4D"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl5_XWTpbT",
+          "controlId": "control5_NaxMkJ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl5_XWTpbT",
+                "onGetTemplate": "getTemplate_uiControl5_XWTpbT"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl24_L4AwD2",
+          "controlId": "control31_aOz6BZ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl24_L4AwD2",
+                "onGetTemplate": "getTemplate_uiControl24_L4AwD2"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context6_ErkTWw": [
+          "工程项目管理系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context6_ErkTWw": [
+          "10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context6_ErkTWw": [
+          [
+            ".",
+            "alldutypost",
+            "alldutyul",
+            "header",
+            "header-footer-nav",
+            "header-position",
+            "http://...:/crbc/erp/finereport/pdreport/Projectmonthfillstat.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/Projectunitorgmonthfillsum.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/Projectunitorgmonthworkvaluesum.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/jidujihuashigongchanzh.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/nianjihuashigongchanzh.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/prjMonthProcessValuereportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectmonthprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectquarterprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projecttotalplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectweekworkvalue.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectyearprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/ribaotongji.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/yuejihuashigongchanzhi.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/BiddingcostCostbudge.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/BiddingcostCostbudgeDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgeActualcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgeActualcostDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/Costbudgetdyn.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgetdynDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/MechanicalIndirectcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/ProjectMonthcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/ProjectMonthcostSum.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/baddeal.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendingcostin.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendingcostinsingle.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendinoutdetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendinoutdetailsingle.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costcollectdetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/deal.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialinreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialoutreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialreportdataupdate_single.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialreportdataupdate_single_new.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materials_consume.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialtaskinforeport.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialturncontractfinereportnew.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialturnreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialusealldataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialuseallotfinereport.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialusesumdataupdate.jsp",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/conchange.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/conchangenote.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/condispute.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/project.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contractreport/subContractBalanceRiskControl.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costbudget.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costbudgetbill.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costinoutcontrast.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costinoutotherfee.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costintenddetail.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costmonthcheck.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/projectdetailtotal.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/enginereport/machinecountmonthreport.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/enginereport/projectMachineClass.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/MainMaterialStoreCatalogNew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialPriceBlanceNew.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialcheckdeport_totalnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialcheckdeportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialfirstproinstorenew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialinreportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialoutreportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialturnoutstorenew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/turnovermaterialstorechecknew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/turnovermaterialtotalnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/providerreport/providerQualified.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securitymanageruserreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityprjrulereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityproductfeereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityspecialuserreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securitysubrulereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityteachtrainreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/subcontractreport/subconeqipreport.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/subcontractreport/subcountviewreport.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/materials/deportreset.jsp",
+            "http://...:/crbc/lqpm/Completionprjview_list.action",
+            "http://...:/crbc/lqpm/Conbill_dynview.action",
+            "http://...:/crbc/lqpm/Conbill_list.action",
+            "http://...:/crbc/lqpm/Conbuildingprjview_list.action",
+            "http://...:/crbc/lqpm/Conchange_view.action",
+            "http://...:/crbc/lqpm/Conchangenote_list.action",
+            "http://...:/crbc/lqpm/Confinishprjview_list.action",
+            "http://...:/crbc/lqpm/Coninbuildprjview_list.action",
+            "http://...:/crbc/lqpm/Conyearprjview_list.action",
+            "http://...:/crbc/lqpm/CostbudgetChange_list.action",
+            "http://...:/crbc/lqpm/Costbudget_view.action",
+            "http://...:/crbc/lqpm/Costprojectandcompany_list.action?type=",
+            "http://...:/crbc/lqpm/Costprojectandcompany_report.action?type=",
+            "http://...:/crbc/lqpm/Deport_list.action",
+            "http://...:/crbc/lqpm/Deport_query.action",
+            "http://...:/crbc/lqpm/Fianacbs_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacbsout_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacmakeuse_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacplan_list.action?type=",
+            "http://...:/crbc/lqpm/Finishprjview_list.action",
+            "http://...:/crbc/lqpm/Machineenter_list.action",
+            "http://...:/crbc/lqpm/Machineexit_list.action",
+            "http://...:/crbc/lqpm/Machinestatusing_list.action?machinestatusing.type=",
+            "http://...:/crbc/lqpm/Machineworkuse_index.action",
+            "http://...:/crbc/lqpm/Machineworkusemanager_index.action",
+            "http://...:/crbc/lqpm/Materialcastoffdeal_indexlist.action",
+            "http://...:/crbc/lqpm/Materialcontract_indexlist.action",
+            "http://...:/crbc/lqpm/Materialcontractpay_indexlist.action",
+            "http://...:/crbc/lqpm/Materialdeportcheck_list.action",
+            "http://...:/crbc/lqpm/Materialfirstproinstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialfirstproinstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materiallendturninnote_list.action",
+            "http://...:/crbc/lqpm/Materiallendturnoutnote_list.action",
+            "http://...:/crbc/lqpm/Materialmoveoutstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialmoveoutstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialreportbad_indexlist.action",
+            "http://...:/crbc/lqpm/Materialreqmonthplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialrequiretotalplan_view.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialrequiretotalplan_viewAll.action",
+            "http://...:/crbc/lqpm/Materialshipoutstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialshipoutstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialstockinstore_indexlist.action?intype=",
+            "http://...:/crbc/lqpm/Materialstockinstore_indexlist.action?type=differ&intype=",
+            "http://...:/crbc/lqpm/Materialstockmonthplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialturnamortize_list.action",
+            "http://...:/crbc/lqpm/Materialturnamortize_list.action?type=differ",
+            "http://...:/crbc/lqpm/Materialturncontract_getMachinecontents.action",
+            "http://...:/crbc/lqpm/Materialturndeportcheck_indexlist.action",
+            "http://...:/crbc/lqpm/Materialturninstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialturninstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialturnoutstore_list.action",
+            "http://...:/crbc/lqpm/Materialturnoutstore_list.action?type=differ",
+            "http://...:/crbc/lqpm/Partition_list.action",
+            "http://...:/crbc/lqpm/Partition_summarylist.action",
+            "http://...:/crbc/lqpm/Processallplan_view.action",
+            "http://...:/crbc/lqpm/Processallplandetail_list.action",
+            "http://...:/crbc/lqpm/Processallplanedition_analysisindex.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_gantt.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_ganttall.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_list.action",
+            "http://...:/crbc/lqpm/ProcesslenplanFordetail_totalListForDetail.action",
+            "http://...:/crbc/lqpm/Processlenplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Processlenplanfill_list.action",
+            "http://...:/crbc/lqpm/Processprewarning_list.action",
+            "http://...:/crbc/lqpm/Processprewarning_progress.action",
+            "http://...:/crbc/lqpm/Processwbsphasemapinfo_indexFrame.action",
+            "http://...:/crbc/lqpm/Processwbsphaset_list.action",
+            "http://...:/crbc/lqpm/Projectinnerrenteqipcheck_list.action",
+            "http://...:/crbc/lqpm/Projectoutrenteqipcheck_list.action",
+            "http://...:/crbc/lqpm/Provider_indexList.action?provider.status=",
+            "http://...:/crbc/lqpm/Providersurvey_list.action",
+            "http://...:/crbc/lqpm/Providertype_list.action",
+            "http://...:/crbc/lqpm/Qualitybasemixscale_list.action",
+            "http://...:/crbc/lqpm/Qualitycheck_index.action",
+            "http://...:/crbc/lqpm/Qualitychecknote_list.action",
+            "http://...:/crbc/lqpm/Qualitychecknoticed_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructionhrdetail_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructionlist_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructnote_list.action?type=",
+            "http://...:/crbc/lqpm/Qualityconstructsummary_list.action?ztype=",
+            "http://...:/crbc/lqpm/Qualitydeployscalenote_list.action",
+            "http://...:/crbc/lqpm/Qualitydeployscaleplan_list.action",
+            "http://...:/crbc/lqpm/Qualitydeployscalereport_list.action",
+            "http://...:/crbc/lqpm/Qualityequipbadorstop_list.action?type=",
+            "http://...:/crbc/lqpm/Qualityequipcheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipcheck_show.action",
+            "http://...:/crbc/lqpm/Qualityequipcyclecheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipflit_list.action",
+            "http://...:/crbc/lqpm/Qualityequiprepairnote_list.action",
+            "http://...:/crbc/lqpm/Qualityequipseflcheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipstockapp_list.action",
+            "http://...:/crbc/lqpm/Qualityhourscale_list.action",
+            "http://...:/crbc/lqpm/Qualitynoequipitem_view.action",
+            "http://...:/crbc/lqpm/Qualitypitchscale_list.action",
+            "http://...:/crbc/lqpm/Qualityprjqualityexcellent_list.action?stype=",
+            "http://...:/crbc/lqpm/Qualityseasonmeeting_list.action",
+            "http://...:/crbc/lqpm/Qualityupdatenote_list.action",
+            "http://...:/crbc/lqpm/Refinfo_list.action?type=",
+            "http://...:/crbc/lqpm/Refinfo_view.action",
+            "http://...:/crbc/lqpm/Securityactivity_list.action",
+            "http://...:/crbc/lqpm/Securitybigrisk_list.action",
+            "http://...:/crbc/lqpm/Securitydangeritem_list.action",
+            "http://...:/crbc/lqpm/Securitydeadaccident_list.action",
+            "http://...:/crbc/lqpm/Securitydiseaseitem_list.action",
+            "http://...:/crbc/lqpm/Securityemergencyequipitem_list.action",
+            "http://...:/crbc/lqpm/Securityemergencysupport_list.action?stype=",
+            "http://...:/crbc/lqpm/Securityenvironmentitem_list.action",
+            "http://...:/crbc/lqpm/Securityequipitem_list.action",
+            "http://...:/crbc/lqpm/Securitymanagerplan_list.action?type=",
+            "http://...:/crbc/lqpm/Securitymanageruser_list.action",
+            "http://...:/crbc/lqpm/Securitymorg_view.action?type=",
+            "http://...:/crbc/lqpm/Securityprjrule_view.action",
+            "http://...:/crbc/lqpm/Securityproductfee_list.action",
+            "http://...:/crbc/lqpm/Securitypruducecheck_list.action",
+            "http://...:/crbc/lqpm/Securitypruducecheckupdate_list.action",
+            "http://...:/crbc/lqpm/Securitysharefile_list.action?filetype=",
+            "http://...:/crbc/lqpm/Securityshipaccident_list.action",
+            "http://...:/crbc/lqpm/Securityshipitem_list.action",
+            "http://...:/crbc/lqpm/Securityspecialuser_list.action",
+            "http://...:/crbc/lqpm/Securitysubrule_list.action",
+            "http://...:/crbc/lqpm/Securityteachtrain_list.action",
+            "http://...:/crbc/lqpm/Securitytechexplain_list.action",
+            "http://...:/crbc/lqpm/Subconassess_list.action",
+            "http://...:/crbc/lqpm/Subconeqipbillcheck_indexList.action",
+            "http://...:/crbc/lqpm/Techarticlesapp_list.action",
+            "http://...:/crbc/lqpm/Techchecknote_list.action",
+            "http://...:/crbc/lqpm/Techdesignchange_list.action",
+            "http://...:/crbc/lqpm/Techdevelopmentprj_list.action",
+            "http://...:/crbc/lqpm/Techdrawingscheck_list.action",
+            "http://...:/crbc/lqpm/Techmanageplan_list.action?type=",
+            "http://...:/crbc/lqpm/Technewtechpopular_list.action",
+            "http://...:/crbc/lqpm/Techpatentapp_list.action",
+            "http://...:/crbc/lqpm/Techplantypefix_list.action",
+            "http://...:/crbc/lqpm/Techprogressapp_list.action",
+            "http://...:/crbc/lqpm/Techtechnicalwork_list.action",
+            "http://...:/crbc/lqpm/Techupdatenote_list.action",
+            "http://...:/crbc/lqpm/Techworkmethodapp_list.action",
+            "http://...:/crbc/lqpm/Visitrecord_list.action",
+            "http://...:/crbc/lqpm/WbsProcessMateChange_list.action",
+            "http://...:/crbc/lqpm/WbsQuantitiesVariation_list.action",
+            "http://...:/crbc/lqpm/conbilldetailreplace_list.action",
+            "http://...:/crbc/oa/Flowtemplet_list.action?flowtype=tmp&qx=...,...,...,...,...",
+            "http://...:/crbc/oa/Sendarchives_outlist.action?flowtablelistvalue=tmp&qx=...,...,...,...",
+            "http://...:/crbc/oa/Sendarchives_unCheckListSub.action?flowtablelistvalue=tmp&qx=...,...",
+            "http://...:/crbc/oa/Sendarchives_unCheckListSub.action?flowtablelistvalue=tmp&qx=....,....",
+            "http://...:/crbc/oa/Sendarchives_watchlist.action?flowtablelistvalue=tmp&qx=...",
+            "http://...:/crbc/oa/Sendarchives_watchlist.action?flowtablelistvalue=tmp&qx=....",
+            "http://...:/crbc/pm/BusinessType_list.action",
+            "http://...:/crbc/pm/OrgPM_index.action",
+            "http://...:/crbc/pm/OrgPM_show.action",
+            "jqueryuimenu",
+            "jqueryuimenutxt",
+            "linkMenu",
+            "main",
+            "main-center",
+            "main-left",
+            "main-left-middle",
+            "main-left-up",
+            "main-right",
+            "mainiframe",
+            "mm-",
+            "nav",
+            "navleft",
+            "navright",
+            "onlinenum",
+            "positionname",
+            "postid",
+            "prjname",
+            "prjstatus",
+            "showproject",
+            "subsysprjid",
+            "tt"
+          ],
+          [
+            ".",
+            "alldutypost",
+            "alldutyul",
+            "header",
+            "header-footer-nav",
+            "header-position",
+            "http://...:/crbc/erp/finereport/pdreport/Projectmonthfillstat.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/Projectunitorgmonthfillsum.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/Projectunitorgmonthworkvaluesum.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/jidujihuashigongchanzh.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/nianjihuashigongchanzh.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/prjMonthProcessValuereportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectmonthprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectquarterprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projecttotalplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectweekworkvalue.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/projectyearprocessplan.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/ribaotongji.jsp",
+            "http://...:/crbc/erp/finereport/pdreport/yuejihuashigongchanzhi.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/BiddingcostCostbudge.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/BiddingcostCostbudgeDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgeActualcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgeActualcostDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/Costbudgetdyn.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/CostbudgetdynDetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/MechanicalIndirectcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/ProjectMonthcost.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/ProjectMonthcostSum.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/baddeal.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendingcostin.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendingcostinsingle.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendinoutdetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costIntendinoutdetailsingle.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/costcollectdetail.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/deal.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialinreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialoutreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialreportdataupdate_single.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialreportdataupdate_single_jt.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialreportdataupdate_single_new.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materials_consume.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialtaskinforeport.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialturncontractfinereportnew.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialturnreportdataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialusealldataupdate.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialuseallotfinereport.jsp",
+            "http://...:/crbc/erp/finereport/pmreport/materialusesumdataupdate.jsp",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/conchange.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/conchangenote.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/condispute.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contract/project.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/contractreport/subContractBalanceRiskControl.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costbudget.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costbudgetbill.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costinoutcontrast.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costinoutotherfee.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costintenddetail.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/costmonthcheck.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/costreport/projectdetailtotal.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/enginereport/machinecountmonthreport.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/enginereport/projectMachineClass.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/MainMaterialStoreCatalogNew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialPriceBlanceNew.jsp?type=&code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialcheckdeport_totalnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialcheckdeportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialfirstproinstorenew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialinreportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialoutreportnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/materialturnoutstorenew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/turnovermaterialstorechecknew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/materialreport/turnovermaterialtotalnew.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/providerreport/providerQualified.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securitymanageruserreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityprjrulereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityproductfeereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityspecialuserreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securitysubrulereport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/safemanage/securityteachtrainreport.jsp?type=",
+            "http://...:/crbc/erp/lqpm/jsreport/subcontractreport/subconeqipreport.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/jsreport/subcontractreport/subcountviewreport.jsp?code=pcode",
+            "http://...:/crbc/erp/lqpm/materials/deportreset.jsp",
+            "http://...:/crbc/lqpm/Completionprjview_list.action",
+            "http://...:/crbc/lqpm/Conbill_dynview.action",
+            "http://...:/crbc/lqpm/Conbill_list.action",
+            "http://...:/crbc/lqpm/Conbuildingprjview_list.action",
+            "http://...:/crbc/lqpm/Conchange_view.action",
+            "http://...:/crbc/lqpm/Conchangenote_list.action",
+            "http://...:/crbc/lqpm/Confinishprjview_list.action",
+            "http://...:/crbc/lqpm/Coninbuildprjview_list.action",
+            "http://...:/crbc/lqpm/Conyearprjview_list.action",
+            "http://...:/crbc/lqpm/CostbudgetChange_list.action",
+            "http://...:/crbc/lqpm/Costbudget_view.action",
+            "http://...:/crbc/lqpm/Costprojectandcompany_list.action?type=",
+            "http://...:/crbc/lqpm/Costprojectandcompany_report.action?type=",
+            "http://...:/crbc/lqpm/Deport_list.action",
+            "http://...:/crbc/lqpm/Deport_query.action",
+            "http://...:/crbc/lqpm/Fianacbs_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacbsout_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacmakeuse_list.action?type=",
+            "http://...:/crbc/lqpm/Fianacplan_list.action?type=",
+            "http://...:/crbc/lqpm/Finishprjview_list.action",
+            "http://...:/crbc/lqpm/Machineenter_list.action",
+            "http://...:/crbc/lqpm/Machineexit_list.action",
+            "http://...:/crbc/lqpm/Machinestatusing_list.action?machinestatusing.type=",
+            "http://...:/crbc/lqpm/Machineworkuse_index.action",
+            "http://...:/crbc/lqpm/Machineworkusemanager_index.action",
+            "http://...:/crbc/lqpm/Materialcastoffdeal_indexlist.action",
+            "http://...:/crbc/lqpm/Materialcontract_indexlist.action",
+            "http://...:/crbc/lqpm/Materialcontractpay_indexlist.action",
+            "http://...:/crbc/lqpm/Materialdeportcheck_list.action",
+            "http://...:/crbc/lqpm/Materialfirstproinstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialfirstproinstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materiallendturninnote_list.action",
+            "http://...:/crbc/lqpm/Materiallendturnoutnote_list.action",
+            "http://...:/crbc/lqpm/Materialmoveoutstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialmoveoutstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialreportbad_indexlist.action",
+            "http://...:/crbc/lqpm/Materialreqmonthplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialrequiretotalplan_view.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialrequiretotalplan_viewAll.action",
+            "http://...:/crbc/lqpm/Materialshipoutstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialshipoutstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialstockinstore_indexlist.action?intype=",
+            "http://...:/crbc/lqpm/Materialstockinstore_indexlist.action?type=differ&intype=",
+            "http://...:/crbc/lqpm/Materialstockmonthplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Materialturnamortize_list.action",
+            "http://...:/crbc/lqpm/Materialturnamortize_list.action?type=differ",
+            "http://...:/crbc/lqpm/Materialturncontract_getMachinecontents.action",
+            "http://...:/crbc/lqpm/Materialturndeportcheck_indexlist.action",
+            "http://...:/crbc/lqpm/Materialturninstore_indexlist.action",
+            "http://...:/crbc/lqpm/Materialturninstore_indexlist.action?type=differ",
+            "http://...:/crbc/lqpm/Materialturnoutstore_list.action",
+            "http://...:/crbc/lqpm/Materialturnoutstore_list.action?type=differ",
+            "http://...:/crbc/lqpm/Partition_list.action",
+            "http://...:/crbc/lqpm/Partition_summarylist.action",
+            "http://...:/crbc/lqpm/Processallplan_view.action",
+            "http://...:/crbc/lqpm/Processallplandetail_list.action",
+            "http://...:/crbc/lqpm/Processallplanedition_analysisindex.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_gantt.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_ganttall.action",
+            "http://...:/crbc/lqpm/Processallplanwbsedition_list.action",
+            "http://...:/crbc/lqpm/ProcesslenplanFordetail_totalListForDetail.action",
+            "http://...:/crbc/lqpm/Processlenplan_list.action?requiretype=",
+            "http://...:/crbc/lqpm/Processlenplanfill_list.action",
+            "http://...:/crbc/lqpm/Processprewarning_list.action",
+            "http://...:/crbc/lqpm/Processprewarning_progress.action",
+            "http://...:/crbc/lqpm/Processwbsphasemapinfo_indexFrame.action",
+            "http://...:/crbc/lqpm/Processwbsphaset_list.action",
+            "http://...:/crbc/lqpm/Projectinnerrenteqipcheck_list.action",
+            "http://...:/crbc/lqpm/Projectoutrenteqipcheck_list.action",
+            "http://...:/crbc/lqpm/Provider_indexList.action?provider.status=",
+            "http://...:/crbc/lqpm/Providersurvey_list.action",
+            "http://...:/crbc/lqpm/Providertype_list.action",
+            "http://...:/crbc/lqpm/Qualitybasemixscale_list.action",
+            "http://...:/crbc/lqpm/Qualitycheck_index.action",
+            "http://...:/crbc/lqpm/Qualitychecknote_list.action",
+            "http://...:/crbc/lqpm/Qualitychecknoticed_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructionhrdetail_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructionlist_list.action",
+            "http://...:/crbc/lqpm/Qualityconstructnote_list.action?type=",
+            "http://...:/crbc/lqpm/Qualityconstructsummary_list.action?ztype=",
+            "http://...:/crbc/lqpm/Qualitydeployscalenote_list.action",
+            "http://...:/crbc/lqpm/Qualitydeployscaleplan_list.action",
+            "http://...:/crbc/lqpm/Qualitydeployscalereport_list.action",
+            "http://...:/crbc/lqpm/Qualityequipbadorstop_list.action?type=",
+            "http://...:/crbc/lqpm/Qualityequipcheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipcheck_show.action",
+            "http://...:/crbc/lqpm/Qualityequipcyclecheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipflit_list.action",
+            "http://...:/crbc/lqpm/Qualityequiprepairnote_list.action",
+            "http://...:/crbc/lqpm/Qualityequipseflcheck_list.action",
+            "http://...:/crbc/lqpm/Qualityequipstockapp_list.action",
+            "http://...:/crbc/lqpm/Qualityhourscale_list.action",
+            "http://...:/crbc/lqpm/Qualitynoequipitem_view.action",
+            "http://...:/crbc/lqpm/Qualitypitchscale_list.action",
+            "http://...:/crbc/lqpm/Qualityprjqualityexcellent_list.action?stype=",
+            "http://...:/crbc/lqpm/Qualityseasonmeeting_list.action",
+            "http://...:/crbc/lqpm/Qualityupdatenote_list.action",
+            "http://...:/crbc/lqpm/Refinfo_list.action?type=",
+            "http://...:/crbc/lqpm/Refinfo_view.action",
+            "http://...:/crbc/lqpm/Securityactivity_list.action",
+            "http://...:/crbc/lqpm/Securitybigrisk_list.action",
+            "http://...:/crbc/lqpm/Securitydangeritem_list.action",
+            "http://...:/crbc/lqpm/Securitydeadaccident_list.action",
+            "http://...:/crbc/lqpm/Securitydiseaseitem_list.action",
+            "http://...:/crbc/lqpm/Securityemergencyequipitem_list.action",
+            "http://...:/crbc/lqpm/Securityemergencysupport_list.action?stype=",
+            "http://...:/crbc/lqpm/Securityenvironmentitem_list.action",
+            "http://...:/crbc/lqpm/Securityequipitem_list.action",
+            "http://...:/crbc/lqpm/Securitymanagerplan_list.action?type=",
+            "http://...:/crbc/lqpm/Securitymanageruser_list.action",
+            "http://...:/crbc/lqpm/Securitymorg_view.action?type=",
+            "http://...:/crbc/lqpm/Securityprjrule_view.action",
+            "http://...:/crbc/lqpm/Securityproductfee_list.action",
+            "http://...:/crbc/lqpm/Securitypruducecheck_list.action",
+            "http://...:/crbc/lqpm/Securitypruducecheckupdate_list.action",
+            "http://...:/crbc/lqpm/Securitysharefile_list.action?filetype=",
+            "http://...:/crbc/lqpm/Securityshipaccident_list.action",
+            "http://...:/crbc/lqpm/Securityshipitem_list.action",
+            "http://...:/crbc/lqpm/Securityspecialuser_list.action",
+            "http://...:/crbc/lqpm/Securitysubrule_list.action",
+            "http://...:/crbc/lqpm/Securityteachtrain_list.action",
+            "http://...:/crbc/lqpm/Securitytechexplain_list.action",
+            "http://...:/crbc/lqpm/Subconassess_list.action",
+            "http://...:/crbc/lqpm/Subconeqipbillcheck_indexList.action",
+            "http://...:/crbc/lqpm/Techarticlesapp_list.action",
+            "http://...:/crbc/lqpm/Techchecknote_list.action",
+            "http://...:/crbc/lqpm/Techdesignchange_list.action",
+            "http://...:/crbc/lqpm/Techdevelopmentprj_list.action",
+            "http://...:/crbc/lqpm/Techdrawingscheck_list.action",
+            "http://...:/crbc/lqpm/Techmanageplan_list.action?type=",
+            "http://...:/crbc/lqpm/Technewtechpopular_list.action",
+            "http://...:/crbc/lqpm/Techpatentapp_list.action",
+            "http://...:/crbc/lqpm/Techplantypefix_list.action",
+            "http://...:/crbc/lqpm/Techprogressapp_list.action",
+            "http://...:/crbc/lqpm/Techtechnicalwork_list.action",
+            "http://...:/crbc/lqpm/Techupdatenote_list.action",
+            "http://...:/crbc/lqpm/Techworkmethodapp_list.action",
+            "http://...:/crbc/lqpm/Visitrecord_list.action",
+            "http://...:/crbc/lqpm/WbsProcessMateChange_list.action",
+            "http://...:/crbc/lqpm/WbsQuantitiesVariation_list.action",
+            "http://...:/crbc/lqpm/conbilldetailreplace_list.action",
+            "http://...:/crbc/oa/Flowtemplet_list.action?flowtype=tmp&qx=...,...,...,...,...",
+            "http://...:/crbc/oa/Sendarchives_outlist.action?flowtablelistvalue=tmp&qx=...,...,...,...",
+            "http://...:/crbc/oa/Sendarchives_unCheckListSub.action?flowtablelistvalue=tmp&qx=...,...",
+            "http://...:/crbc/oa/Sendarchives_unCheckListSub.action?flowtablelistvalue=tmp&qx=....,....",
+            "http://...:/crbc/oa/Sendarchives_watchlist.action?flowtablelistvalue=tmp&qx=...",
+            "http://...:/crbc/oa/Sendarchives_watchlist.action?flowtablelistvalue=tmp&qx=....",
+            "http://...:/crbc/pm/BusinessType_list.action",
+            "http://...:/crbc/pm/OrgPM_index.action",
+            "http://...:/crbc/pm/OrgPM_show.action",
+            "jqueryuimenu",
+            "jqueryuimenutxt",
+            "linkMenu",
+            "main",
+            "main-center",
+            "main-left",
+            "main-left-middle",
+            "main-left-up",
+            "main-right",
+            "mainiframe",
+            "mm-",
+            "nav",
+            "navleft",
+            "navright",
+            "onlinenum",
+            "positionname",
+            "postid",
+            "prjname",
+            "prjstatus",
+            "showproject",
+            "subsysprjid",
+            "tt"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context6_ErkTWw": [
+          [
+            "aaaaa",
+            "deep-",
+            "easyui-menu",
+            "header",
+            "header-footer",
+            "header-footer-left",
+            "header-footer-nav",
+            "header-footer-nav-left",
+            "header-footer-nav-leftarror",
+            "header-footer-nav-rightarror",
+            "header-footer-right",
+            "header-top",
+            "header-top-center",
+            "header-top-left",
+            "header-top-right",
+            "li-btn-left",
+            "li-btn-right",
+            "libtnleft",
+            "libtnright",
+            "main",
+            "main-center",
+            "main-left",
+            "main-left-down",
+            "main-left-down-content",
+            "main-left-down-down",
+            "main-left-down-up",
+            "main-left-middle",
+            "main-left-up",
+            "main-right",
+            "menu",
+            "menu-item",
+            "menu-rightarrow",
+            "menu-text",
+            "menu-top",
+            "testbg",
+            "testiframe"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context6_ErkTWw": [
+          [
+            "-/-/DIV",
+            "-/-/IFRAME",
+            "-/-/INPUT-hidden",
+            "-/-/SCRIPT",
+            "-/-/TEXTAREA",
+            "-/DIV/DIV",
+            "-/DIV/MARQUEE",
+            "A/B/IMG",
+            "DIV/A/B",
+            "DIV/B/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/B",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IFRAME",
+            "DIV/DIV/IMG",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/MARQUEE/FONT",
+            "DIV/SPAN/A",
+            "DIV/SPAN/B",
+            "DIV/SPAN/DIV",
+            "DIV/SPAN/SPAN",
+            "DIV/UL/LI",
+            "LI/A/BR",
+            "LI/A/IMG",
+            "LI/DIV/DIV",
+            "LI/UL/LI",
+            "SPAN/A/B",
+            "SPAN/A/SPAN",
+            "SPAN/DIV/UL",
+            "SPAN/SELECT/OPTION",
+            "SPAN/SPAN/SELECT",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/UL"
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "name": "登陆",
+      "app_id": "login",
+      "icon": "local/img/OA.png",
+      "url": "http://10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6"
+    },
+    {
+      "name": "首页",
+      "app_id": "index",
+      "icon": "local/img/OA.png",
+      "url": "http://10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6"
+    }
+  ]
+}

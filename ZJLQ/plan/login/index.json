@@ -1,0 +1,539 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "http://10.13.51.99:8088/portal/admin/login.action",
+  "jsFile": "index.js",
+  "requires": {
+    "index": "../index/index.json"
+  },
+  "chineseName": "登录",
+  "description": "",
+  "controls": {
+    "control0_SvgTou": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"login\"]//INPUT[@name=\"username\"]",
+              "descendant::INPUT[@name=\"username\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 4,
+            "value": [
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//INPUT[@id=\"login_username\"]",
+              "descendant::DIV[@id=\"user_main\"]//INPUT[@id=\"login_username\"]",
+              "descendant::INPUT[@id=\"login_username\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user_main_box LI.user_main_input INPUT.TxtUserNameCssClass"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/UL[2]/LI[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "roles": "element,textbox",
+      "text": "",
+      "frameXPath": ""
+    },
+    "control1_4X30Dp": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"login\"]//INPUT[@name=\"username\"]",
+              "descendant::INPUT[@name=\"username\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 4,
+            "value": [
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//INPUT[@id=\"login_username\"]",
+              "descendant::DIV[@id=\"user_main\"]//INPUT[@id=\"login_username\"]",
+              "descendant::INPUT[@id=\"login_username\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user_main_box LI.user_main_input INPUT.TxtUserNameCssClass"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/UL[2]/LI[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "intendedRole": "textbox",
+      "roles": "element,textbox",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control2_vSJuaK": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"login\"]//INPUT[@name=\"password\"]",
+              "descendant::INPUT[@name=\"password\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 4,
+            "value": [
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//INPUT[@id=\"login_password\"]",
+              "descendant::DIV[@id=\"user_main\"]//INPUT[@id=\"login_password\"]",
+              "descendant::INPUT[@id=\"login_password\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user_main_box LI.user_main_input INPUT.TxtPasswordCssClass"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/UL[3]/LI[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "password"
+          }
+        ]
+      },
+      "intendedRole": "passwordbox",
+      "roles": "element,passwordbox,textbox",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control3_6kKwgm": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "elem/@name",
+            "prob": 2,
+            "value": [
+              "descendant::form[@name=\"login\"]//INPUT[@name=\"rand\"]",
+              "descendant::INPUT[@name=\"rand\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 4,
+            "value": [
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//INPUT[@id=\"login_rand\"]",
+              "descendant::DIV[@id=\"user_main\"]//INPUT[@id=\"login_rand\"]",
+              "descendant::INPUT[@id=\"login_rand\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user_main_box LI.user_main_input INPUT.TxtUsercodeCssClass"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/UL[4]/LI[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "intendedRole": "textbox",
+      "roles": "element,textbox",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control4_TktJul": {
+      "location": {
+        "data": {
+          "tagName": "IMG"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "img/@src",
+            "prob": 2,
+            "value": {
+              "pathname": "/portal/image.jsp"
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": [
+              "descendant::DIV[@id=\"user_login\"]//FORM[@id=\"login\"]//DIV[@id=\"user_main\"]/UL[1]/LI[2]/DIV[1]/UL[4]/LI[2]/IMG[1]",
+              "descendant::DIV[@id=\"user_login\"]//FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//IMG",
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//IMG",
+              "descendant::DIV[@id=\"user_main\"]//IMG"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "LI.user_main_c DIV.user_main_box LI.user_main_input IMG"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[2]/DIV[1]/UL[4]/LI[2]/IMG[1]"
+          }
+        ]
+      },
+      "roles": "element,image,button",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control26_giEB2u": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 4,
+            "value": [
+              "descendant::FORM[@id=\"login\"]//DIV[@id=\"user_main\"]//INPUT[@id=\"IbtnEnter\"]",
+              "descendant::DIV[@id=\"user_main\"]//INPUT[@id=\"IbtnEnter\"]",
+              "descendant::INPUT[@id=\"IbtnEnter\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": "LI.user_main_r INPUT.IbtnEnterCssClass"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/FORM[1]/DIV[1]/DIV[2]/UL[1]/LI[3]/DIV[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "image"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context0_OfKfmH": {
+      "controls": [
+        "control1_4X30Dp",
+        "control2_vSJuaK",
+        "control3_6kKwgm",
+        "control4_TktJul",
+        "control26_giEB2u"
+      ],
+      "anchors": [
+        "control0_SvgTou"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_mC3DlW": {
+      "toContexts": [
+        {
+          "toContextId": "context0_OfKfmH"
+        }
+      ]
+    },
+    "flow1_SECJ0K": {
+      "fromContextId": "context0_OfKfmH",
+      "fromAction": "click",
+      "fromControlId": "control1_4X30Dp",
+      "toContexts": [
+        {
+          "toContextId": "context0_OfKfmH"
+        }
+      ]
+    },
+    "flow2_wbvQrS": {
+      "fromContextId": "context0_OfKfmH",
+      "fromAction": "click",
+      "fromControlId": "control3_6kKwgm",
+      "toContexts": [
+        {
+          "toContextId": "context0_OfKfmH"
+        }
+      ]
+    },
+    "flow4_Fd5FoH": {
+      "fromContextId": "context0_OfKfmH",
+      "fromAction": "click",
+      "fromControlId": "control2_vSJuaK",
+      "toContexts": [
+        {
+          "toContextId": "context0_OfKfmH"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_tgi33T": {
+      "contextId": "context0_OfKfmH",
+      "layout": [
+        {
+          "id": "uiControl0_kp7Vpr",
+          "controlId": "control1_4X30Dp",
+          "display": {
+            "adapterId": "textbox",
+            "type": "textbox",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl1_uAKBuW",
+          "controlId": "control2_vSJuaK",
+          "display": {
+            "adapterId": "passwordbox",
+            "type": "passwordbox",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl2_Eo0qLL",
+          "display": {
+            "type": "grid",
+            "adapterId": "grid",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl2_Eo0qLLrow0",
+              "display": {
+                "cols": 3,
+                "type": "col",
+                "adapterId": "col",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl3_gEHpDB",
+                  "controlId": "control3_6kKwgm",
+                  "display": {
+                    "adapterId": "textbox",
+                    "type": "textbox",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl2_Eo0qLLrow1",
+              "display": {
+                "cols": 3,
+                "type": "col",
+                "adapterId": "col",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl4_zMJDHh",
+                  "controlId": "control4_TktJul",
+                  "display": {
+                    "adapterId": "image_link",
+                    "type": "image",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uiControl20_ZvzQZr",
+          "controlId": "control26_giEB2u",
+          "display": {
+            "adapterId": "clickable",
+            "type": "button",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_OfKfmH": [
+          "工程项目管理系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_OfKfmH": [
+          "10.13.51.99:8088/portal/admin/login.action"
+        ],
+        "context0_FrTv6V": [
+          "10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6",
+          "10.13.51.99:8088/portal/admin/login.action"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_OfKfmH": [
+          [
+            "IbtnEnter",
+            "login",
+            "login_",
+            "login_companycode",
+            "login_password",
+            "login_rand",
+            "login_username",
+            "user_bottom",
+            "user_login",
+            "user_main",
+            "user_top"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_OfKfmH": [
+          [
+            "IbtnEnterCssClass",
+            "TxtPasswordCssClass",
+            "TxtUserNameCssClass",
+            "TxtUsercodeCssClass",
+            "TxtUsercompanyCssClass",
+            "errorMessage",
+            "user_bottom_c",
+            "user_bottom_l",
+            "user_bottom_r",
+            "user_main_box",
+            "user_main_c",
+            "user_main_input",
+            "user_main_l",
+            "user_main_r",
+            "user_main_text",
+            "user_top_c",
+            "user_top_l",
+            "user_top_r"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_OfKfmH": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/FORM",
+            "DIV/DIV/UL",
+            "DIV/FORM/DIV",
+            "DIV/UL/LI",
+            "FORM/DIV/DIV",
+            "LI/DIV/INPUT-image",
+            "LI/DIV/UL",
+            "UL/LI/DIV",
+            "UL/LI/IMG",
+            "UL/LI/INPUT-password",
+            "UL/LI/INPUT-text",
+            "UL/LI/SPAN"
+          ]
+        ]
+      }
+    }
+  }
+}

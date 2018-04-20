@@ -1,0 +1,73 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+  },
+  "override_urls": [
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.13\\.51\\.99:8088\\/\\/crbc\\/common\\/selectdialog\\/index\\.jsp\\?type=getPrjitem&page=getPrjitem\\.jsp&prjstatus=1&time=.*"
+      ],
+      "target_url": "override/blankLfj.html",
+      "default_url": "http://10.13.51.99:8088//crbc/common/selectdialog/index.jsp?type=getPrjitem&page=getPrjitem.jsp&prjstatus=1&time=Mon%20Apr%202%2015:55:35%20UTC+0800%202018"
+    },
+    {
+      "origin_url": [
+        "http:\\/\\/10\\.13\\.51\\.99:8088\\/crbc\\/js\\/tjcommondialog\\.js"
+      ],
+      "target_url": "override/tjcommondialog.js",
+      "default_url": "http://10.13.51.99:8088/crbc/js/tjcommondialog.js"
+    }
+  ],
+  "resource_filter": [
+    {
+      "url_match": [
+        "^http:\\/\\/10\\.13\\.51\\.99:8088.*"
+      ],
+      "charset": "utf-8",
+      "replaces": [
+        {
+          "regexp": "\\btop\\b",
+          "sub_str": "_ysp_top"
+        }
+      ]
+    }
+  ],
+  "adapter_urls": [
+    {
+      "title": "index",
+      "url": "adapter://ZYLQ04161639/plan/index/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.13\\.51\\.99:8088\\/portal\\/admin\\/loginsso\\.action\\?modelnumb.*"
+      ],
+      "demo": [
+        "http://10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6"
+      ]
+    },
+    {
+      "title": "login",
+      "url": "adapter://ZYLQ04161639/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.13\\.51\\.99:8088\\/portal\\/admin\\/login.*"
+      ],
+      "demo": [
+        "http://10.13.51.99:8088/portal/admin/login.action"
+      ]
+    }
+  ],
+  "name": "中远路桥",
+  "default_url": "http://10.13.51.99:8088/portal/admin/loginsso.action?modelnumb=1&parm1=suyuxin&parm2=098f6bcd4621d373cade4e832627b4f6",
+  "scope": "ZYLQ04161639",
+  "start_url": "enterplorer://ZYLQ04161639/local/index.html",
+  "update_time": 1524220999708
+}

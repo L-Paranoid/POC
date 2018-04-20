@@ -1,0 +1,144 @@
+
+
+
+
+
+
+
+
+<head>
+<link rel="stylesheet" href="http://10.13.51.99:8088/crbc/themes/theme01/style.css" type="text/css">
+
+<style>
+#menu {
+	padding: 5 10 5 10;
+	cursor: hand;
+}
+</style>
+<script>
+var url = new Array();
+url.push('/crbc/common/Commondialog_view.action?prjstatus=1&type=getPrjitem&dotype=_getPrjitem&returnindex=0&time='+escape(new Date()));
+</script>
+</head>
+
+<table width="100%" style="height: 100%;" border="0" cellpadding="0"
+	cellspacing="0">
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" class="top_bg1" height="26"
+				width="100%">
+				<tr>
+					<td width="10">
+						&nbsp;
+					</td>
+					<td width="80" align="center" id="menu" onclick="ShowMenu(0);"
+						name="menu">
+						选择项目
+					</td>
+					<td name="menu" id="menu" style="display: none;">
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr id="tr_iframe" style="display: none;">
+		<td style="height: 99%;">
+			<IFRAME id="iframe0" name="iframe" style="width: 100%; height: 100%;"
+				src="/crbc/common/blank.jsp" frameborder="0" ></IFRAME>
+		</td>
+	</tr>
+	<tr id="tr_iframe" style="display: none;">
+		<td style="height: 99%;">
+			<IFRAME id="iframe1" name="iframe" style="width: 100%; height: 100%;"
+				src="/crbc/common/blank.jsp" frameborder="0" ></IFRAME>
+		</td>
+	</tr>
+	<tr style="height: 30px;">
+		<td align="center" class="menubar">
+			<input type="button" value="确定" class="button"
+				onclick="setReturnValue();" />
+			<input type="button" value="关闭" class="button"
+				onclick="window.returnValue=null;window.close();" />
+		</td>
+	</tr>
+</table>
+<script>
+var selectindex = -1 ;
+function ShowMenu(index)
+{
+  debugger;
+	for(var i=0;i < document.all( "menu" ).length-1; i++)
+	{
+		if( i == index ) continue ;
+		
+	  	document.all( "menu" )[i].className="menu0";
+		document.all( "tr_iframe" )[i].style.display = "none";
+		
+	}
+  	document.all( "menu" )[index].className="menu1";
+	document.all( "tr_iframe" )[index].style.display = "inline";  	
+  	//
+  	if(selectindex != index )
+  	{
+      debugger;
+      
+      //document.all("iframe")[index].src == "http://10.13.51.99:8088/crbc/common/blank.jsp"
+  		if((document.all("iframe") && document.all("iframe")[index].src == "http://10.13.51.99:8088/crbc/common/blank.jsp") || document.querySelectorAll('iframe')[index].src == "http://10.13.51.99:8088/crbc/common/blank.jsp") {
+        if(document.all("iframe")){
+          document.all("iframe")[index].src = url[index];
+        }
+        else{
+          document.querySelectorAll('iframe')[index].src = url[index];
+        }
+      }
+  		selectindex = index;
+  	}
+}
+function setReturnValue()
+{
+ // debugger;
+	if( document.iframe0 != null && document.iframe0.setReturnValue != null ) {document.iframe0.setReturnValue();}
+	//alert(top.window.returnValue+"  top.window.returnValue");
+	if(window.returnValue == null)
+	{ 
+    if(!top.VALUE || top.VALUE == 'mobile'){
+      window.close();
+    }else{
+      alert("请选择项目!" );
+			return false;
+    }
+	}else{
+	window.close();
+	}
+}
+
+//页面已有值， 修改时
+function setValue()
+{
+
+	//var parm = window.dialogArguments;
+	//if( parm == null ) return;
+	//if( parm[1] == null ) return;
+	//alert( parm[1] );
+}
+
+function ShowReturnValue()
+{
+	alert(window.returnValue );
+}
+function test(){
+ShowReturnValue();
+}
+//------------------------------------------------------------------------
+ShowMenu(0);//设置默认菜单
+
+
+</script>
+
+
+
+
