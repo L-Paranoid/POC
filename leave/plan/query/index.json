@@ -1,0 +1,491 @@
+{
+  "version": "0.1",
+  "id": "query",
+  "targetURL": "http://192.168.220.110/psp/ps/EMPLOYEE/HRMS/c/HPS_MENU.HPS_TL_AWE_001.GBL?FolderPath=PORTAL_ROOT_OBJECT.HPS_DEVELOP.HPS_WF_FLD.HPS_TL_AWE_001_GBL&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder",
+  "jsFile": "index.js",
+  "requires": {
+    "menu": "../menu/index.json"
+  },
+  "chineseName": "查找现有值",
+  "description": "",
+  "controls": {
+    "control8_EgX08w": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "win0tblSrchFlds",
+              "tagName": "TABLE",
+              "prefix": "",
+              "suffix": "/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]",
+              "ratio": 0.23
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.ps_pagecontainer TABLE.PSPAGECONTAINER TABLE.PSPAGECONTAINER TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[5]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control8_EgX08w"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "//iframe[@name='TargetContent'][@id='ptifrmtgtframe']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control9_fAoT38": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              5,
+              7
+            ],
+            "value": "BODY.PSSRCHPAGE FORM.PSForm DIV.ps_pagecontainer DIV"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[5]/DIV[3]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control9_fAoT38"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "//iframe[@name='TargetContent'][@id='ptifrmtgtframe']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control21_ham8Ss": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              6,
+              7
+            ],
+            "value": "BODY.PSSRCHPAGE FORM.PSForm DIV.ps_pagecontainer DIV"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[5]/DIV[4]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control21_ham8Ss"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='TargetContent'][@id='ptifrmtgtframe']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control17_ANAk5F": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "win0tblSrchFlds",
+              "tagName": "TABLE",
+              "prefix": "",
+              "suffix": "/TBODY[1]/TR[1]/TD[1]/TABLE[1]",
+              "ratio": 0.234
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.ps_pagecontainer TABLE.PSPAGECONTAINER TABLE.PSPAGECONTAINER"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[5]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "userEvents": "back",
+      "roles": "element,button,link",
+      "monitored": true,
+      "frameXPath": "//iframe[@name='TargetContent'][@id='ptifrmtgtframe']<<IFRAME>>",
+      "componentType": "button"
+    }
+  },
+  "contexts": {
+    "context4_wTi2Fi": {
+      "controls": [
+        "control8_EgX08w",
+        "control9_fAoT38",
+        "control21_ham8Ss",
+        "control17_ANAk5F"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow13_SBTf3v": {
+      "toContexts": [
+        {
+          "toContextId": "context4_wTi2Fi"
+        },
+        {
+          "toContextId": "context1_UvkUyT",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow18_0GOL8w": {
+      "fromContextId": "context4_wTi2Fi",
+      "fromAction": "doAction",
+      "fromControlId": "control9_fAoT38",
+      "toContexts": [
+        {
+          "toContextId": "context4_wTi2Fi"
+        }
+      ]
+    },
+    "flow21_mfzNqF": {
+      "fromContextId": "context4_wTi2Fi",
+      "fromAction": "doAction",
+      "fromControlId": "control8_EgX08w",
+      "toContexts": [
+        {
+          "toContextId": "context4_wTi2Fi"
+        }
+      ]
+    },
+    "flow20_3yxbvT": {
+      "fromContextId": "context4_wTi2Fi",
+      "fromAction": "click",
+      "fromControlId": "control17_ANAk5F",
+      "toContexts": [
+        {
+          "toContextId": "context4_wTi2Fi"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page4_rfPrd8": {
+      "contextId": "context4_wTi2Fi",
+      "layout": [
+        {
+          "id": "uiControl13_Q4vmPb",
+          "display": {
+            "class": "title",
+            "title": "搜索标准",
+            "type": "header",
+            "adapterId": "header",
+            "amStyle": "",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl13_Q4vmPbheaderLeft",
+              "display": {
+                "type": "headerLeft",
+                "adapterId": "headerLeft",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl26_gFBuRs",
+                  "controlId": "control17_ANAk5F",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "text": "返回",
+                    "class": "goback",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl13_Q4vmPbheaderRight",
+              "display": {
+                "type": "headerRight",
+                "adapterId": "headerRight",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl8_4znM8I",
+          "controlId": "control8_EgX08w",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl8_4znM8I",
+                "onGetTemplate": "getTemplate_uiControl8_4znM8I"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl9_1ZMcdL",
+          "controlId": "control9_fAoT38",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl9_1ZMcdL",
+                "onGetTemplate": "getTemplate_uiControl9_1ZMcdL"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl21_gmvGUU",
+          "controlId": "control21_ham8Ss",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl21_gmvGUU",
+                "onGetTemplate": "getTemplate_uiControl21_gmvGUU"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context4_wTi2Fi": [
+          ""
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context4_wTi2Fi": [
+          ""
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context4_wTi2Fi": [
+          [
+            "#ICClear",
+            "#ICSearch",
+            "HPS_AWE_HDR_ACTION_DT",
+            "HPS_AWE_HDR_ACTION_DT$op",
+            "HPS_AWE_HDR_ACTION_DT$prompt",
+            "HPS_AWE_HDR_ACTION_DT$prompt$img",
+            "HPS_AWE_HDR_ACTION_DT_LBL",
+            "HPS_AWE_HDR_HPS_WF_STATUS",
+            "HPS_AWE_HDR_HPS_WF_STATUS$op",
+            "HPS_AWE_HDR_HPS_WF_STATUS_LBL",
+            "HPS_AWE_HDR_TRANSACTION_NBR",
+            "HPS_AWE_HDR_TRANSACTION_NBR$op",
+            "HPS_AWE_HDR_TRANSACTION_NBR_LBL",
+            "windivHPS_AWE_HDR_ACTION_DT",
+            "windivHPS_AWE_HDR_HPS_WF_STATUS",
+            "windivHPS_AWE_HDR_TRANSACTION_NBR",
+            "windivSEARCHABOVE",
+            "windivSEARCHADV",
+            "windivSEARCHBELOW",
+            "windivSEARCHRESULT",
+            "wintblSrchFlds"
+          ],
+          [
+            "HPS_AWE_HDR_ACTION_DT",
+            "HPS_AWE_HDR_ACTION_DT$op",
+            "HPS_AWE_HDR_ACTION_DT$prompt",
+            "HPS_AWE_HDR_ACTION_DT$prompt$img",
+            "HPS_AWE_HDR_ACTION_DT_LBL",
+            "HPS_AWE_HDR_HPS_WF_STATUS",
+            "HPS_AWE_HDR_HPS_WF_STATUS$op",
+            "HPS_AWE_HDR_HPS_WF_STATUS_LBL",
+            "HPS_AWE_HDR_TRANSACTION_NBR",
+            "HPS_AWE_HDR_TRANSACTION_NBR$op",
+            "HPS_AWE_HDR_TRANSACTION_NBR_LBL",
+            "windivHPS_AWE_HDR_ACTION_DT",
+            "windivHPS_AWE_HDR_HPS_WF_STATUS",
+            "windivHPS_AWE_HDR_TRANSACTION_NBR"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context4_wTi2Fi": [
+          [
+            "Left",
+            "PSDROPDOWNLIST",
+            "PSEDITBOX",
+            "PSHYPERLINK",
+            "PSPAGECONTAINER",
+            "PSPUSHBUTTON",
+            "PSPUSHBUTTONTBCLEAR",
+            "PSPUSHBUTTONTBSEARCH",
+            "PSSRCHDROPDOWNLABEL",
+            "PSSRCHEDITBOXLABEL",
+            "PSSRCHINSTRUCTIONS",
+            "PTSAVESEARCH"
+          ],
+          [
+            "Left",
+            "PSDROPDOWNLIST",
+            "PSEDITBOX",
+            "PSHYPERLINK",
+            "PSPAGECONTAINER",
+            "PSPUSHBUTTON",
+            "PSPUSHBUTTONTBCLEAR",
+            "PSPUSHBUTTONTBSEARCH",
+            "PSSRCHDROPDOWNLABEL",
+            "PSSRCHEDITBOXLABEL",
+            "PTSAVESEARCH"
+          ],
+          [
+            "PSDROPDOWNLIST",
+            "PSEDITBOX",
+            "PSHYPERLINK",
+            "PSSRCHDROPDOWNLABEL",
+            "PSSRCHEDITBOXLABEL"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context4_wTi2Fi": [
+          [
+            "-/-/DIV",
+            "-/DIV/A",
+            "-/DIV/BR",
+            "-/DIV/H2",
+            "-/DIV/TABLE",
+            "A/SPAN/INPUT-button",
+            "DIV/A/IMG",
+            "DIV/A/SPAN",
+            "DIV/SELECT/OPTION",
+            "DIV/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/A",
+            "TD/DIV/INPUT-text",
+            "TD/DIV/SELECT",
+            "TD/SELECT/OPTION",
+            "TD/TABLE/TBODY",
+            "TR/TD/DIV",
+            "TR/TD/LABEL",
+            "TR/TD/SELECT",
+            "TR/TD/TABLE"
+          ],
+          [
+            "-/-/DIV",
+            "-/DIV/A",
+            "-/DIV/BR",
+            "-/DIV/TABLE",
+            "A/SPAN/INPUT-button",
+            "DIV/A/IMG",
+            "DIV/A/SPAN",
+            "DIV/SELECT/OPTION",
+            "DIV/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/A",
+            "TD/DIV/INPUT-text",
+            "TD/DIV/SELECT",
+            "TD/SELECT/OPTION",
+            "TD/TABLE/TBODY",
+            "TR/TD/DIV",
+            "TR/TD/LABEL",
+            "TR/TD/SELECT",
+            "TR/TD/TABLE"
+          ],
+          [
+            "-/-/TR",
+            "-/TR/TD",
+            "DIV/A/IMG",
+            "DIV/SELECT/OPTION",
+            "TD/DIV/A",
+            "TD/DIV/INPUT-text",
+            "TD/DIV/SELECT",
+            "TD/SELECT/OPTION",
+            "TR/TD/DIV",
+            "TR/TD/LABEL",
+            "TR/TD/SELECT"
+          ]
+        ]
+      }
+    }
+  }
+}

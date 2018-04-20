@@ -1,0 +1,859 @@
+{
+  "version": "0.1",
+  "id": "county",
+  "targetURL": "http://192.168.220.110/psp/ps/EMPLOYEE/HRMS/c/HPS_MENU.HPS_TL_AWE_001.GBL?FolderPath=PORTAL_ROOT_OBJECT.HPS_DEVELOP.HPS_WF_FLD.HPS_TL_AWE_001_GBL&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder",
+  "jsFile": "index.js",
+  "requires": {
+    "menu": "../menu/index.json",
+    "apply": "../apply/index.json"
+  },
+  "chineseName": "区县查找",
+  "description": "",
+  "controls": {
+    "control10_PLvybs": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.ps_pagecontainer TABLE.PSPAGECONTAINER TABLE.PSPAGECONTAINER TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control10_PLvybs"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control16_f36QpZ": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              4,
+              6
+            ],
+            "value": "BODY.PSSRCHPAGE FORM.PSForm DIV.ps_pagecontainer DIV"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[3]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control16_f36QpZ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control35_BmATQS": {
+      "location": {
+        "data": {
+          "tagName": "H2"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "FORM.PSForm DIV.ps_pagecontainer H2.PSSRCHINSTRUCTIONS"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[4]/H2[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control35_BmATQS"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control36_clsO4M": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "FORM.PSForm DIV.ps_pagecontainer SPAN.PSSRCHINSTRUCTIONS"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[4]/SPAN[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control36_clsO4M"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control37_yqvNdZ": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "win0divSEARCHRESULT",
+              "tagName": "DIV",
+              "prefix": "",
+              "suffix": "/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]",
+              "ratio": 0.885
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "FORM.PSForm DIV.ps_pagecontainer TABLE.PSSRCHRESULTSTITLE TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[4]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              65,
+              98,
+              145
+            ]
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control37_yqvNdZ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control38_aARzfn": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::TABLE[@id=\"PTSRCHRESULTS\"]/TBODY[1]",
+              "descendant::TABLE[@id=\"PTSRCHRESULTS\"]//TBODY"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "FORM.PSForm DIV.ps_pagecontainer TABLE.PSSRCHRESULTSWBO TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[2]/DIV[4]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/TABLE[1]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control38_aARzfn"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context5_6gvJkL": {
+      "controls": [
+        "control10_PLvybs",
+        "control16_f36QpZ",
+        "control35_BmATQS",
+        "control36_clsO4M",
+        "control37_yqvNdZ",
+        "control38_aARzfn"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow26_D3hxyd": {
+      "toContexts": [
+        {
+          "toContextId": "context5_6gvJkL"
+        },
+        {
+          "toContextId": "context1_UvkUyT",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow28_aeFXkC": {
+      "fromContextId": "context5_6gvJkL",
+      "fromAction": "doAction",
+      "fromControlId": "control10_PLvybs",
+      "toContexts": [
+        {
+          "toContextId": "context5_6gvJkL"
+        },
+        {
+          "toContextId": "context3_zwoFAH",
+          "toModelId": "apply"
+        }
+      ]
+    },
+    "flow29_5uSK75": {
+      "fromContextId": "context5_6gvJkL",
+      "fromAction": "doAction",
+      "fromControlId": "control16_f36QpZ",
+      "toContexts": [
+        {
+          "toContextId": "context5_6gvJkL"
+        },
+        {
+          "toContextId": "context1_UvkUyT",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow30_JnDdQZ": {
+      "fromContextId": "context5_6gvJkL",
+      "fromAction": "doAction",
+      "fromControlId": "control37_yqvNdZ",
+      "toContexts": [
+        {
+          "toContextId": "context5_6gvJkL"
+        }
+      ]
+    },
+    "flow27_65RnGE": {
+      "fromContextId": "context5_6gvJkL",
+      "fromAction": "doAction",
+      "fromControlId": "control38_aARzfn",
+      "toContexts": [
+        {
+          "toContextId": "context5_6gvJkL"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page5_Me7lRF": {
+      "contextId": "context5_6gvJkL",
+      "layout": [
+        {
+          "id": "uiControl29_q8QRXQ",
+          "display": {
+            "class": "title",
+            "title": "查询*区县",
+            "type": "header",
+            "adapterId": "header",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl29_q8QRXQheaderLeft",
+              "display": {
+                "type": "headerLeft",
+                "adapterId": "headerLeft",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            },
+            {
+              "id": "uiControl29_q8QRXQheaderRight",
+              "display": {
+                "type": "headerRight",
+                "adapterId": "headerRight",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl12_X8ChKs",
+          "controlId": "control10_PLvybs",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl12_X8ChKs",
+                "onGetTemplate": "getTemplate_uiControl12_X8ChKs"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl30_MEtW9u",
+          "controlId": "control16_f36QpZ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl30_MEtW9u",
+                "onGetTemplate": "getTemplate_uiControl30_MEtW9u"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl31_38nOvs",
+          "controlId": "control35_BmATQS",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl31_38nOvs",
+                "onGetTemplate": "getTemplate_uiControl31_38nOvs"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl32_R5ZB1k",
+          "controlId": "control36_clsO4M",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl32_R5ZB1k",
+                "onGetTemplate": "getTemplate_uiControl32_R5ZB1k"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl33_ZydReZ",
+          "controlId": "control37_yqvNdZ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl33_ZydReZ",
+                "onGetTemplate": "getTemplate_uiControl33_ZydReZ"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl34_ykHpqr",
+          "controlId": "control38_aARzfn",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl34_ykHpqr",
+                "onGetTemplate": "getTemplate_uiControl34_ykHpqr"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context5_6gvJkL": [
+          ""
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context5_6gvJkL": [
+          ""
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context5_6gvJkL": [
+          [
+            "#HELPPOPUPCLOSE",
+            "#ICCancel",
+            "#ICClear",
+            "#ICSearch",
+            "#ICSortCol",
+            "CLEARCONSOLE",
+            "CLOSECONSOLE",
+            "COPYCONSOLE",
+            "Delayed_win",
+            "DetachDiv",
+            "FacetPath",
+            "HIDECONSOLE",
+            "HPS_LOCATION_VW_DESCR",
+            "HPS_LOCATION_VW_DESCR$op",
+            "HPS_LOCATION_VW_DESCR_LBL",
+            "HPS_LOCATION_VW_LOCATION",
+            "HPS_LOCATION_VW_LOCATION$op",
+            "HPS_LOCATION_VW_LOCATION_LBL",
+            "HelpDragFrame_win",
+            "HelpdivpopupFrame_win",
+            "HelppopupContainer_win",
+            "HelppopupDiv_win",
+            "HelppopupInner_win",
+            "HelppopupShadow",
+            "HelppopupShadowBottom",
+            "HelppopupShadowBottomLeftCorner",
+            "HelppopupShadowBottomMiddle",
+            "HelppopupShadowBottomRightCorner",
+            "HelppopupShadowTop",
+            "HelppopupShadowTopRightCorner",
+            "HelppopupTitleBarLeftImage",
+            "HelppopupTitleBarMiddle_win",
+            "HelppopupTitleBarRightImage",
+            "HelppopupTitleBar_win",
+            "HelppopupTitle_win",
+            "ICAPPCLSDATA",
+            "ICAction",
+            "ICActionPrompt",
+            "ICAddCount",
+            "ICAutoSave",
+            "ICBcDomData",
+            "ICChanged",
+            "ICElementNum",
+            "ICFind",
+            "ICFirstAnchor_win",
+            "ICFocus",
+            "ICLastAnchor_win",
+            "ICModelCancel",
+            "ICPanelName",
+            "ICResubmit",
+            "ICSID",
+            "ICSaveWarningFilter",
+            "ICSkipPending",
+            "ICStateNum",
+            "ICType",
+            "ICTypeAheadID",
+            "ICXPos",
+            "ICYPos",
+            "PTSRCHRESULTS",
+            "RESULT$",
+            "ResponsetoDiffFrame",
+            "SAVED_win",
+            "SEARCH_RESULT",
+            "SEARCH_RESULTLAST",
+            "TargetFrameName",
+            "WAIT_win",
+            "processing",
+            "ptModalShadow",
+            "ptStatusText_win",
+            "pt_console",
+            "pt_fakeBC",
+            "pt_modalMask",
+            "pt_modalMaskCover",
+            "pt_modals",
+            "pt_typeahead",
+            "pthnavbccref_PT_FAKE_HPS_TL_AWE__GBL",
+            "ptus_componenturl",
+            "ptus_dbname",
+            "ptus_defaultlocalnode",
+            "ptus_node",
+            "ptus_portal",
+            "ptus_universalSrch",
+            "ptus_workcenterid",
+            "saveWait_win",
+            "windivHPS_LOCATION_VW_DESCR",
+            "windivHPS_LOCATION_VW_LOCATION",
+            "windivPAGECONTAINER",
+            "windivPSHIDDENFIELDS",
+            "windivPSTOOLSHIDDENS",
+            "windivSEARCHABOVE",
+            "windivSEARCHADV",
+            "windivSEARCHBELOW",
+            "windivSEARCHRESULT",
+            "wintblSrchFlds"
+          ],
+          [
+            "#HELPPOPUPCLOSE",
+            "#ICCancel",
+            "#ICClear",
+            "#ICSearch",
+            "CLEARCONSOLE",
+            "CLOSECONSOLE",
+            "COPYCONSOLE",
+            "Delayed_win",
+            "DetachDiv",
+            "FacetPath",
+            "HIDECONSOLE",
+            "HPS_LOCATION_VW_DESCR",
+            "HPS_LOCATION_VW_DESCR$op",
+            "HPS_LOCATION_VW_DESCR$to",
+            "HPS_LOCATION_VW_DESCR_LBL",
+            "HPS_LOCATION_VW_LOCATION",
+            "HPS_LOCATION_VW_LOCATION$op",
+            "HPS_LOCATION_VW_LOCATION_LBL",
+            "HelpDragFrame_win",
+            "HelpdivpopupFrame_win",
+            "HelppopupContainer_win",
+            "HelppopupDiv_win",
+            "HelppopupInner_win",
+            "HelppopupShadow",
+            "HelppopupShadowBottom",
+            "HelppopupShadowBottomLeftCorner",
+            "HelppopupShadowBottomMiddle",
+            "HelppopupShadowBottomRightCorner",
+            "HelppopupShadowTop",
+            "HelppopupShadowTopRightCorner",
+            "HelppopupTitleBarLeftImage",
+            "HelppopupTitleBarMiddle_win",
+            "HelppopupTitleBarRightImage",
+            "HelppopupTitleBar_win",
+            "HelppopupTitle_win",
+            "ICAPPCLSDATA",
+            "ICAction",
+            "ICActionPrompt",
+            "ICAddCount",
+            "ICAutoSave",
+            "ICBcDomData",
+            "ICChanged",
+            "ICElementNum",
+            "ICFind",
+            "ICFirstAnchor_win",
+            "ICFocus",
+            "ICLastAnchor_win",
+            "ICModelCancel",
+            "ICPanelName",
+            "ICResubmit",
+            "ICSID",
+            "ICSaveWarningFilter",
+            "ICSkipPending",
+            "ICStateNum",
+            "ICType",
+            "ICTypeAheadID",
+            "ICXPos",
+            "ICYPos",
+            "ResponsetoDiffFrame",
+            "SAVED_win",
+            "TargetFrameName",
+            "WAIT_win",
+            "processing",
+            "ptModalShadow",
+            "ptStatusText_win",
+            "pt_console",
+            "pt_fakeBC",
+            "pt_modalMask",
+            "pt_modalMaskCover",
+            "pt_modals",
+            "pt_typeahead",
+            "pthnavbccref_PT_FAKE_HPS_TL_AWE__GBL",
+            "ptus_componenturl",
+            "ptus_dbname",
+            "ptus_defaultlocalnode",
+            "ptus_node",
+            "ptus_portal",
+            "ptus_universalSrch",
+            "ptus_workcenterid",
+            "saveWait_win",
+            "windivHPS_LOCATION_VW_DESCR",
+            "windivHPS_LOCATION_VW_DESCR$to",
+            "windivHPS_LOCATION_VW_LOCATION",
+            "windivPAGECONTAINER",
+            "windivPSHIDDENFIELDS",
+            "windivPSTOOLSHIDDENS",
+            "windivSEARCHABOVE",
+            "windivSEARCHADV",
+            "windivSEARCHBELOW",
+            "windivSEARCHRESULT",
+            "wintblSrchFlds"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context5_6gvJkL": [
+          [
+            "HelpdivpopupFrame",
+            "HelppopupInner",
+            "HelppopupTitleBar",
+            "HelppopupTitleBarMiddle",
+            "Left",
+            "MOBGImage",
+            "PSDROPDOWNLIST",
+            "PSEDITBOX",
+            "PSHYPERLINK",
+            "PSMODAL",
+            "PSPAGECONTAINER",
+            "PSPROCESSING",
+            "PSPUSHBUTTON",
+            "PSPUSHBUTTONTBCANCEL",
+            "PSPUSHBUTTONTBCLEAR",
+            "PSPUSHBUTTONTBLOOKUP",
+            "PSSRCHEDITBOXLABEL",
+            "PSSRCHINSTRUCTIONS",
+            "PSSRCHRESULTSEVENROW",
+            "PSSRCHRESULTSHDR",
+            "PSSRCHRESULTSHYPERLINK",
+            "PSSRCHRESULTSHYPERLINKD",
+            "PSSRCHRESULTSODDROW",
+            "PSSRCHRESULTSTITLE",
+            "PSSRCHRESULTSWBO",
+            "PSSRCHSUBTITLE",
+            "PTNEXTROW_D",
+            "PTPOPUP_HEADER",
+            "PTPOPUP_TITLE",
+            "PTPREVROW_D",
+            "abnanchor",
+            "popupDragFrame",
+            "popupShadow",
+            "popupShadowBottom",
+            "popupShadowBottomLeftCorner",
+            "popupShadowBottomMiddle",
+            "popupShadowBottomRightCorner",
+            "popupShadowTop",
+            "popupShadowTopRightCorner",
+            "ps_ajax_console",
+            "ps_box-toolshiddens",
+            "ps_modalmask",
+            "ps_modalmask_cover",
+            "ps_pagecontainer",
+            "ps_typeahead",
+            "psc_hidden",
+            "psc_processing",
+            "ptabncrefbc",
+            "ptfakercfbc",
+            "pthbcdispiblock",
+            "pthnavbarcref",
+            "pthnavcrefimg",
+            "pthnavhiearchysep",
+            "spanTextDropdown",
+            "x"
+          ],
+          [
+            "HelpdivpopupFrame",
+            "HelppopupInner",
+            "HelppopupTitleBar",
+            "HelppopupTitleBarMiddle",
+            "Left",
+            "MOBGImage",
+            "PSDROPDOWNLIST",
+            "PSEDITBOX",
+            "PSHYPERLINK",
+            "PSMODAL",
+            "PSPAGECONTAINER",
+            "PSPROCESSING",
+            "PSPUSHBUTTON",
+            "PSPUSHBUTTONTBCANCEL",
+            "PSPUSHBUTTONTBCLEAR",
+            "PSPUSHBUTTONTBLOOKUP",
+            "PSSRCHEDITBOXLABEL",
+            "PSSRCHINSTRUCTIONS",
+            "PTPOPUP_HEADER",
+            "PTPOPUP_TITLE",
+            "abnanchor",
+            "popupDragFrame",
+            "popupShadow",
+            "popupShadowBottom",
+            "popupShadowBottomLeftCorner",
+            "popupShadowBottomMiddle",
+            "popupShadowBottomRightCorner",
+            "popupShadowTop",
+            "popupShadowTopRightCorner",
+            "ps_ajax_console",
+            "ps_box-toolshiddens",
+            "ps_modalmask",
+            "ps_modalmask_cover",
+            "ps_pagecontainer",
+            "ps_typeahead",
+            "psc_hidden",
+            "psc_processing",
+            "ptabncrefbc",
+            "ptfakercfbc",
+            "pthbcdispiblock",
+            "pthnavbarcref",
+            "pthnavcrefimg",
+            "pthnavhiearchysep",
+            "spanTextDropdown",
+            "x"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context5_6gvJkL": [
+          [
+            "-/-/A",
+            "-/-/DIV",
+            "-/-/TABLE",
+            "-/DIV/BR",
+            "-/DIV/DIV",
+            "-/DIV/INPUT-text",
+            "-/DIV/SPAN",
+            "-/DIV/UL",
+            "-/TABLE/TBODY",
+            "A/SPAN/INPUT-button",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BR",
+            "DIV/DIV/DIV",
+            "DIV/DIV/H2",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/LI",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TBODY/TR/TH",
+            "TD/DIV/DIV",
+            "TD/DIV/INPUT-text",
+            "TD/SELECT/OPTION",
+            "TD/SPAN/A",
+            "TD/TABLE/TBODY",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/IMG",
+            "TR/TD/LABEL",
+            "TR/TD/SELECT",
+            "TR/TD/SPAN",
+            "TR/TD/TABLE",
+            "TR/TH/A",
+            "UL/LI/A",
+            "UL/LI/DIV"
+          ],
+          [
+            "-/-/A",
+            "-/-/DIV",
+            "-/-/TABLE",
+            "-/DIV/BR",
+            "-/DIV/DIV",
+            "-/DIV/INPUT-text",
+            "-/DIV/SPAN",
+            "-/DIV/UL",
+            "-/TABLE/TBODY",
+            "A/SPAN/INPUT-button",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BR",
+            "DIV/DIV/DIV",
+            "DIV/DIV/H2",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/LI",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TD/DIV/INPUT-text",
+            "TD/SELECT/OPTION",
+            "TD/TABLE/TBODY",
+            "TR/TD/DIV",
+            "TR/TD/IMG",
+            "TR/TD/LABEL",
+            "TR/TD/SELECT",
+            "TR/TD/SPAN",
+            "TR/TD/TABLE",
+            "UL/LI/A",
+            "UL/LI/DIV"
+          ]
+        ]
+      }
+    }
+  }
+}
