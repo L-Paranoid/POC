@@ -1,0 +1,282 @@
+{
+  "version": "0.1",
+  "id": "file",
+  "targetURL": "http://192.168.220.110/psp/ps/EMPLOYEE/HRMS/c/HPS_MENU.HPS_TL_AWE_001.GBL?FolderPath=PORTAL_ROOT_OBJECT.HPS_DEVELOP.HPS_WF_FLD.HPS_TL_AWE_001_GBL&IsFolder=false&IgnoreParamTempl=FolderPath%2cIsFolder",
+  "jsFile": "index.js",
+  "requires": {
+    "menu": "../menu/index.json"
+  },
+  "chineseName": "文件上传",
+  "description": "",
+  "controls": {
+    "control29_gmPSVI": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "HTML.pc.chrome.mac.psc_dir-ltr.psc_form-xlarge FORM.PSForm DIV.ps_box-toolshiddens"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control29_gmPSVI"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//iframe[contains(@name,'ptModFrame_')][contains(@id,'ptModFrame_')]<<IFRAME>>",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context7_1mNQeg": {
+      "controls": [
+        "control29_gmPSVI"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow15_Gt0DTy": {
+      "toContexts": [
+        {
+          "toContextId": "context7_1mNQeg"
+        },
+        {
+          "toContextId": "context1_UvkUyT",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow22_pJVW41": {
+      "fromContextId": "context7_1mNQeg",
+      "fromAction": "doAction",
+      "fromControlId": "control29_gmPSVI",
+      "toContexts": [
+        {
+          "toContextId": "context7_1mNQeg"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page7_Xg5iBd": {
+      "contextId": "context7_1mNQeg",
+      "layout": [
+        {
+          "id": "uiControl25_iSbu7m",
+          "controlId": "control29_gmPSVI",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl25_iSbu7m",
+                "onGetTemplate": "getTemplate_uiControl25_iSbu7m"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context7_1mNQeg": [
+          ""
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context7_1mNQeg": [
+          ""
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context7_1mNQeg": [
+          [
+            "#HELPPOPUPCLOSE",
+            "CLEARCONSOLE",
+            "CLOSECONSOLE",
+            "COPYCONSOLE",
+            "CheckNum",
+            "Delayed_win",
+            "DetachDiv",
+            "DetailReturnCode",
+            "FacetPath",
+            "HIDECONSOLE",
+            "HelpDragFrame_win",
+            "HelpdivpopupFrame_win",
+            "HelppopupContainer_win",
+            "HelppopupDiv_win",
+            "HelppopupInner_win",
+            "HelppopupShadow",
+            "HelppopupShadowBottom",
+            "HelppopupShadowBottomLeftCorner",
+            "HelppopupShadowBottomMiddle",
+            "HelppopupShadowBottomRightCorner",
+            "HelppopupShadowTop",
+            "HelppopupShadowTopRightCorner",
+            "HelppopupTitleBarLeftImage",
+            "HelppopupTitleBarMiddle_win",
+            "HelppopupTitleBarRightImage",
+            "HelppopupTitleBar_win",
+            "HelppopupTitle_win",
+            "ICAction",
+            "ICActionPrompt",
+            "ICAutoSave",
+            "ICBcDomData",
+            "ICChanged",
+            "ICElementNum",
+            "ICFirstAnchor_win",
+            "ICFocus",
+            "ICLastAnchor_win",
+            "ICModelCancel",
+            "ICPanelName",
+            "ICResubmit",
+            "ICSID",
+            "ICSaveWarningFilter",
+            "ICSkipPending",
+            "ICStateNum",
+            "ICType",
+            "ICTypeAheadID",
+            "ICXPos",
+            "ICYPos",
+            "ResponsetoDiffFrame",
+            "SAVED_win",
+            "TargetFrameName",
+            "WAIT_win",
+            "cmd",
+            "maxfilesize",
+            "popupDragFrame",
+            "processing",
+            "prompts",
+            "ptModalShadow",
+            "ptStatusText_win",
+            "pt_console",
+            "pt_fakeBC",
+            "pt_modalMask",
+            "pt_modalMaskCover",
+            "pt_modals",
+            "pt_typeahead",
+            "pthnavbccref_PT_FAKE_HPS_TL_AWE__GBL",
+            "ptus_componenturl",
+            "ptus_dbname",
+            "ptus_defaultlocalnode",
+            "ptus_node",
+            "ptus_portal",
+            "ptus_universalSrch",
+            "ptus_workcenterid",
+            "saveWait_win",
+            "stoponerror",
+            "urlid",
+            "winMOdivpopupFrame",
+            "winMOpopupContainer",
+            "winMOpopupInner",
+            "windivPSHIDDENFIELDS",
+            "windivPSHIDDENFIELDSATTACH",
+            "windivPSTOOLSHIDDENS"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context7_1mNQeg": [
+          [
+            "HelpdivpopupFrame",
+            "HelppopupInner",
+            "HelppopupTitleBar",
+            "HelppopupTitleBarMiddle",
+            "Left",
+            "MOBGImage",
+            "PSMODAL",
+            "PSPROCESSING",
+            "PSPUSHBUTTON",
+            "PTPOPUP_HEADER",
+            "PTPOPUP_TITLE",
+            "abnanchor",
+            "popupDragFrame",
+            "popupShadow",
+            "popupShadowBottom",
+            "popupShadowBottomLeftCorner",
+            "popupShadowBottomMiddle",
+            "popupShadowBottomRightCorner",
+            "popupShadowTop",
+            "popupShadowTopRightCorner",
+            "ps_ajax_console",
+            "ps_box-toolshiddens",
+            "ps_modalmask",
+            "ps_modalmask_cover",
+            "ps_typeahead",
+            "psc_hidden",
+            "psc_processing",
+            "ptabncrefbc",
+            "ptfakercfbc",
+            "pthbcdispiblock",
+            "pthnavbarcref",
+            "pthnavcrefimg",
+            "pthnavhiearchysep",
+            "spanTextDropdown",
+            "x"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context7_1mNQeg": [
+          [
+            "-/-/DIV",
+            "-/DIV/A",
+            "-/DIV/BR",
+            "-/DIV/DIV",
+            "-/DIV/INPUT-file",
+            "-/DIV/SCRIPT",
+            "-/DIV/TABLE",
+            "A/SPAN/INPUT-button",
+            "DIV/A/SPAN",
+            "DIV/DIV/BR",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/UL",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/LI",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TR/TD/DIV",
+            "TR/TD/IMG",
+            "TR/TD/SPAN",
+            "UL/LI/A",
+            "UL/LI/DIV"
+          ]
+        ]
+      }
+    }
+  }
+}
