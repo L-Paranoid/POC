@@ -1,0 +1,33 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.5.3",
+  "runtime_env": "1webview",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": []
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://CCYQ/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/10\\.135\\.21\\.86:8088\\/index\\.html"
+      ],
+      "demo": [
+        "http://10.135.21.86:8088/index.html"
+      ]
+    }
+  ],
+  "name": "长春一汽",
+  "default_url": "http://10.135.21.86:8088/index.html",
+  "scope": "CCYQ",
+  "start_url": "enterplorer://CCYQ/local/index.html",
+  "update_time": 1523868762666
+}
