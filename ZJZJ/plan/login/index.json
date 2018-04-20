@@ -1,0 +1,169 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "http://psp.e-cqs.cn/portal/index2.html",
+  "jsFile": "index.js",
+  "chineseName": "登录",
+  "description": "",
+  "controls": {
+    "control0_1G9rn0": {
+      "location": {
+        "data": {
+          "tagName": "HTML"
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_1G9rn0"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context0_2ZRPK6": {
+      "controls": [
+        "control0_1G9rn0"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_NttTeV": {
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_PmxO82": {
+      "contextId": "context0_2ZRPK6",
+      "layout": [
+        {
+          "id": "uiControl0_vJZuKP",
+          "controlId": "control0_1G9rn0",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl0_vJZuKP",
+                "onGetTemplate": "getTemplate_uiControl0_vJZuKP"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_2ZRPK6": [
+          "国家质量监督检验检疫总局公共服务门户"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_2ZRPK6": [
+          "psp.e-cqs.cn/portal/index2.html"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_2ZRPK6": [
+          [
+            "Footer",
+            "Header",
+            "Module",
+            "base-footer",
+            "base-header",
+            "carousel",
+            "ecqs-header",
+            "floatBox",
+            "floatRight",
+            "gobackTopBtn",
+            "header-left",
+            "header-right",
+            "iframeCarousel",
+            "iframeWindow",
+            "index",
+            "nav",
+            "tipmodel"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_2ZRPK6": [
+          [
+            "active",
+            "addBox",
+            "clearfix",
+            "default-container",
+            "divtop",
+            "down",
+            "downloadapp",
+            "ecqs-container",
+            "handle",
+            "header-logo",
+            "hide",
+            "info-bottom",
+            "info-top",
+            "login-user-info",
+            "logined",
+            "navList",
+            "nologined",
+            "openCommunicate",
+            "openQuestionnaire",
+            "radius",
+            "show"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_2ZRPK6": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/DIV/UL",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/P/SPAN",
+            "DIV/UL/LI",
+            "LI/DIV/DIV",
+            "LI/DIV/IMG",
+            "LI/DIV/P",
+            "UL/LI/DIV",
+            "UL/LI/IMG",
+            "UL/LI/P"
+          ]
+        ]
+      }
+    }
+  }
+}
