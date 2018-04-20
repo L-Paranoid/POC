@@ -14,8 +14,8 @@
   "override_urls": [],
   "adapter_urls": [],
   "name": "中国质检总局",
-  "default_url": "http://psp.e-cqs.cn/portal/index2.html",
+  "default_url": "http://psp.e-cqs.cn/portal/login.html?name=index2",
   "scope": "ZJZJ",
   "start_url": "enterplorer://ZJZJ/local/index.html",
-  "update_time": 1524103549755
+  "update_time": 1524221949795
 }
