@@ -1,0 +1,89 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.5.3",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "resource_filter": [
+      {
+        "url_match": [
+          "^http:\\//portal\\.boe\\.com\\.cn.*",
+          "^http:\\//hrportal\\.boe\\.com\\.cn.*"
+        ],
+        "charset": "utf-8",
+        "Accept-Language": "zh-Hans-CN",
+        "replaces": [
+          {
+            "regexp": "\\btop\\b",
+            "sub_str": "_ysp_top"
+          }
+        ]
+      }
+    ],
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://JDF/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/portal\\.boe\\.com\\.cn\\/wps\\/portal\\/\\!ut\\/p.*"
+      ],
+      "demo": [
+        "http://portal.boe.com.cn/wps/portal/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDVCAo4FTkJGTsYGBu7OJfjghBVEY0sgKgfqjCCkpyI0wSHdUVAQAX2fGdw!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
+      ]
+    },
+    {
+      "title": "BOEfootmark",
+      "url": "adapter://JDF/plan/BOEfootmark/index.json",
+      "matcher": [
+        "^http:\\/\\/hrportal\\.boe\\.com\\.cn\\/boefoot\\/page"
+      ],
+      "demo": [
+        "http://hrportal.boe.com.cn/boefoot/page"
+      ]
+    },
+    {
+      "title": "index",
+      "url": "adapter://JDF/plan/index/index.json",
+      "matcher": [
+        "^http:\\/\\/portal\\.boe\\.com\\.cn\\/wps\\/myportal\\/Home\\/home\\/!ut\\/p\\/z1\\/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizQwMnD0sTIx83Y2CnQ0cjUPCDIyNvY0MDAz0wwkpiAJKG-AAjiD9UViUOBo4BRk5GRsYuPsbYVWAYkZBboRBpqOiIgBq7zMq\\/dz\\/d5\\/L2dBISEvZ0FBIS9nQSEh\\/#Z7_0H420382M8CAE0AJS3BTIV2IE0"
+      ],
+      "demo": [
+        "http://portal.boe.com.cn/wps/myportal/Home/home/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zizQwMnD0sTIx83Y2CnQ0cjUPCDIyNvY0MDAz0wwkpiAJKG-AAjiD9UViUOBo4BRk5GRsYuPsbYVWAYkZBboRBpqOiIgBq7zMq/dz/d5/L2dBISEvZ0FBIS9nQSEh/#Z7_0H420382M8CAE0AJS3BTIV2IE0"
+      ]
+    },
+    {
+      "title": "applicationLeave",
+      "url": "adapter://JDF/plan/applicationLeave/index.json",
+      "matcher": [
+        "^http:\\/\\/bpm\\.boe\\.com\\.cn\\/boeHQ\\/hqhrApplyForLeaveWorkflow\\/create"
+      ],
+      "demo": [
+        "http://bpm.boe.com.cn/boeHQ/hqhrApplyForLeaveWorkflow/create"
+      ]
+    },
+    {
+      "title": "kaoqing",
+      "url": "adapter://JDF/plan/kaoqing/index.json",
+      "matcher": [
+        "^http:\\/\\/hrportal\\.boe\\.com\\.cn\\/kaoqin\\/kaoqinpage"
+      ],
+      "demo": [
+        "http://hrportal.boe.com.cn/kaoqin/kaoqinpage"
+      ]
+    }
+  ],
+  "name": "京东方POC",
+  "default_url": "http://portal.boe.com.cn",
+  "scope": "JDF",
+  "start_url": "enterplorer://JDF/local/index.html",
+  "update_time": 1520327628737
+}

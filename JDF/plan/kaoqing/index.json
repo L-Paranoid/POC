@@ -1,0 +1,614 @@
+{
+  "version": "0.1",
+  "id": "kaoqing",
+  "targetURL": "http://hrportal.boe.com.cn/kaoqin/kaoqinpage",
+  "jsFile": "index.js",
+  "chineseName": "考勤",
+  "description": "",
+  "controls": {
+    "control11_LMqISs": {
+      "location": {
+        "data": {
+          "tagName": "A"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "a/@href",
+            "prob": 3,
+            "value": {
+              "pathname": "/kaoqin/kaoqinpage"
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]//UL[@id=\"side-menu\"]/LI[3]/A[1]",
+              "descendant::DIV[@id=\"wrapper\"]//UL[@id=\"side-menu\"]//A",
+              "descendant::UL[@id=\"side-menu\"]//A"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.sidebar-collapse UL.leftNav LI.left_active A"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/NAV[1]/DIV[1]/UL[1]/LI[3]/A[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control11_LMqISs"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control12_ErHRKm": {
+      "location": {
+        "data": {
+          "tagName": "FORM"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]/DIV[1]/DIV[1]/FORM[1]",
+              "descendant::DIV[@id=\"wrapper\"]//FORM"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.contentMain DIV.ckbx DIV.time FORM"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/FORM[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control12_ErHRKm"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control13_fF98Ea": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]/DIV[2]/TABLE[1]",
+              "descendant::DIV[@id=\"wrapper\"]//TABLE"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "DIV.contentMain DIV.tableBx TABLE.table.table-bordered.text-center"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control13_fF98Ea"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control14_0JUywZ": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]/DIV[2]/TABLE[2]",
+              "descendant::DIV[@id=\"wrapper\"]//TABLE"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              5
+            ],
+            "value": "DIV.contentMain DIV.tableBx TABLE.table.table-bordered.text-center"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/TABLE[2]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control14_0JUywZ"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control15_7BXq6n": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]//TABLE[@id=\"tableHeight\"]",
+              "descendant::TABLE[@id=\"tableHeight\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              2,
+              5
+            ],
+            "value": "DIV.contentMain DIV.tableBx TABLE.table.table-bordered.text-center"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/TABLE[3]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control15_7BXq6n"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control16_cQopoc": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]/DIV[2]/TABLE[4]",
+              "descendant::DIV[@id=\"wrapper\"]//TABLE"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.contentMain DIV.tableBx TABLE.table.table-bordered.w70.text-center"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/TABLE[4]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control16_cQopoc"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    },
+    "control4_lQHfD5": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]/DIV[2]/TABLE[5]/TBODY[1]",
+              "descendant::DIV[@id=\"wrapper\"]//TBODY"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": "DIV.contentMain DIV.tableBx TABLE.table.table-bordered.w70.text-center TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[2]/TABLE[5]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control4_lQHfD5"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context4_CSkCUw": {
+      "controls": [
+        "control11_LMqISs",
+        "control12_ErHRKm",
+        "control13_fF98Ea",
+        "control14_0JUywZ",
+        "control15_7BXq6n",
+        "control16_cQopoc",
+        "control4_lQHfD5"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow9_oGlHg1": {
+      "toContexts": [
+        {
+          "toContextId": "context4_CSkCUw"
+        }
+      ]
+    },
+    "flow8_nT8tpu": {
+      "fromContextId": "context4_CSkCUw",
+      "fromAction": "doAction",
+      "fromControlId": "control11_LMqISs",
+      "toContexts": [
+        {
+          "toContextId": "context4_CSkCUw"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page4_bHvdco": {
+      "contextId": "context4_CSkCUw",
+      "layout": [
+        {
+          "id": "uiControl10_bDgAl8",
+          "controlId": "control11_LMqISs",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl10_bDgAl8",
+                "onGetTemplate": "getTemplate_uiControl10_bDgAl8"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl11_COiTUF",
+          "controlId": "control12_ErHRKm",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl11_COiTUF",
+                "onGetTemplate": "getTemplate_uiControl11_COiTUF"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl12_W6oO5v",
+          "controlId": "control13_fF98Ea",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl12_W6oO5v",
+                "onGetTemplate": "getTemplate_uiControl12_W6oO5v"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl13_GmXoNn",
+          "controlId": "control14_0JUywZ",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl13_GmXoNn",
+                "onGetTemplate": "getTemplate_uiControl13_GmXoNn"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl14_Icc724",
+          "controlId": "control15_7BXq6n",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl14_Icc724",
+                "onGetTemplate": "getTemplate_uiControl14_Icc724"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl15_Tz82IR",
+          "controlId": "control16_cQopoc",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl15_Tz82IR",
+                "onGetTemplate": "getTemplate_uiControl15_Tz82IR"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl4_rGFOvk",
+          "controlId": "control4_lQHfD5",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl4_rGFOvk",
+                "onGetTemplate": "getTemplate_uiControl4_rGFOvk"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context4_CSkCUw": [
+          "人力资源专区"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context4_CSkCUw": [
+          "hrportal.boe.com.cn/kaoqin/kaoqinpage"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context4_CSkCUw": [
+          [
+            "begindt",
+            "bgt",
+            "eid",
+            "endt",
+            "ent",
+            "getData",
+            "nav",
+            "side-menu",
+            "tableHeight",
+            "wrapper"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context4_CSkCUw": [
+          [
+            "active",
+            "botLeft",
+            "botMenu",
+            "boterwm",
+            "ckbx",
+            "clear",
+            "col-xs-",
+            "contentMain",
+            "copyright",
+            "datetimepicker",
+            "datetimepicker-days",
+            "datetimepicker-dropdown-bottom-right",
+            "datetimepicker-hours",
+            "datetimepicker-minutes",
+            "datetimepicker-months",
+            "datetimepicker-years",
+            "day",
+            "dow",
+            "dropdown-menu",
+            "erNav",
+            "firstNav",
+            "footMain",
+            "form_datetime",
+            "glyphicon",
+            "head-content",
+            "headPortrait",
+            "header",
+            "headerNav",
+            "hedActive",
+            "homeFooter",
+            "hour",
+            "icon-arrow-left",
+            "icon-arrow-right",
+            "kqTip",
+            "leftNav",
+            "left_active",
+            "logo",
+            "minute",
+            "month",
+            "navbar-static-side",
+            "new",
+            "next",
+            "old",
+            "on",
+            "perIn",
+            "perInImg",
+            "perIn_list",
+            "prev",
+            "qjmess",
+            "sanNav",
+            "search-data",
+            "selfService",
+            "selfServiceList",
+            "siNav",
+            "sidebar-collapse",
+            "switch",
+            "table",
+            "table-bordered",
+            "table-condensed",
+            "tableBx",
+            "text-center",
+            "time",
+            "today",
+            "tr",
+            "w",
+            "wuNav",
+            "year"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context4_CSkCUw": [
+          [
+            "-/-/DIV",
+            "-/-/LINK",
+            "-/-/SCRIPT",
+            "-/-/STYLE",
+            "-/DIV/DIV",
+            "-/DIV/NAV",
+            "DIV/A/I",
+            "DIV/A/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/BR",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FORM",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/SCRIPT",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/UL",
+            "DIV/FORM/INPUT-hidden",
+            "DIV/FORM/P",
+            "DIV/NAV/DIV",
+            "DIV/P/I",
+            "DIV/P/SPAN",
+            "DIV/TABLE/TBODY",
+            "DIV/TABLE/TFOOT",
+            "DIV/TABLE/THEAD",
+            "DIV/UL/LI",
+            "FORM/P/INPUT-button",
+            "FORM/P/INPUT-text",
+            "LI/A/BR",
+            "LI/A/IMG",
+            "LI/DIV/A",
+            "LI/UL/LI",
+            "NAV/DIV/UL",
+            "TABLE/TBODY/TR",
+            "TABLE/TFOOT/TR",
+            "TABLE/THEAD/TR",
+            "TBODY/TR/TD",
+            "TBODY/TR/TH",
+            "TFOOT/TR/TH",
+            "THEAD/TR/TH",
+            "TR/TD/SPAN",
+            "TR/TH/I",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/I",
+            "UL/LI/UL"
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "version": "0.1",
+  "id": "BOEfootmark",
+  "targetURL": "http://hrportal.boe.com.cn/boefoot/page",
+  "jsFile": "index.js",
+  "chineseName": "BOE足迹",
+  "description": "",
+  "controls": {
+    "control9_EAltaO": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]",
+              "descendant::DIV[@id=\"wrapper\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "BODY.fixed-sidebar.full-height-layout.gray-bg DIV.print.fadeInDown"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control9_EAltaO"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": ""
+    },
+    "control10_7cTSf1": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"wrapper\"]/DIV[1]",
+              "descendant::DIV[@id=\"wrapper\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "BODY.fixed-sidebar.full-height-layout.gray-bg DIV.print.fadeInDown"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control10_7cTSf1"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context3_V7BkWU": {
+      "controls": [
+        "control9_EAltaO",
+        "control10_7cTSf1"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow7_7krzaA": {
+      "toContexts": [
+        {
+          "toContextId": "context3_V7BkWU"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page3_wW2u3m": {
+      "contextId": "context3_V7BkWU",
+      "layout": [
+        {
+          "id": "uiControl8_8IWh6P",
+          "controlId": "control9_EAltaO",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl8_8IWh6P",
+                "onGetTemplate": "getTemplate_uiControl8_8IWh6P"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl9_yUPBsR",
+          "controlId": "control10_7cTSf1",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl9_yUPBsR",
+                "onGetTemplate": "getTemplate_uiControl9_yUPBsR"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context3_V7BkWU": [
+          "人力资源专区"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context3_V7BkWU": [
+          "hrportal.boe.com.cn/boefoot/page"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context3_V7BkWU": [
+          [
+            "nav",
+            "side-menu",
+            "wrapper"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context3_V7BkWU": [
+          [
+            "botLeft",
+            "botMenu",
+            "boterwm",
+            "copyright",
+            "erNav",
+            "fadeInDown",
+            "firstNav",
+            "footMain",
+            "head-content",
+            "headPortrait",
+            "header",
+            "headerNav",
+            "hedActive",
+            "homeFooter",
+            "leftNav",
+            "left_active",
+            "logo",
+            "navbar-static-side",
+            "on",
+            "perIn",
+            "perInImg",
+            "perIn_list",
+            "pop",
+            "pop-content",
+            "pop-img",
+            "print",
+            "sanNav",
+            "selfService",
+            "selfServiceList",
+            "siNav",
+            "sidebar-collapse",
+            "wuNav"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context3_V7BkWU": [
+          [
+            "-/-/DIV",
+            "-/-/LINK",
+            "-/-/SCRIPT",
+            "-/-/STYLE",
+            "-/DIV/DIV",
+            "-/DIV/NAV",
+            "DIV/A/I",
+            "DIV/A/IMG",
+            "DIV/DIV/A",
+            "DIV/DIV/BR",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/SCRIPT",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/NAV/DIV",
+            "DIV/P/SPAN",
+            "DIV/UL/LI",
+            "LI/A/BR",
+            "LI/A/EM",
+            "LI/A/IMG",
+            "LI/DIV/A",
+            "LI/UL/LI",
+            "NAV/DIV/UL",
+            "UL/LI/A",
+            "UL/LI/DIV",
+            "UL/LI/I",
+            "UL/LI/IMG",
+            "UL/LI/P",
+            "UL/LI/UL"
+          ]
+        ]
+      }
+    }
+  }
+}

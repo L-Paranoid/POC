@@ -1,0 +1,22 @@
+{
+  "menu": [
+    {
+      "name": "足迹",
+      "app_id": "index",
+      "icon": "local/img/OA.png",
+      "url": "http://hrportal.boe.com.cn/boefoot/page"
+    },
+    {
+      "name": "登陆",
+      "app_id": "login",
+      "icon": "local/img/OA.png",
+      "url": "http://portal.boe.com.cn/wps/portal/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDVCAo4FTkJGTsYGBu7OJfjghBVEY0sgKgfqjCCkpyI0wSHdUVAQAX2fGdw!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
+    },
+    {
+      "name": "考勤",
+      "app_id": "kq",
+      "icon": "local/img/OA.png",
+      "url": "http://hrportal.boe.com.cn/kaoqin/kaoqinpage"
+    }
+  ]
+}
