@@ -1,0 +1,499 @@
+* {
+  transition: none!important;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+ul,
+div,
+li,
+span,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.ysp-head {
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  padding: 7px 10px;
+  background: #1261be;
+  color: #fff;
+  z-index: 99;
+  min-height: 39px;
+}
+.ysp-head .ysp-head-back {
+  float: left;
+  min-width: 25px;
+  min-height: 10px;
+}
+.ysp-head .ysp-head-save {
+  min-width: 25px;
+  float: right;
+  min-height: 10px;
+}
+.class > .ysp-head {
+  top: 0;
+  margin-bottom: 39px;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  padding: 7px 10px;
+  background: #1261be;
+  color: #fff;
+  z-index: 99;
+  min-height: 39px;
+}
+.class > .ysp-head .ysp-head-back {
+  float: left;
+  min-width: 25px;
+  min-height: 10px;
+}
+.class > .ysp-head .ysp-head-save {
+  min-width: 25px;
+  float: right;
+  min-height: 10px;
+}
+.icon-title {
+  border-left: 5px solid #105cc1;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.fixed-common-dialog {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.fixed-common-dialog > div {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+.fixed-common-dialog > div ul {
+  background: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.fixed-common-dialog > div ul li {
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #005aa0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.icon-title {
+  border-left: 5px solid #105cc1;
+  padding-left: 15px;
+}
+/*       以上部分为公共样式        */
+.xianchangchouyang {
+  margin-top: 20px;
+}
+.shouyang-list {
+  margin-top: 96px;
+  background: #eee;
+  border-bottom: 1px solid #eee;
+}
+.shouyang-list div {
+  margin-bottom: 15px;
+}
+.shouyang-list ul {
+  padding: 18px;
+  background: #fff;
+  border-bottom: 10px solid #eee;
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+}
+.shouyang-list ul .title {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.shouyang-list ul .content {
+  display: inline-block;
+  width: 65%;
+  overflow: hidden;
+  color: #001c59;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.shouyang-list .active ul {
+  margin-bottom: 15px;
+  border: 2px solid #e4393c;
+}
+.Todo-list-content {
+  margin-top: 20px;
+  background: #eee;
+}
+.Todo-list-content ul {
+  padding: 18px;
+  background: #fff;
+  border-bottom: 10px solid #eee;
+  padding-top: 0;
+}
+.Todo-list-content .title {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.Todo-list-content .content-title {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  margin-right: 15px;
+}
+.Todo-list-content span:nth-child(2) {
+  display: inline-block;
+  width: 70%;
+  color: #001c59;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.common-btn {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.common-btn button {
+  padding: 4px 12%;
+  border: 1px solid #333;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  min-width: 152px;
+}
+.common-btn button:nth-child(1) {
+  border: 1px solid #3075f5;
+  background: #3075f5;
+  color: #fff;
+}
+.common-btn button:nth-child(2) {
+  border: 1px solid #3075f5;
+  background: #3075f5;
+  color: #fff;
+  margin-right: 0;
+}
+.common-edit-btn {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.common-edit-btn button {
+  padding: 4px 12%;
+  border: 1px solid #333;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  min-width: 152px;
+}
+.common-edit-btn button:nth-child(1) {
+  border: 1px solid #3075f5;
+}
+.common-edit-btn button:nth-child(2) {
+  border: 1px solid #3075f5;
+  background: #3075f5;
+  color: #fff;
+  margin-right: 0;
+}
+.todoList-search {
+  top: 39px;
+  width: 100%;
+  position: fixed;
+  font-size: 16px;
+  padding: 0;
+  border-top: 7px solid #fff;
+  overflow: hidden;
+  background: #eee;
+  border-bottom: 7px solid #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  text-align: center;
+}
+.todoList-search span:nth-child(1) {
+  color: #005aa0;
+  margin-right: 15px;
+  margin-left: -15px;
+}
+.todoList-search span:nth-child(2) {
+  color: #e4393c;
+}
+.editor-state [data-ysp="component"] {
+  padding-top: 0;
+}
+.edit-storage {
+  font-size: 15px;
+  border-bottom: 10px solid #eee;
+}
+.edit-storage ul,
+.edit-storage li {
+  padding: 0;
+  margin: 0;
+}
+.edit-storage ul,
+.edit-storage .approvalTr,
+.edit-storage .file {
+  padding: 0 18px;
+}
+.edit-storage .icon-title {
+  border-left: 5px solid #105cc1;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.edit-storage .ysp-Basic {
+  background: #fff;
+}
+.edit-storage ul {
+  background: #fff;
+}
+.edit-storage ul li div b {
+  color: red;
+}
+.edit-storage ul li div .title {
+  float: left;
+  width: 35%;
+  overflow: hidden;
+  padding: 8px 0;
+}
+.edit-storage ul li div .content {
+  overflow: hidden;
+  display: inline-block;
+  width: 60%;
+  padding: 8px 5px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.edit-storage ul li div input.content {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+input[type=text] {
+  border: none;
+}
+.ysp-detail-checked {
+  padding: 10px 15px;
+  padding-bottom: 0;
+}
+.ysp-detail-checked ul {
+  text-align: center;
+  position: relative;
+}
+.ysp-detail-checked ul > span {
+  display: block;
+  text-align: left;
+}
+.ysp-detail-checked ul .li,
+.ysp-detail-checked ul li {
+  padding: 10px;
+  width: 45%;
+  display: inline-flex;
+}
+.ysp-detail-checked ul .li div,
+.ysp-detail-checked ul li div {
+  margin: auto;
+}
+.ysp-detail-checked ul .lis {
+  width: 30%;
+  display: inline-flex;
+}
+.ysp-detail-checked ul .lis div {
+  margin: auto;
+}
+.ysp-detail-checked ul .ysp-textarea {
+  width: 100%;
+}
+.ysp-detail-checked ul .ysp-file {
+  min-height: 30px;
+  min-width: 90%;
+}
+.ysp-detail-checked ul .ysp-file span {
+  color: #666;
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.ysp-detail-checked ul .ysp-file span b {
+  float: right;
+  color: red;
+}
+.ysp-detail-checked ul .ysp-file button {
+  position: absolute;
+  top: -3px;
+  right: 5px;
+  border: none;
+  border: 1px solid #005aa0;
+  border-radius: 3px;
+}
+.ysp-list {
+  margin-top: 15px;
+  background: #eee;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 3px solid #eee;
+}
+.ysp-list ul {
+  padding: 18px;
+  background: #fff;
+  border-bottom: 10px solid #eee;
+  padding-bottom: 10px;
+  border: 2px solid transparent;
+  margin-bottom: 15px;
+}
+.ysp-list .title {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ysp-list .content-title {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.ysp-list span:nth-child(2) {
+  display: inline-block;
+  width: 60%;
+  color: #001c59;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ysp-list .active {
+  margin-bottom: 15px;
+  padding: 18px;
+  background: #fff;
+  border-bottom: 10px solid #eee;
+  padding-bottom: 10px;
+  border: 2px solid #e4393c;
+}
+.chou {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.ysp-look-list {
+  font-size: 15px;
+}
+.ysp-look-list ul,
+.ysp-look-list li {
+  padding: 0;
+  margin: 0;
+}
+.ysp-look-list ul,
+.ysp-look-list .approvalTr,
+.ysp-look-list .file {
+  padding: 0 18px;
+}
+.ysp-look-list .icon-title {
+  border-left: 5px solid #105cc1;
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 17px;
+}
+.ysp-look-list .ysp-Basic {
+  background: #fff;
+  border-bottom: 15px solid #eee;
+  padding-top: 10px;
+}
+.ysp-look-list .Basic,
+.ysp-look-list .loan,
+.ysp-look-list .cashier {
+  padding-bottom: 10px;
+  background: #fff;
+  margin-top: 5px;
+}
+.ysp-look-list .Basic li div .title,
+.ysp-look-list .loan li div .title,
+.ysp-look-list .cashier li div .title {
+  display: inline-block;
+  width: 30%;
+  overflow: hidden;
+  padding: 8px 0;
+  height: 32px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+.ysp-look-list .Basic li div .content,
+.ysp-look-list .loan li div .content,
+.ysp-look-list .cashier li div .content {
+  overflow: hidden;
+  display: inline-block;
+  width: 66%;
+  padding: 8px 5px ;
+  border-bottom: 1px solid #eee;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 10px;
+}
+.ysp-look-list .Basic li div i,
+.ysp-look-list .loan li div i,
+.ysp-look-list .cashier li div i {
+  color: red;
+}
+.cehcked-xxx {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.cehcked-xxx .checkout-select {
+  width: 45%;
+  display: inline-block;
+  padding: 10px 0;
+}
+.fixed-common-dialog-detail {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.fixed-common-dialog-detail > div {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+.fixed-common-dialog-detail > div ul {
+  max-height: 400px;
+  background: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow: auto;
+}
+.fixed-common-dialog-detail > div ul li {
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid #005aa0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.loagin-head-rand input[type=text] {
+  border: none;
+  border: 1px solid #aaa!important;
+}

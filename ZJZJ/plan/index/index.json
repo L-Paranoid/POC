@@ -1,0 +1,381 @@
+{
+  "version": "0.1",
+  "id": "index",
+  "targetURL": "http://psp.e-cqs.cn/portal/index2.html",
+  "jsFile": "index.js",
+  "requires": {
+    "SpotSampling": "../SpotSampling/index.json",
+    "AdoptionInquiries": "../AdoptionInquiries/index.json"
+  },
+  "chineseName": "首页_信息管理系统",
+  "description": "",
+  "controls": {
+    "control12_FaRmHR": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control12_FaRmHR"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control13_tlGiVF": {
+      "location": {
+        "data": {
+          "tagName": "BUTTON"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "ordinal": [
+              4,
+              10
+            ],
+            "value": {
+              "text": [
+                "在线办理"
+              ],
+              "visText": [
+                "在线办理"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]",
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
+              "descendant::DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
+              "descendant::TABLE[@id=\"jdccxt-table\"]//BUTTON"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              4,
+              10
+            ],
+            "value": "TABLE.server-table TD.function-td BUTTON.btn-blue"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              99,
+              164
+            ]
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//iframe[@id='iframeWindow']<<IFRAME>>//iframe[@id='imanage']<<IFRAME>>",
+      "componentType": "button"
+    },
+    "control14_fCDcCT": {
+      "location": {
+        "data": {
+          "tagName": "BUTTON"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "ordinal": [
+              5,
+              10
+            ],
+            "value": {
+              "text": [
+                "在线办理"
+              ],
+              "visText": [
+                "在线办理"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]",
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
+              "descendant::DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
+              "descendant::TABLE[@id=\"jdccxt-table\"]//BUTTON"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              5,
+              10
+            ],
+            "value": "TABLE.server-table TD.function-td BUTTON.btn-blue"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              99,
+              164
+            ]
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//iframe[@id='iframeWindow']<<IFRAME>>//iframe[@id='imanage']<<IFRAME>>",
+      "componentType": "button"
+    }
+  },
+  "contexts": {
+    "context1_WLZfkV": {
+      "controls": [
+        "control12_FaRmHR",
+        "control13_tlGiVF",
+        "control14_fCDcCT"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow9_haPN1b": {
+      "toContexts": [
+        {
+          "toContextId": "context1_WLZfkV"
+        }
+      ]
+    },
+    "flow10_GbV848": {
+      "fromContextId": "context1_WLZfkV",
+      "fromAction": "doAction",
+      "fromControlId": "control12_FaRmHR",
+      "toContexts": [
+        {
+          "toContextId": "context1_WLZfkV"
+        }
+      ]
+    },
+    "flow11_tnyZZH": {
+      "fromContextId": "context1_WLZfkV",
+      "fromAction": "click",
+      "fromControlId": "control13_tlGiVF",
+      "toContexts": [
+        {
+          "toContextId": "context1_WLZfkV"
+        },
+        {
+          "toContextId": "context2_c4R0tk",
+          "toModelId": "SpotSampling"
+        }
+      ]
+    },
+    "flow5_zHHR4s": {
+      "fromContextId": "context1_WLZfkV",
+      "fromAction": "click",
+      "fromControlId": "control14_fCDcCT",
+      "toContexts": [
+        {
+          "toContextId": "context1_WLZfkV"
+        },
+        {
+          "toContextId": "context4_sImTJv",
+          "toModelId": "AdoptionInquiries"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_4sgcTI": {
+      "contextId": "context1_WLZfkV",
+      "layout": [
+        {
+          "id": "uiControl12_gAnWRJ",
+          "controlId": "control12_FaRmHR",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl12_gAnWRJ",
+                "onGetTemplate": "getTemplate_uiControl12_gAnWRJ"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl13_tzTgTZ",
+          "controlId": "control13_tlGiVF",
+          "display": {
+            "adapterId": "clickable",
+            "type": "button",
+            "amStyle": "primary",
+            "text": "现场抽样",
+            "class": "ysp-top",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl14_k4mxb7",
+          "controlId": "control14_fCDcCT",
+          "display": {
+            "adapterId": "clickable",
+            "type": "button",
+            "amStyle": "primary",
+            "text": "现场收样",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_WLZfkV": [
+          "国家质量监督检验检疫总局公共服务门户"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_WLZfkV": [
+          "psp.e-cqs.cn/portal/index2.html",
+          "psp.e-cqs.cn//portal/index2.html"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_WLZfkV": [
+          [
+            "Footer",
+            "Header",
+            "Module",
+            "base-footer",
+            "base-header",
+            "carousel",
+            "ecqs-header",
+            "floatBox",
+            "floatRight",
+            "gobackTopBtn",
+            "header-left",
+            "header-right",
+            "iframeCarousel",
+            "iframeWindow",
+            "index",
+            "nav",
+            "quitLogiin",
+            "tipmodel"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_WLZfkV": [
+          [
+            "active",
+            "addBox",
+            "clearfix",
+            "default-container",
+            "divtop",
+            "down",
+            "downloadapp",
+            "ecqs-container",
+            "handle",
+            "header-logo",
+            "hide",
+            "info-bottom",
+            "info-top",
+            "login-user-info",
+            "logined",
+            "logined-left",
+            "logined-right",
+            "navList",
+            "noBorder",
+            "nologined",
+            "openCommunicate",
+            "openQuestionnaire",
+            "radius",
+            "show"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_WLZfkV": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/DIV/UL",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/P/SPAN",
+            "DIV/UL/LI",
+            "LI/DIV/DIV",
+            "LI/DIV/IMG",
+            "LI/DIV/P",
+            "UL/LI/DIV",
+            "UL/LI/IMG",
+            "UL/LI/P"
+          ]
+        ]
+      }
+    }
+  }
+}

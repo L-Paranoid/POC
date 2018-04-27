@@ -1,15 +1,23 @@
 {
   "version": "0.1",
   "id": "login",
-  "targetURL": "http://psp.e-cqs.cn/portal/index2.html",
+  "targetURL": "http://psp.e-cqs.cn/portal/login.html?name=index2",
   "jsFile": "index.js",
+  "requires": {
+    "index": "../index/index.json"
+  },
   "chineseName": "登录",
   "description": "",
+  "firstPaintEnable": false,
   "controls": {
     "control0_1G9rn0": {
       "location": {
         "data": {
           "tagName": "HTML"
+        },
+        "userData": {
+          "data": [],
+          "force": false
         },
         "locators": [
           {
@@ -24,22 +32,423 @@
       },
       "intendedRole": "custom",
       "roles": "element,custom",
-      "monitored": false,
+      "monitored": true,
       "frameXPath": "",
       "componentType": "custom"
+    },
+    "control1_CPlKrX": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@placeholder",
+            "prob": 3,
+            "value": {
+              "text": [
+                "用户名"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"login-section\"]//INPUT[@id=\"userName\"]",
+              "descendant::INPUT[@id=\"userName\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "DIV.user-login DIV.input-group INPUT.form-control"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "intendedRole": "textbox",
+      "roles": "element,textbox",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "textbox"
+    },
+    "control2_zpI2Z8": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@placeholder",
+            "prob": 3,
+            "value": {
+              "text": [
+                "密 码"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"login-section\"]//INPUT[@id=\"password\"]",
+              "descendant::INPUT[@id=\"password\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              3
+            ],
+            "value": "DIV.user-login DIV.input-group INPUT.form-control"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[2]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "password"
+          }
+        ]
+      },
+      "intendedRole": "passwordbox",
+      "roles": "element,passwordbox,textbox",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "textbox"
+    },
+    "control3_5LgwF7": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@placeholder",
+            "prob": 3,
+            "value": {
+              "text": [
+                "验证码"
+              ]
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"login-section\"]//INPUT[@id=\"_random_number\"]",
+              "descendant::INPUT[@id=\"_random_number\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              2,
+              3
+            ],
+            "value": "DIV.user-login DIV.input-group INPUT.form-control"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[3]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "text"
+          }
+        ]
+      },
+      "intendedRole": "textbox",
+      "roles": "element,textbox",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "textbox"
+    },
+    "control4_TddOAf": {
+      "location": {
+        "data": {
+          "tagName": "IMG"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "img/@src",
+            "prob": 2,
+            "value": {
+              "pathname": "/imageGenerator"
+            }
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"login-section\"]//IMG[@id=\"randomNumber\"]",
+              "descendant::IMG[@id=\"randomNumber\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user-login DIV.input-group SPAN.input-group-btn IMG"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[3]/SPAN[1]/IMG[1]"
+          }
+        ]
+      },
+      "roles": "element,image,button",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "image"
+    },
+    "control10_ATsNmq": {
+      "location": {
+        "data": {
+          "tagName": "BUTTON"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "登 录"
+              ],
+              "visText": [
+                "登 录"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user-login DIV.loginBtn BUTTON.btn"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[5]/BUTTON[1]"
+          }
+        ]
+      },
+      "roles": "element,button",
+      "text": "登 录",
+      "frameXPath": ""
+    },
+    "control11_C3sv9v": {
+      "location": {
+        "data": {
+          "tagName": "BUTTON"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "button/text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "登 录"
+              ],
+              "visText": [
+                "登 录"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.user-login DIV.loginBtn BUTTON.btn"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[5]/BUTTON[1]"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "",
+      "componentType": "button"
+    },
+    "control17_X9IP9S": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"login-section\"]//INPUT[@id=\"memory\"]",
+              "descendant::INPUT[@id=\"memory\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.login-right.col-sm-4 DIV.user-login DIV.checkbox.login-tip LABEL INPUT"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[4]/LABEL[1]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "checkbox"
+          }
+        ]
+      },
+      "intendedRole": "checkbox",
+      "roles": "element,checkbox",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "checkbox"
     }
   },
   "contexts": {
     "context0_2ZRPK6": {
       "controls": [
-        "control0_1G9rn0"
+        "control0_1G9rn0",
+        "control1_CPlKrX",
+        "control2_zpI2Z8",
+        "control3_5LgwF7",
+        "control4_TddOAf",
+        "control11_C3sv9v",
+        "control17_X9IP9S"
       ],
-      "anchors": [],
-      "urlAnchor": []
+      "anchors": [
+        "control10_ATsNmq"
+      ],
+      "urlAnchor": [
+        "http:\\/\\/psp\\.e-cqs\\.cn\\/portal\\/login\\.html\\?name\\=index2"
+      ]
     }
   },
   "flows": {
     "flow0_NttTeV": {
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    },
+    "flow1_K49lMT": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "doAction",
+      "fromControlId": "control0_1G9rn0",
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6",
+          "toModelId": "login"
+        },
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    },
+    "flow2_B2eQVw": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "click",
+      "fromControlId": "control3_5LgwF7",
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    },
+    "flow8_q7iVb0": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "click",
+      "fromControlId": "control11_C3sv9v",
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        },
+        {
+          "toContextId": "context1_WLZfkV",
+          "toModelId": "index"
+        }
+      ]
+    },
+    "flow7_FZCr4A": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "click",
+      "fromControlId": "control1_CPlKrX",
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    },
+    "flow22_to12S2": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "click",
+      "fromControlId": "control2_zpI2Z8",
+      "toContexts": [
+        {
+          "toContextId": "context0_2ZRPK6"
+        }
+      ]
+    },
+    "flow23_V6Mgm0": {
+      "fromContextId": "context0_2ZRPK6",
+      "fromAction": "click",
+      "fromControlId": "control17_X9IP9S",
       "toContexts": [
         {
           "toContextId": "context0_2ZRPK6"
@@ -65,6 +474,112 @@
               }
             }
           }
+        },
+        {
+          "id": "uiControl1_cVw1zT",
+          "controlId": "control1_CPlKrX",
+          "display": {
+            "adapterId": "textbox",
+            "type": "textbox",
+            "class": "loagin-head-rand",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl2_yR1ecm",
+          "controlId": "control2_zpI2Z8",
+          "display": {
+            "adapterId": "passwordbox",
+            "type": "passwordbox",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl3_17nJMI",
+          "display": {
+            "type": "grid",
+            "adapterId": "grid",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl3_17nJMIrow0",
+              "display": {
+                "cols": 3,
+                "type": "col",
+                "adapterId": "col",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl4_ppNAfr",
+                  "controlId": "control3_5LgwF7",
+                  "display": {
+                    "adapterId": "textbox",
+                    "type": "textbox",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl3_17nJMIrow1",
+              "display": {
+                "cols": 3,
+                "type": "col",
+                "adapterId": "col",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl5_LtC6WU",
+                  "controlId": "control4_TddOAf",
+                  "display": {
+                    "adapterId": "image_link",
+                    "type": "image",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "uiControl10_qa6xO2",
+          "controlId": "control17_X9IP9S",
+          "display": {
+            "adapterId": "checkbox",
+            "type": "checkbox",
+            "text": "记住密码",
+            "adapter": {
+              "templateType": ""
+            }
+          }
+        },
+        {
+          "id": "uiControl11_MDtKM3",
+          "controlId": "control11_C3sv9v",
+          "display": {
+            "adapterId": "clickable",
+            "type": "button",
+            "adapter": {
+              "templateType": ""
+            }
+          }
         }
       ]
     }
@@ -73,14 +588,16 @@
     "page/title": {
       "contexts": {
         "context0_2ZRPK6": [
-          "国家质量监督检验检疫总局公共服务门户"
+          "国家质量监督检验检疫总局公共服务门户",
+          "登 录"
         ]
       }
     },
     "page/urls": {
       "contexts": {
         "context0_2ZRPK6": [
-          "psp.e-cqs.cn/portal/index2.html"
+          "psp.e-cqs.cn/portal/index2.html",
+          "psp.e-cqs.cn/portal/login.html?name=index2"
         ]
       }
     },
@@ -105,6 +622,35 @@
             "index",
             "nav",
             "tipmodel"
+          ],
+          [
+            "Footer",
+            "_random_number",
+            "base-footer",
+            "basic-addon",
+            "errMsg",
+            "example",
+            "login-section",
+            "memory",
+            "password",
+            "randomNumber",
+            "sign-header",
+            "userName",
+            "userType"
+          ],
+          [
+            "Footer",
+            "_random_number",
+            "basic-addon",
+            "errMsg",
+            "example",
+            "login-section",
+            "memory",
+            "password",
+            "randomNumber",
+            "sign-header",
+            "userName",
+            "userType"
           ]
         ]
       }
@@ -134,6 +680,72 @@
             "openQuestionnaire",
             "radius",
             "show"
+          ],
+          [
+            "btn",
+            "btn-default",
+            "checkbox",
+            "close",
+            "col-sm-",
+            "col-sm-offset-",
+            "container",
+            "fade",
+            "form-control",
+            "glyphicon",
+            "glyphicon-remove-circle",
+            "info-bottom",
+            "info-top",
+            "input-group",
+            "input-group-addon",
+            "input-group-btn",
+            "login-left",
+            "login-right",
+            "login-tip",
+            "loginBtn",
+            "login_bg_img",
+            "modal",
+            "modal-body",
+            "modal-content",
+            "modal-dialog",
+            "modal-footer",
+            "modal-header",
+            "modal-title",
+            "registerNow",
+            "row",
+            "type_active",
+            "user-login"
+          ],
+          [
+            "btn",
+            "btn-default",
+            "checkbox",
+            "close",
+            "col-sm-",
+            "col-sm-offset-",
+            "container",
+            "fade",
+            "form-control",
+            "glyphicon",
+            "glyphicon-remove-circle",
+            "input-group",
+            "input-group-addon",
+            "input-group-btn",
+            "login-left",
+            "login-right",
+            "login-tip",
+            "loginBtn",
+            "login_bg_img",
+            "modal",
+            "modal-body",
+            "modal-content",
+            "modal-dialog",
+            "modal-footer",
+            "modal-header",
+            "modal-title",
+            "registerNow",
+            "row",
+            "type_active",
+            "user-login"
           ]
         ]
       }
@@ -161,6 +773,30 @@
             "UL/LI/DIV",
             "UL/LI/IMG",
             "UL/LI/P"
+          ],
+          [
+            "-/-/DIV",
+            "-/DIV/DIV",
+            "-/DIV/SCRIPT",
+            "DIV/A/IMG",
+            "DIV/BUTTON/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/H5",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-password",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/P",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/UL",
+            "DIV/LABEL/INPUT-checkbox",
+            "DIV/LABEL/SPAN",
+            "DIV/P/I",
+            "DIV/P/SPAN",
+            "DIV/SPAN/IMG",
+            "DIV/UL/LI"
           ]
         ]
       }

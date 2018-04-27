@@ -5,6 +5,7 @@
   var utils = ysp.utils;
   ysp.customHelper = {};
   utils.extend(ysp.customHelper, {
+    trim:_trim,
     /* 适配中定制的公共代码放在这里 */
 
     /*
@@ -17,12 +18,41 @@
     // 以下两个方法用于修改原页面中的错误, 但执行时机不同
     // 当目标页面加载完onload时执行, aWin为当前页面的window对象, doc为当前页面的document对象
     onTargetLoad: function(aWin, doc){
-
+      if(aWin.editorData){
+          aWin.editorData = function () {
+            var $ = aWin.$;
+            var singleCollId = $("#singleCollId").val();
+            if (singleCollId == '' || singleCollId == undefined) {
+                alert('请选择修改的记录！');
+                return false;
+            }
+            if ($("#singleStatus").val() == "2" || $("#singleStatus").val() == "9") {
+                alert('已提交不允许修改，或者是废样的数据！');
+                return false;
+          }
+            aWin.location.href = "http://psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleInfo.jsp?singleCollId=" + singleCollId;
+        }
+      }
+      if(aWin.viewData){
+        aWin.viewData = function() {
+          var $ = aWin.$;
+          var singleCollId = $("#singleCollId").val();
+          if (singleCollId == '' || singleCollId == undefined) {
+            alert('请选择修改记录！');
+            return false;
+          }
+          
+          aWin.location.href = "http://psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleInfo.jsp?singleCollId=" + singleCollId +"&isView=1";
+          console.log(aWin.location.href)
+        }
+      }
     },
 
     // 目标页面加载前执行, aWin为当前页面的window对象, doc为当前页面的document对象
     beforeTargetLoad: function(aWin, doc) {
-
+			if(aWin.location.href == 'http://psp.e-cqs.cn//portal/index.html'){
+        aWin.location.href = "http://psp.e-cqs.cn//portal/index2.html";
+      }
     },
 
     //登录相关接口
@@ -42,5 +72,7 @@
 
 
   });
-
+function _trim(str){
+  return str?str.replace(/^(\s+)|(\n+)|(\t+)|(\s+)$/g,''):' ';
+}
 })(window, ysp);
