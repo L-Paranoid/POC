@@ -36,7 +36,7 @@
       "frameXPath": "",
       "componentType": "custom"
     },
-    "control13_tlGiVF": {
+    "control9_Cs8f6w": {
       "location": {
         "data": {
           "tagName": "BUTTON"
@@ -50,7 +50,7 @@
             "id": "button/text",
             "prob": 3,
             "ordinal": [
-              4,
+              5,
               10
             ],
             "value": {
@@ -66,7 +66,7 @@
             "id": "@id/word",
             "prob": 2,
             "value": [
-              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]",
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[6]/TD[4]/BUTTON[1]",
               "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
               "descendant::DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
               "descendant::TABLE[@id=\"jdccxt-table\"]//BUTTON"
@@ -76,7 +76,7 @@
             "id": "@class/word",
             "prob": 1,
             "ordinal": [
-              4,
+              5,
               10
             ],
             "value": "TABLE.server-table TD.function-td BUTTON.btn-blue"
@@ -84,7 +84,7 @@
           {
             "id": "path/ordinal",
             "prob": 1,
-            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[3]/TD[4]/BUTTON[1]"
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[6]/TD[4]/BUTTON[1]"
           },
           {
             "id": "style/color",
@@ -98,11 +98,11 @@
       },
       "intendedRole": "button",
       "roles": "element,button",
-      "monitored": false,
+      "monitored": true,
       "frameXPath": "//iframe[@id='iframeWindow']<<IFRAME>>//iframe[@id='imanage']<<IFRAME>>",
       "componentType": "button"
     },
-    "control14_fCDcCT": {
+    "control13_w5P97e": {
       "location": {
         "data": {
           "tagName": "BUTTON"
@@ -116,7 +116,7 @@
             "id": "button/text",
             "prob": 3,
             "ordinal": [
-              5,
+              6,
               10
             ],
             "value": {
@@ -132,7 +132,7 @@
             "id": "@id/word",
             "prob": 2,
             "value": [
-              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]",
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[7]/TD[4]/BUTTON[1]",
               "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
               "descendant::DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//BUTTON",
               "descendant::TABLE[@id=\"jdccxt-table\"]//BUTTON"
@@ -142,7 +142,7 @@
             "id": "@class/word",
             "prob": 1,
             "ordinal": [
-              5,
+              6,
               10
             ],
             "value": "TABLE.server-table TD.function-td BUTTON.btn-blue"
@@ -150,7 +150,7 @@
           {
             "id": "path/ordinal",
             "prob": 1,
-            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[4]/TD[4]/BUTTON[1]"
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]/TD[4]/BUTTON[1]"
           },
           {
             "id": "style/color",
@@ -164,17 +164,60 @@
       },
       "intendedRole": "button",
       "roles": "element,button",
-      "monitored": false,
+      "monitored": true,
       "frameXPath": "//iframe[@id='iframeWindow']<<IFRAME>>//iframe[@id='imanage']<<IFRAME>>",
       "componentType": "button"
+    },
+    "control14_asSs9E": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]/TBODY[1]/TR[7]",
+              "descendant::DIV[@id=\"first-busi\"]//DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//TR",
+              "descendant::DIV[@id=\"jdccxt\"]//TABLE[@id=\"jdccxt-table\"]//TR",
+              "descendant::TABLE[@id=\"jdccxt-table\"]//TR"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              6,
+              10
+            ],
+            "value": "DIV.table-container DIV.table-content TABLE.server-table TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[2]/DIV[4]/DIV[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[7]"
+          }
+        ]
+      },
+      "intendedRole": "section",
+      "roles": "element,section",
+      "monitored": true,
+      "frameXPath": "//iframe[@id='iframeWindow']<<IFRAME>>//iframe[@id='imanage']<<IFRAME>>",
+      "componentType": "section"
     }
   },
   "contexts": {
     "context1_WLZfkV": {
       "controls": [
         "control12_FaRmHR",
-        "control13_tlGiVF",
-        "control14_fCDcCT"
+        "control9_Cs8f6w",
+        "control13_w5P97e",
+        "control14_asSs9E"
       ],
       "anchors": [],
       "urlAnchor": []
@@ -198,24 +241,10 @@
         }
       ]
     },
-    "flow11_tnyZZH": {
+    "flow5_gb4T6B": {
       "fromContextId": "context1_WLZfkV",
       "fromAction": "click",
-      "fromControlId": "control13_tlGiVF",
-      "toContexts": [
-        {
-          "toContextId": "context1_WLZfkV"
-        },
-        {
-          "toContextId": "context2_c4R0tk",
-          "toModelId": "SpotSampling"
-        }
-      ]
-    },
-    "flow5_zHHR4s": {
-      "fromContextId": "context1_WLZfkV",
-      "fromAction": "click",
-      "fromControlId": "control14_fCDcCT",
+      "fromControlId": "control13_w5P97e",
       "toContexts": [
         {
           "toContextId": "context1_WLZfkV"
@@ -223,6 +252,20 @@
         {
           "toContextId": "context4_sImTJv",
           "toModelId": "AdoptionInquiries"
+        }
+      ]
+    },
+    "flow11_Efpb45": {
+      "fromContextId": "context1_WLZfkV",
+      "fromAction": "click",
+      "fromControlId": "control9_Cs8f6w",
+      "toContexts": [
+        {
+          "toContextId": "context1_WLZfkV"
+        },
+        {
+          "toContextId": "context2_c4R0tk",
+          "toModelId": "SpotSampling"
         }
       ]
     }
@@ -247,22 +290,33 @@
           }
         },
         {
-          "id": "uiControl13_tzTgTZ",
-          "controlId": "control13_tlGiVF",
+          "id": "uiControl29_HztpGu",
+          "controlId": "control14_asSs9E",
+          "display": {
+            "adapterId": "section",
+            "type": "section",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": []
+        },
+        {
+          "id": "uiControl13_6D6GC5",
+          "controlId": "control9_Cs8f6w",
           "display": {
             "adapterId": "clickable",
             "type": "button",
             "amStyle": "primary",
             "text": "现场抽样",
-            "class": "ysp-top",
             "adapter": {
               "templateType": ""
             }
           }
         },
         {
-          "id": "uiControl14_k4mxb7",
-          "controlId": "control14_fCDcCT",
+          "id": "uiControl14_bLXlCy",
+          "controlId": "control13_w5P97e",
           "display": {
             "adapterId": "clickable",
             "type": "button",

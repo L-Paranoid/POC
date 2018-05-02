@@ -106,41 +106,6 @@
       "frameXPath": "",
       "componentType": "custom"
     },
-    "control24_AHtcJ3": {
-      "location": {
-        "data": {
-          "tagName": "TR"
-        },
-        "userData": {
-          "data": [],
-          "force": false
-        },
-        "locators": [
-          {
-            "id": "@class/word",
-            "prob": 1,
-            "ordinal": [
-              1,
-              2
-            ],
-            "value": "DIV.col-md-9.column.enterprise-right DIV.right-top DIV.right-top-search TABLE TBODY TR"
-          },
-          {
-            "id": "path/ordinal",
-            "prob": 1,
-            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/TABLE[1]/TBODY[1]/TR[2]"
-          }
-        ]
-      },
-      "events": {
-        "onGetData": "getData_control24_AHtcJ3"
-      },
-      "intendedRole": "custom",
-      "roles": "element,link,custom",
-      "monitored": true,
-      "frameXPath": "",
-      "componentType": "custom"
-    },
     "control25_JcadTF": {
       "location": {
         "data": {
@@ -171,6 +136,41 @@
       "monitored": false,
       "frameXPath": "",
       "componentType": "custom"
+    },
+    "control28_KGqc5v": {
+      "location": {
+        "data": {
+          "tagName": "FORM"
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::DIV[@id=\"enterprise-info\"]//FORM[@id=\"queryForm\"]",
+              "descendant::FORM[@id=\"queryForm\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.col-md-9.column.enterprise-right DIV.right-top DIV.right-top-search FORM"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control28_KGqc5v"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
     }
   },
   "contexts": {
@@ -178,12 +178,10 @@
       "controls": [
         "control7_ftDHKV",
         "control23_3L1CCr",
-        "control24_AHtcJ3",
-        "control25_JcadTF"
+        "control25_JcadTF",
+        "control28_KGqc5v"
       ],
-      "anchors": [
-        "control21_WDD8Sn"
-      ],
+      "anchors": [],
       "urlAnchor": []
     }
   },
@@ -199,16 +197,6 @@
       "fromContextId": "context4_sImTJv",
       "fromAction": "doAction",
       "fromControlId": "control7_ftDHKV",
-      "toContexts": [
-        {
-          "toContextId": "context4_sImTJv"
-        }
-      ]
-    },
-    "flow15_1qGePC": {
-      "fromContextId": "context4_sImTJv",
-      "fromAction": "doAction",
-      "fromControlId": "control24_AHtcJ3",
       "toContexts": [
         {
           "toContextId": "context4_sImTJv"
@@ -286,16 +274,16 @@
           }
         },
         {
-          "id": "uiControl23_KCRswl",
-          "controlId": "control24_AHtcJ3",
+          "id": "uiControl30_l1qZFC",
+          "controlId": "control28_KGqc5v",
           "display": {
             "adapterId": "custom",
             "type": "custom",
             "adapter": {
               "templateType": "react",
               "events": {
-                "onDoAction": "doAction_uiControl23_KCRswl",
-                "onGetTemplate": "getTemplate_uiControl23_KCRswl"
+                "onDoAction": "doAction_uiControl30_l1qZFC",
+                "onGetTemplate": "getTemplate_uiControl30_l1qZFC"
               }
             }
           }
@@ -351,7 +339,9 @@
           "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=f117871a-4938-4ad5-9c6b-25fc6445ab62",
           "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=374eac72-554d-42c5-b312-bceb86b9c4ed",
           "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=4610e381-f96a-486d-bbd7-307ccdca20cd",
-          "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=8983dc47-e93d-4281-a6b4-6454f9ee3655"
+          "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=8983dc47-e93d-4281-a6b4-6454f9ee3655",
+          "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=f5eb02fa-8af4-401e-a890-c2d52958190e",
+          "psp.e-cqs.cn/ecqsNationalCheckWeb/inspectSample/sampleList.jsp?userCode=911103023271690276&tokenId=93257337-098e-42dd-bc54-9db58c5fa34f"
         ]
       }
     },
@@ -415,6 +405,33 @@
             "sampleForm",
             "submitSave",
             "tempSave"
+          ],
+          [
+            "_easyui_combobox_i_",
+            "base-footer",
+            "base-header",
+            "checkPlanName",
+            "checkPlanNo",
+            "checkTaskNo",
+            "datagrid-row-r--",
+            "enterprise-info",
+            "footer-bot",
+            "header",
+            "header-top",
+            "logo-left",
+            "logo-right",
+            "prodName",
+            "queryButton",
+            "queryForm",
+            "reason",
+            "sampleList",
+            "sendBackSample_div",
+            "sendBackSample_form",
+            "singleCollId",
+            "singleStatus",
+            "status",
+            "tmpNo",
+            "tmpYes"
           ]
         ]
       }
@@ -825,6 +842,113 @@
             "valid-div",
             "validatebox-invalid",
             "validatebox-text"
+          ],
+          [
+            "buttonClear",
+            "buttonSearch",
+            "clearfix",
+            "col-md-",
+            "column",
+            "combo",
+            "combo-arrow",
+            "combo-f",
+            "combo-p",
+            "combo-panel",
+            "combobox-f",
+            "combobox-item",
+            "container",
+            "datagrid",
+            "datagrid-body",
+            "datagrid-body-inner",
+            "datagrid-btable",
+            "datagrid-cell",
+            "datagrid-cell-c-checkPlanName",
+            "datagrid-cell-c-checkPlanNo",
+            "datagrid-cell-c-checkTaskNo",
+            "datagrid-cell-c-prodName",
+            "datagrid-cell-c-produceOrganName",
+            "datagrid-cell-c-samplUnitName",
+            "datagrid-cell-c-status",
+            "datagrid-cell-check",
+            "datagrid-cell-rownumber",
+            "datagrid-f",
+            "datagrid-footer",
+            "datagrid-footer-inner",
+            "datagrid-header",
+            "datagrid-header-check",
+            "datagrid-header-inner",
+            "datagrid-header-row",
+            "datagrid-header-rownumber",
+            "datagrid-htable",
+            "datagrid-pager",
+            "datagrid-row",
+            "datagrid-sort-icon",
+            "datagrid-td-rownumber",
+            "datagrid-view",
+            "datagrid-wrap",
+            "easyui-combobox",
+            "easyui-dialog",
+            "easyui-fluid",
+            "easyui-textbox",
+            "enterprise-right",
+            "functionButton",
+            "info-bottom",
+            "info-top",
+            "l-btn",
+            "l-btn-disabled",
+            "l-btn-empty",
+            "l-btn-icon",
+            "l-btn-icon-left",
+            "l-btn-left",
+            "l-btn-plain",
+            "l-btn-plain-disabled",
+            "l-btn-small",
+            "l-btn-text",
+            "noBorder",
+            "pagination",
+            "pagination-btn-separator",
+            "pagination-first",
+            "pagination-info",
+            "pagination-last",
+            "pagination-load",
+            "pagination-next",
+            "pagination-num",
+            "pagination-page-list",
+            "pagination-prev",
+            "panel",
+            "panel-body",
+            "panel-body-noborder",
+            "panel-body-noheader",
+            "panel-header",
+            "panel-header-noborder",
+            "panel-noscroll",
+            "panel-title",
+            "panel-tool",
+            "panel-tool-close",
+            "right-bottom",
+            "right-middle",
+            "right-middle-table",
+            "right-top",
+            "right-top-search",
+            "right-top-title",
+            "row",
+            "textbox",
+            "textbox-addon",
+            "textbox-addon-right",
+            "textbox-f",
+            "textbox-icon",
+            "textbox-invalid",
+            "textbox-prompt",
+            "textbox-text",
+            "textbox-value",
+            "title",
+            "validatebox-invalid",
+            "validatebox-text",
+            "window",
+            "window-body",
+            "window-header",
+            "window-mask",
+            "window-shadow"
           ]
         ]
       }
@@ -907,6 +1031,48 @@
             "TD/SPAN/SPAN",
             "THEAD/TR/TH",
             "TR/TD/INPUT-text",
+            "TR/TD/SPAN"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/DIV",
+            "A/SPAN/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FORM",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-hidden",
+            "DIV/DIV/P",
+            "DIV/DIV/STYLE",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/UL",
+            "DIV/FORM/DIV",
+            "DIV/FORM/TABLE",
+            "DIV/P/SPAN",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/A",
+            "FORM/DIV/INPUT-button",
+            "FORM/TABLE/COLGROUP",
+            "FORM/TABLE/TBODY",
+            "SPAN/SPAN/A",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/A/SPAN",
+            "TD/DIV/INPUT-checkbox",
+            "TD/DIV/SPAN",
+            "TD/SELECT/OPTION",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/INPUT-text",
+            "TD/SPAN/SPAN",
+            "TD/SPAN/TEXTAREA",
+            "TR/TD/A",
+            "TR/TD/DIV",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-radio",
+            "TR/TD/INPUT-text",
+            "TR/TD/SELECT",
             "TR/TD/SPAN"
           ]
         ]
