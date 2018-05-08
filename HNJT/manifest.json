@@ -1,0 +1,58 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.6.0",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": [],
+    "resource_filter": [
+      {
+        "url_match": [
+          "^http:\\/\\/223\\.71\\.99\\.53:85.*"
+        ],
+        "charset": "utf-8",
+        "Accept-Language": "zh-Hans-CN",
+        "replaces": [
+          {
+            "regexp": "\\btop\\b",
+            "sub_str": "_ysp_top"
+          }
+        ]
+      }
+    ],
+    "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; WOW64; Trident/7.0; .NET4.0E; .NET4.0C; InfoPath.3; hwvcloud4; hwcloud4)"
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "Login",
+      "url": "adapter://HNJT/plan/Login/index.json",
+      "matcher": [
+        "^http:\\/\\/223\\.71\\.99\\.53:85\\/ReimbursePlatform\\/"
+      ],
+      "demo": [
+        "http://223.71.99.53:85/ReimbursePlatform/"
+      ]
+    },
+    {
+      "title": "TodoList",
+      "url": "adapter://HNJT/plan/TodoList/index.json",
+      "matcher": [
+        "^http:\\/\\/223\\.71\\.99\\.53:85\\/ReimbursePlatform\\/myReimburse\\/index\\.action"
+      ],
+      "demo": [
+        "http://223.71.99.53:85/ReimbursePlatform/myReimburse/index.action"
+      ]
+    }
+  ],
+  "name": "华能集团",
+  "default_url": "http://223.71.99.53:85/ReimbursePlatform/index.jsp",
+  "scope": "HNJT",
+  "start_url": "enterplorer://HNJT/local/index.html",
+  "update_time": 1525243902181
+}
