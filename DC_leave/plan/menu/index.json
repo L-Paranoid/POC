@@ -1,0 +1,347 @@
+{
+  "version": "0.1",
+  "id": "menu",
+  "targetURL": "http://123.125.21.40/dachanoa/homepage.html",
+  "jsFile": "index.js",
+  "requires": {
+    "leave": "../leave/index.json",
+    "toDoList": "../toDoList/index.json",
+    "menu": "../menu/index.json",
+    "toDo": "../toDo/index.json"
+  },
+  "chineseName": "菜单页",
+  "description": "",
+  "controls": {
+    "control1_DGgHzg": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/DIV[1]/TABLE[1]/TBODY[1]/TR[17]/TD[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control1_DGgHzg"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='leftFrame']<<IFRAME>>"
+    },
+    "control2_yVBT7A": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "待处理事项"
+              ],
+              "visText": [
+                "待处理事项"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              15
+            ],
+            "value": "TD.position TABLE.labtit TD.lab2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              1,
+              69,
+              100
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "待处理事项 ",
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control8_cagIIx": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              15
+            ],
+            "value": "TD.position TABLE.labtit TD.lab3"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              1,
+              69,
+              100
+            ]
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control8_cagIIx"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control4_bHnsph": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "input/button/@value",
+            "prob": 3,
+            "value": {
+              "text": [
+                "查 询"
+              ]
+            }
+          },
+          {
+            "id": "elem/@name",
+            "prob": 1,
+            "value": [
+              "descendant::form[@name=\"worklistForm\"]//INPUT[@name=\"Submit2\"]",
+              "descendant::INPUT[@name=\"Submit2\"]"
+            ]
+          },
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "ext-gen6",
+              "tagName": "BODY",
+              "prefix": "",
+              "suffix": "/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/INPUT[3]",
+              "ratio": 0.948
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "BODY.body01.ext-safari.ext-mac TD.position INPUT.button02"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/INPUT[3]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "submit"
+          }
+        ]
+      },
+      "roles": "element,button",
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    }
+  },
+  "contexts": {
+    "context1_lmIltE": {
+      "controls": [
+        "control1_DGgHzg",
+        "control8_cagIIx"
+      ],
+      "anchors": [
+        "control2_yVBT7A"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow1_dC228l": {
+      "toContexts": [
+        {
+          "toContextId": "context1_lmIltE"
+        },
+        {
+          "toContextId": "context2_I9wsD2",
+          "toModelId": "leave"
+        }
+      ]
+    },
+    "flow2_c2qSxu": {
+      "fromContextId": "context1_lmIltE",
+      "fromAction": "doAction",
+      "fromControlId": "control1_DGgHzg",
+      "toContexts": [
+        {
+          "toContextId": "context1_lmIltE"
+        },
+        {
+          "toContextId": "context2_I9wsD2",
+          "toModelId": "leave"
+        },
+        {
+          "toContextId": "context3_1HHUZa",
+          "toModelId": "toDoList"
+        }
+      ]
+    },
+    "flow6_CrMW9t": {
+      "fromContextId": "context1_lmIltE",
+      "fromAction": "doAction",
+      "fromControlId": "control8_cagIIx",
+      "toContexts": [
+        {
+          "toContextId": "context1_lmIltE"
+        },
+        {
+          "toContextId": "context1_lmIltE",
+          "toModelId": "menu"
+        },
+        {
+          "toContextId": "context3_cxTghW",
+          "toModelId": "toDoList"
+        },
+        {
+          "toContextId": "context3_yzZuXm",
+          "toModelId": "toDoList"
+        },
+        {
+          "toContextId": "context4_4TTgRJ",
+          "toModelId": "toDo"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_QyJzwZ": {
+      "contextId": "context1_lmIltE",
+      "layout": [
+        {
+          "id": "uiControl1_zDXCQi",
+          "controlId": "control1_DGgHzg",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl1_zDXCQi",
+                "onGetTemplate": "getTemplate_uiControl1_zDXCQi"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl6_VV4dNL",
+          "controlId": "control8_cagIIx",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl6_VV4dNL",
+                "onGetTemplate": "getTemplate_uiControl6_VV4dNL"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_lmIltE": [
+          "大成OA系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_lmIltE": [
+          "123.125.21.40/dachanoa/homepage.html"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_lmIltE": [
+          []
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_lmIltE": [
+          []
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_lmIltE": [
+          [
+            "-/-/FRAME"
+          ]
+        ]
+      }
+    }
+  }
+}

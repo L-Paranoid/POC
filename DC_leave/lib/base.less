@@ -1,0 +1,650 @@
+// base.less 是整个工程全局的样式文件，会作用到所有的页面模板中
+// Less 的语法与 CSS 兼容，可以直接用 CSS 语法进行编写
+// 如需了解详情，请访问 http://www.lesscss.net/
+// 发布后，base.less 被编译成 base.css 文件
+textarea{
+  margin-top: 10px;
+  font-size: 14px;
+  min-width: 70%;
+  max-width: 75%;
+  padding: 0 0;
+  min-height: 50px;
+  max-height: 50px;
+  margin: 0 0;
+}
+//表头标题
+div[data-ysp-modelid = "login"] {
+  .ysp_login_background{
+    width:100%;
+    height:100vh;
+    background: url(../local/img/login.png)	no-repeat	0	0;
+    background-size:100%	100%;
+    display:flex;
+    align-items:center;
+    .ysp_login_card{
+      width:100%;
+      margin:0 0.625rem;
+      padding:2rem 0.45rem;
+      .ysp_userName{
+        label{
+          width: 25%;
+          float: left;
+          padding: 10px 0;
+          color: #FCFCFC;
+        }
+        .userName{
+          width: 75%;
+          border: none;
+          border-radius:3px;
+          background: rgba(255,255,255,0.4);
+        }
+      }
+      .ysp_password{
+        label{
+          width: 25%;
+          float: left;
+          padding: 10px 0;
+          color: #FCFCFC;
+        }
+        .password{
+          width: 75%;
+          border: none;
+          border-radius:3px;
+          background: rgba(255,255,255,0.4);
+        }
+      }
+      .ysp_role{
+        label{
+          width: 25%;
+          float: left;
+          padding: 10px 0;
+          color: #FCFCFC;
+        }
+        .role{
+          width: 75%;
+          border: none;
+          border-radius:3px;
+          background: rgba(255,255,255,0.4);
+          option{
+            color: #6C6C6C;
+          }
+        }
+      }
+      .ysp_rmbbox{
+        width: 100%;
+        float: left;
+        label{
+          width: 100%;
+          float: left;
+          .checked{
+            background: url(../local/img/checktrue.png) no-repeat;
+            background-size: 15px;
+            width: 15px;
+            height: 15px;
+            display: block;
+            float: left;
+          }
+          .unchecked{
+            background: url(../local/img/checkfalse.png) no-repeat;
+            background-size: 15px;
+            width: 15px;
+            height: 15px;
+            display: block;
+            float: left;
+          }
+          .text{
+            width: 67%;
+            float: left;
+            font-size: 14px;
+            color: #FCFCFC;
+          }
+        }
+      }
+      .ysp_btn{
+        .btn{
+          width: 100%;
+          background: rgb(47,75,199);
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+div[data-ysp-modelid = "menu"] {
+  background: #f4f4f4;
+  .ysp_entirety{
+    .ysp_title{
+      display: inline-block;
+      width: 100%;
+      height: 45px;
+    	text-align: center;
+      background: rgb(0, 141, 216);
+      h1{
+        margin-top: 12px;
+      	padding-left: 25px;
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+    .ysp_content{
+      width: 100%;
+      background: #fff;
+      height: 50px;
+      border-bottom: 1px solid rgb(240,240,240);
+      padding-top: 10px;
+      margin: 0 0;
+      .ysp_logo{
+        display: block;
+        width:30px;
+        height:40px;
+        background: url(../local/img/OA.png) no-repeat;
+        background-size: 100%;
+        margin-left: 10px;
+        float: left;
+      }
+      .ysp_text{
+        margin: 0 0;
+        margin-left:10px;
+      }
+    }
+    .ysp_content1{
+      width: 100%;
+      background: #fff;
+      height: 50px;
+      padding-top: 10px;
+      margin-top:-7px;
+      .ysp_logo{
+        display: block;
+        width:30px;
+        height:40px;
+        background: url(../local/img/neibu.png) no-repeat;
+        background-size: 100%;
+        margin-left: 10px;
+        float: left;
+      }
+      .ysp_text{
+        margin: 0 0;
+        margin-left:10px;
+      }
+    }
+  }
+}
+div[data-ysp-modelid = "leave"] {
+  background: #f4f4f4;
+  .titleName{
+    text-align: center;
+    font-size: 20px;
+  }
+  .line{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #cccccc;
+    .lineLeft{
+      display: inline-block;
+    }
+    .lineRight{
+      float: right;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .iptWid{
+      display: inline-block;
+      float: right;
+      margin-top: 7px;
+      font-size: 14px;
+      input{
+        border:1px solid #cccccc;
+      }
+    }
+    .lineBtn{
+      height: 60px;
+      display: inline-block;
+      float: right;
+      input{
+        width: 82%;
+        border:1px solid #cccccc;
+        margin-top: 7px;
+        margin-bottom: 0;
+      }
+      a{
+        display: inline-block;
+        position: absolute;
+        top: 235px;
+        right: 30px;
+      }
+    }
+    .lineBtn2{
+      height: 60px;
+      display: inline-block;
+      float: right;
+      input{
+        width: 82%;
+        border:1px solid #cccccc;
+        margin-top: 7px;
+        margin-bottom: 0;
+      }
+      a{
+        display: inline-block;
+        position: absolute;
+        top: 415px;
+        right: 30px;
+      }
+    }
+    .selectedsWid{
+      width: 60%;
+      float: right;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .lineDate{
+      display: inline-block;
+      width: 60%;
+    }
+    .lineSpan{
+      height: 60px;
+      display: inline-block;
+      span{
+        float: right;
+        z-index: 1;
+      }
+      input{
+        margin-top: 7px;
+        width: 85%;
+        display: inline-block;
+      }
+    }
+    .lineFile{
+      font-size: 14px;
+      display: inline-block;
+      font{
+        color:red;
+      }
+    }
+  }
+  .lineTextarea{
+    border-top: 1px solid #cccccc;
+    Textarea{
+      margin-bottom: 5px;
+    }
+  }
+}
+div[data-ysp-modelid = "toDo"] {
+  background: #f4f4f4;
+  .ysp_entirety{
+    overflow:hidden;
+    .ysp_cards{
+      width: 90%;
+      height: auto;
+      background: #fff;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      float: left;
+      .ysp_img{
+        display: block;
+        width: 5px;
+        height: 15px;
+        background: url(../local/img/img.png) no-repeat;
+        background-size: 100%;
+        float: left;
+      }
+      .ysp_cards-body{
+        width: 90%;
+        margin-left: 20px;
+        display: inline-block;
+        label{
+          width: 30%;
+          float: left;
+          margin: 0 0;
+          font-size: 14px;
+        }
+        span{
+          width: 70%;
+          float: left;
+          font-size: 14px;
+        }
+        div:first-child{
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .ysp_page{
+    width: 90%;
+    height: 31px;
+    background: #fff;
+    margin-left: 20px;
+    font-size: 13px;
+    //padding-left: 10px;
+    .ysp_share{
+      float: left;
+      padding-top: 5px;
+    }
+    .ysp_left{
+      background: url(../local/img/ysp-left-icon.png) no-repeat;
+      background-size: 100%;
+      display: block;
+      width: 19px;
+      height: 31px;
+      float: left;
+    }
+    .ysp_right{
+      background: url(../local/img/ysp-right-icon.png) no-repeat;
+      background-size: 100%;
+      display: block;
+      width: 18px;
+      height: 31px;
+      float: left;
+      margin-top: -5px;
+    }
+    .div1{
+      padding-top: 6px;
+      .ysp_first{
+      	float: left;
+      }
+      select{
+        width: 10%;
+      	padding: 2px 0;
+        float: left;
+        margin: 0 0;
+        float: left;
+        font-size: 13px;
+      }
+      .ysp_pages{
+        float: left;
+      }
+    }
+    .div2{
+      .ysp_each{
+      	float: left;
+      }
+      select{
+        width: 15%;
+      	padding: 2px 0;
+        float: left;
+        margin: 0 0;
+        float: left;
+        font-size: 13px;
+      }
+      .ysp_single{
+        float: left;
+      }
+    }
+  }
+  
+  .navbar-nav-title{
+    padding-bottom: 8px;
+  }
+}
+div[data-ysp-modelid="sheet"]{
+  background: #f4f4f4;
+  .titleName{
+    text-align: center;
+    font-size: 20px;
+  }
+  .line{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #cccccc;
+    .lineLeft{
+      display: inline-block;
+    }
+    .lineRight{
+      float: right;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .iptWid{
+      display: inline-block;
+      float: right;
+      margin-top: 7px;
+      font-size: 14px;
+      input{
+        border:1px solid #cccccc;
+      }
+    }
+    .lineBtn{
+      height: 60px;
+      display: inline-block;
+      float: right;
+      input{
+        width: 82%;
+        border:1px solid #cccccc;
+        margin-top: 7px;
+        margin-bottom: 0;
+      }
+      a{
+        display: inline-block;
+        position: absolute;
+        top: 235px;
+        right: 30px;
+      }
+    }
+    .lineBtn2{
+      height: 60px;
+      display: inline-block;
+      float: right;
+      input{
+        width: 82%;
+        border:1px solid #cccccc;
+        margin-top: 7px;
+        margin-bottom: 0;
+      }
+      a{
+        display: inline-block;
+        position: absolute;
+        top: 415px;
+        right: 30px;
+      }
+    }
+    .selectedsWid{
+      width: 60%;
+      float: right;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .lineDate{
+      display: inline-block;
+    }
+    .lineSpan{
+      height: 60px;
+      display: inline-block;
+      span{
+        float: right;
+        z-index: 1;
+      }
+      input{
+        margin-top: 7px;
+        width: 85%;
+        display: inline-block;
+      }
+    }
+    .lineFile{
+      font-size: 14px;
+      display: inline-block;
+      font{
+        color:red;
+      }
+    }
+  }
+  .lineTextarea{
+    border-top: 1px solid #cccccc;
+    Textarea{
+      margin-bottom: 5px;
+    }
+  }
+  .ysp-dc-content{
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    div{
+      padding: 8px 10px 0px 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      span:nth-child(1){
+        color: #999999;
+        width: 115px;
+      }
+      .ysp_dc-content-JB{
+        width: 280px !important;
+      }
+      .ysp_dc-content-GJ{
+        width: 210px !important;
+      }
+    }
+  }
+  .ysp-dc-content-table{
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    div{
+      padding: 5px 10px;
+      span:nth-child(1){
+        color: #999999;
+      }
+    }
+  }
+  .ysp-dc-content-SP{
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    div{
+      padding: 8px 10px 0px 10px;
+      .ysp-dc-content-Person{
+        margin-right: 10px;
+      }
+      .ysp-dc-content-CL{
+        margin-right: 26px;
+      }
+    }
+    .ysp-dc-content-select{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      >span:nth-child(1){
+        margin-right: 26px;
+      }
+      select{
+        border-radius: 6px;
+        background: #fff;
+        padding: 0px 30px 0px 10px;
+        font-size: 12px;
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.ysp-dc-button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  >span:nth-child(1){
+    height: 50px;
+    background: #4796ed;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+  }
+  >span:nth-child(2){
+    height: 50px;
+    background: red;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+.ysp-lc-button{
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  >span:nth-child(1){
+    height: 50px;
+    background: #4796ed;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+  }
+  >span:nth-child(2){
+    height: 50px;
+    background: red;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+  }
+  >span:nth-child(3){
+    height: 50px;
+    background: green;
+    color: #fff;
+    width: 100%;
+    padding-top: 15px;
+  }
+}
+.ysp-person-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  background: #4796ed;
+  color: #fff;
+  width: 100%;
+}
+.ysp-chose-person{
+  //padding: 10px;
+  margin: 10px;
+  border: 1px solid #ececec;
+  >div:nth-child(1){
+    background: #ececec;
+    padding: 10px;
+  }
+  >div:nth-child(2){
+    padding: 10px;
+  }
+  .ysp-chose-clickPerson{
+    background: #4797ed;
+  }
+}
+.ysp-dc-file{
+  background: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  >span:nth-child(1){
+    border-radius: 10px;
+    padding: 10px;
+    //border: 1px solid #ececec;
+    background: #4796ed;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  div{
+    padding: 10px 0px;
+    span:nth-child(1){
+      border-radius: 10px;
+      padding: 5px;
+      background: red;
+      color: #fff;
+    }
+    span:nth-child(2){
+      margin-left: 10px;
+    }
+  }
+}
+.roleImg{
+  background: url(../local/img/role.png)	no-repeat	0	0;
+  background-size:100%	100%;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
