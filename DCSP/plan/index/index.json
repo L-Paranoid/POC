@@ -1,0 +1,1035 @@
+{
+  "version": "0.1",
+  "id": "index",
+  "targetURL": "http://218.95.181.41:8081/ajjwork/index_zzq.jsp",
+  "jsFile": "index.js",
+  "requires": {
+    "work_list_more": "../work_list_more/index.json",
+    "index_list_new": "../index_list_new/index.json",
+    "xzzf": "../xzzf/index.json",
+    "index_search": "../index_search/index.json",
+    "zhcx": "../zhcx/index.json"
+  },
+  "chineseName": "首页",
+  "description": "",
+  "controls": {
+    "control12_FzLEHB": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/partialWord",
+            "prob": 3,
+            "value": {
+              "elemId": "ywbl-tr",
+              "tagName": "TBODY",
+              "prefix": "",
+              "suffix": "",
+              "ratio": 0
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              10
+            ],
+            "value": "TABLE.mar-4 TABLE.bor-3 TD.pad-1 TABLE TBODY"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[4]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control12_FzLEHB"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control0_oBK4ZA": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TABLE.word-5 TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_oBK4ZA"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control1_lJxAwn": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": "TABLE.mar-2 TABLE.mar-4.bor-3 TD.pad-1"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[4]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control1_lJxAwn"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control8_tau1fS": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TABLE.bor-3 TD.pad-1 TABLE.mar-5 TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[4]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control8_tau1fS"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control9_uVxT43": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/nonWord",
+            "prob": 1,
+            "disabled": true,
+            "fact": "t1",
+            "value": "descendant::TABLE[@id=\"t1\"]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TD.pad-1 TD.pad-2 TABLE TBODY TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[4]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control9_uVxT43"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context1_GuQii8": {
+      "controls": [
+        "control12_FzLEHB",
+        "control0_oBK4ZA",
+        "control1_lJxAwn",
+        "control8_tau1fS",
+        "control9_uVxT43"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow8_NyAbKG": {
+      "toContexts": [
+        {
+          "toContextId": "context1_GuQii8"
+        }
+      ]
+    },
+    "flow1_mneq9Z": {
+      "fromContextId": "context1_GuQii8",
+      "fromAction": "doAction",
+      "fromControlId": "control0_oBK4ZA",
+      "toContexts": [
+        {
+          "toContextId": "context1_GuQii8"
+        },
+        {
+          "toContextId": "context4_5uU4zB",
+          "toModelId": "xzzf"
+        }
+      ]
+    },
+    "flow3_EHeKvv": {
+      "fromContextId": "context1_GuQii8",
+      "fromAction": "doAction",
+      "fromControlId": "control1_lJxAwn",
+      "toContexts": [
+        {
+          "toContextId": "context1_GuQii8"
+        },
+        {
+          "toContextId": "context2_dUgnLD",
+          "toModelId": "work_list_more"
+        },
+        {
+          "toContextId": "context3_AvAAA9",
+          "toModelId": "index_list_new"
+        }
+      ]
+    },
+    "flow38_6oy50S": {
+      "fromContextId": "context1_GuQii8",
+      "fromAction": "doAction",
+      "fromControlId": "control9_uVxT43",
+      "toContexts": [
+        {
+          "toContextId": "context1_GuQii8"
+        },
+        {
+          "toContextId": "context9_X9Dgpg",
+          "toModelId": "index_search"
+        },
+        {
+          "toContextId": "context10_xl504x",
+          "toModelId": "zhcx"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page1_fAImkV": {
+      "contextId": "context1_GuQii8",
+      "layout": [
+        {
+          "id": "uiControl2_CxREHV",
+          "controlId": "control0_oBK4ZA",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl2_CxREHV",
+                "onGetTemplate": "getTemplate_uiControl2_CxREHV"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl7_3vDQXi",
+          "controlId": "control9_uVxT43",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl7_3vDQXi",
+                "onGetTemplate": "getTemplate_uiControl7_3vDQXi"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl15_D0grT2",
+          "controlId": "control12_FzLEHB",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl15_D0grT2",
+                "onGetTemplate": "getTemplate_uiControl15_D0grT2"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl3_k3CxfA",
+          "controlId": "control1_lJxAwn",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl3_k3CxfA",
+                "onGetTemplate": "getTemplate_uiControl3_k3CxfA"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl16_5A3H83",
+          "controlId": "control8_tau1fS",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl16_5A3H83",
+                "onGetTemplate": "getTemplate_uiControl16_5A3H83"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context1_GuQii8": [
+          "宁夏回族自治区安全生产综合监管信息平台"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context1_GuQii8": [
+          "218.95.181.41:8081/ajjwork/index_zzq.jsp"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context1_GuQii8": [
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-csvwvz-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-pnyw-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-ysids-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-ehvcg-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-xfbpi-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-nchs-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-mjw-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-pmcjbx-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-qnsavdm-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-hizsp-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-bqou-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-czirycp-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ],
+          [
+            "EditPassword",
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "bmpm-div",
+            "bmpm-tr-more",
+            "button",
+            "city",
+            "clickindex_",
+            "clickindex_all",
+            "county",
+            "d",
+            "dateinfo",
+            "dishi",
+            "drType",
+            "grpm-div",
+            "grpm-tr-more",
+            "highcharts-xqvi-",
+            "logout",
+            "main",
+            "menuId",
+            "newPassd",
+            "oldPassd",
+            "s",
+            "t",
+            "tab_",
+            "txt",
+            "vitalityMore",
+            "work_list",
+            "workplaceQx",
+            "workplaceStreet",
+            "xianqu",
+            "ywbl-tr"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context1_GuQii8": [
+          [
+            "bg-",
+            "bor-",
+            "dialog-content",
+            "div-",
+            "divClass",
+            "easyui-layout",
+            "easyui-linkbutton",
+            "easyui-window",
+            "highcharts-container",
+            "icon-cancel",
+            "icon-edit",
+            "icon-ok",
+            "icon-search",
+            "img_cls",
+            "int-text",
+            "intbut-",
+            "l-btn",
+            "l-btn-left",
+            "l-btn-text",
+            "layout",
+            "layout-body",
+            "layout-panel",
+            "layout-panel-center",
+            "layout-panel-south",
+            "layout-split-proxy-h",
+            "layout-split-proxy-v",
+            "li_class",
+            "mar-",
+            "navtop-",
+            "pad-",
+            "panel",
+            "panel-body",
+            "panel-body-noborder",
+            "panel-body-noheader",
+            "panel-header",
+            "panel-header-noborder",
+            "panel-icon",
+            "panel-title",
+            "panel-tool",
+            "panel-tool-close",
+            "panel-tool-collapse",
+            "panel-tool-max",
+            "panel-tool-min",
+            "panel-with-icon",
+            "selt",
+            "span",
+            "tab",
+            "td-tab-",
+            "tr_cls",
+            "ul_cls",
+            "window",
+            "window-body",
+            "window-header",
+            "window-shadow",
+            "word-",
+            "ztree"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context1_GuQii8": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/-/TABLE",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/TABLE/TBODY",
+            "A/B/FONT",
+            "A/SPAN/SPAN",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/CANVAS",
+            "DIV/DIV/DIV",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/svg",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/LI",
+            "DIV/svg/defs",
+            "DIV/svg/desc",
+            "DIV/svg/g",
+            "DIV/svg/rect",
+            "DIV/svg/text",
+            "FORM/TABLE/TBODY",
+            "LI/A/B",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TD/DIV/UL",
+            "TD/FORM/SCRIPT",
+            "TD/FORM/TABLE",
+            "TD/SELECT/OPTION",
+            "TD/SPAN/DIV",
+            "TD/SPAN/FONT",
+            "TD/SPAN/INPUT-button",
+            "TD/TABLE/TBODY",
+            "TR/TD/A",
+            "TR/TD/B",
+            "TR/TD/BR",
+            "TR/TD/DIV",
+            "TR/TD/FONT",
+            "TR/TD/FORM",
+            "TR/TD/IMG",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-password",
+            "TR/TD/INPUT-text",
+            "TR/TD/META",
+            "TR/TD/SCRIPT",
+            "TR/TD/SELECT",
+            "TR/TD/SPAN",
+            "TR/TD/STYLE",
+            "TR/TD/TABLE",
+            "TR/TD/TITLE",
+            "UL/LI/A",
+            "defs/clipPath/rect",
+            "g/g/g",
+            "g/g/rect",
+            "g/g/text",
+            "g/text/tspan",
+            "svg/defs/clipPath",
+            "svg/g/g",
+            "svg/g/path",
+            "svg/g/rect",
+            "svg/g/text",
+            "svg/g/title",
+            "svg/text/tspan"
+          ],
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/-/TABLE",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/TABLE/TBODY",
+            "A/B/FONT",
+            "A/SPAN/SPAN",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BR",
+            "DIV/DIV/CANVAS",
+            "DIV/DIV/DIV",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/svg",
+            "DIV/TABLE/TBODY",
+            "DIV/UL/LI",
+            "DIV/svg/defs",
+            "DIV/svg/desc",
+            "DIV/svg/g",
+            "DIV/svg/rect",
+            "DIV/svg/text",
+            "FORM/TABLE/TBODY",
+            "LI/A/B",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/DIV",
+            "TD/DIV/UL",
+            "TD/FORM/SCRIPT",
+            "TD/FORM/TABLE",
+            "TD/SELECT/OPTION",
+            "TD/SPAN/DIV",
+            "TD/SPAN/FONT",
+            "TD/SPAN/INPUT-button",
+            "TD/TABLE/TBODY",
+            "TR/TD/A",
+            "TR/TD/B",
+            "TR/TD/BR",
+            "TR/TD/DIV",
+            "TR/TD/FONT",
+            "TR/TD/FORM",
+            "TR/TD/IMG",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-password",
+            "TR/TD/INPUT-text",
+            "TR/TD/META",
+            "TR/TD/SCRIPT",
+            "TR/TD/SELECT",
+            "TR/TD/SPAN",
+            "TR/TD/STYLE",
+            "TR/TD/TABLE",
+            "TR/TD/TITLE",
+            "UL/LI/A",
+            "defs/clipPath/rect",
+            "g/g/g",
+            "g/g/rect",
+            "g/g/text",
+            "g/text/tspan",
+            "svg/defs/clipPath",
+            "svg/g/g",
+            "svg/g/path",
+            "svg/g/rect",
+            "svg/g/text",
+            "svg/g/title",
+            "svg/text/tspan"
+          ]
+        ]
+      }
+    }
+  }
+}

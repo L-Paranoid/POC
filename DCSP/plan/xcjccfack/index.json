@@ -1,0 +1,937 @@
+{
+  "version": "0.1",
+  "id": "xcjccfack",
+  "targetURL": "http://218.95.181.41:8081/ajjwork/index.jsp?nId=2&index=3&mhType=1",
+  "jsFile": "index.js",
+  "chineseName": "现场检查方案查看",
+  "description": "",
+  "controls": {
+    "control69_ZUCC1T": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "input/button/@value",
+            "prob": 3,
+            "value": {
+              "text": [
+                "返 回"
+              ]
+            }
+          },
+          {
+            "id": "elem/@name",
+            "prob": 1,
+            "ordinal": [
+              2,
+              3
+            ],
+            "value": [
+              "descendant::form[@name=\"myForm\"]//INPUT[@name=\"button2\"]",
+              "descendant::INPUT[@name=\"button2\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::FORM[@id=\"myForm\"]/DIV[1]/INPUT[3]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.butdiv INPUT.intbut-3"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[1]/INPUT[3]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "button"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "button"
+    },
+    "control70_5waRC9": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "ordinal": [
+              2,
+              3
+            ],
+            "value": {
+              "text": [
+                "现场检查方案"
+              ],
+              "visText": [
+                "现场检查方案"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "SPAN.font_size"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]/SPAN[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "content"
+    },
+    "control72_cZIl0m": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::FORM[@id=\"myForm\"]/TABLE[2]/TBODY[1]",
+              "descendant::FORM[@id=\"myForm\"]//TBODY"
+            ]
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[2]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control72_cZIl0m"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control75_ulhwS4": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "> 现场检查方案"
+              ],
+              "visText": [
+                "> 现场检查方案"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": "TD.pad-3 SPAN.word-12"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[3]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "> 现场检查方案",
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>"
+    },
+    "control76_gfcB85": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::FORM[@id=\"myForm\"]/TABLE[2]/TBODY[1]/TR[12]"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[2]/TBODY[1]/TR[12]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control76_gfcB85"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control77_zUt7Ti": {
+      "location": {
+        "data": {
+          "tagName": "TBODY"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::FORM[@id=\"myForm\"]/TABLE[2]/TBODY[1]",
+              "descendant::FORM[@id=\"myForm\"]//TBODY"
+            ]
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[2]/TBODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control77_zUt7Ti"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control74_UU6Lfs": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.panel.window"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]"
+          }
+        ]
+      },
+      "intendedRole": "dialog",
+      "roles": "element,link,dialog",
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "dialog"
+    },
+    "control78_cdlAmv": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"dialog\"]/DIV[1]",
+              "descendant::DIV[@id=\"dialog\"]//DIV"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.panel.window DIV.panel-body.panel-body-noborder.window-body DIV.panel"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[2]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control78_cdlAmv"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control79_0nOmxt": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.panel-header.panel-header-noborder.window-header DIV.panel-tool DIV.panel-tool-close"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[2]/DIV[1]/DIV[3]/DIV[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "button"
+    },
+    "control80_WA0ZV1": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              14
+            ],
+            "value": "SPAN.font_small"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[3]/TD[1]/SPAN[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control80_WA0ZV1"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "custom"
+    },
+    "control81_T2FxJi": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "locators": [
+          {
+            "id": "input/button/@value",
+            "prob": 3,
+            "value": {
+              "text": [
+                "提 交"
+              ]
+            }
+          },
+          {
+            "id": "elem/@name",
+            "prob": 1,
+            "ordinal": [
+              0,
+              3
+            ],
+            "value": [
+              "descendant::form[@name=\"myForm\"]//INPUT[@name=\"button2\"]",
+              "descendant::INPUT[@name=\"button2\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::FORM[@id=\"myForm\"]/DIV[1]/INPUT[1]"
+          },
+          {
+            "id": "@id/nonWord",
+            "prob": 1,
+            "disabled": true,
+            "fact": "tj",
+            "value": "descendant::FORM[@id=\"myForm\"]//INPUT[@id=\"tj\"]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "DIV.butdiv INPUT.intbut-10"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[1]/INPUT[1]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "button"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "button"
+    },
+    "control82_vDSiDi": {
+      "location": {
+        "data": {
+          "tagName": "INPUT"
+        },
+        "locators": [
+          {
+            "id": "input/button/@value",
+            "prob": 3,
+            "value": {
+              "text": [
+                "退回"
+              ]
+            }
+          },
+          {
+            "id": "elem/@name",
+            "prob": 1,
+            "ordinal": [
+              1,
+              3
+            ],
+            "value": [
+              "descendant::form[@name=\"myForm\"]//INPUT[@name=\"button2\"]",
+              "descendant::INPUT[@name=\"button2\"]"
+            ]
+          },
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": [
+              "descendant::FORM[@id=\"myForm\"]//INPUT[@id=\"tuihui\"]",
+              "descendant::INPUT[@id=\"tuihui\"]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": "DIV.butdiv INPUT.intbut-10"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/FORM[1]/DIV[1]/INPUT[2]"
+          },
+          {
+            "id": "input/type",
+            "verifyEnabled": true,
+            "value": "button"
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "roles": "element,button",
+      "monitored": false,
+      "frameXPath": "//frame[@id='mainFrame']<<IFRAME>>//frame[@name='iframeid'][@id='iframeid']<<IFRAME>>",
+      "componentType": "button"
+    }
+  },
+  "contexts": {
+    "context8_1cCrvG": {
+      "controls": [
+        "control69_ZUCC1T",
+        "control70_5waRC9",
+        "control72_cZIl0m",
+        "control76_gfcB85",
+        "control77_zUt7Ti",
+        "control74_UU6Lfs",
+        "control78_cdlAmv",
+        "control79_0nOmxt",
+        "control80_WA0ZV1",
+        "control81_T2FxJi",
+        "control82_vDSiDi"
+      ],
+      "anchors": [
+        "control75_ulhwS4"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow39_ZmnKU9": {
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    },
+    "flow40_VfV4EO": {
+      "fromContextId": "context8_1cCrvG",
+      "fromAction": "click",
+      "fromControlId": "control69_ZUCC1T",
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    },
+    "flow43_eyswTw": {
+      "fromContextId": "context8_1cCrvG",
+      "fromAction": "doAction",
+      "fromControlId": "control77_zUt7Ti",
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    },
+    "flow44_HrKeeL": {
+      "fromContextId": "context8_1cCrvG",
+      "fromAction": "click",
+      "fromControlId": "control79_0nOmxt",
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    },
+    "flow46_x22WzT": {
+      "fromContextId": "context8_1cCrvG",
+      "fromAction": "doAction",
+      "fromControlId": "control78_cdlAmv",
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    },
+    "flow47_lIx16F": {
+      "fromContextId": "context8_1cCrvG",
+      "fromAction": "click",
+      "fromControlId": "control82_vDSiDi",
+      "toContexts": [
+        {
+          "toContextId": "context8_1cCrvG"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page8_BwW36x": {
+      "contextId": "context8_1cCrvG",
+      "layout": [
+        {
+          "id": "uiControl87_nsqSTb",
+          "display": {
+            "title": "安全生产行政执法文书",
+            "type": "header",
+            "adapterId": "header",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl87_nsqSTbheaderLeft",
+              "display": {
+                "type": "headerLeft",
+                "adapterId": "headerLeft",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl88_ZkuaaQ",
+                  "controlId": "control69_ZUCC1T",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl87_nsqSTbheaderRight",
+              "display": {
+                "type": "headerRight",
+                "adapterId": "headerRight",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl89_E7rME3",
+          "display": {
+            "type": "card",
+            "adapterId": "card",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl89_E7rME3header",
+              "display": {
+                "type": "cardHeader",
+                "text": "",
+                "adapterId": "cardHeader",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            },
+            {
+              "id": "uiControl89_E7rME3body",
+              "display": {
+                "type": "cardBody",
+                "adapterId": "cardBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl90_Dt5mZ3",
+                  "controlId": "control70_5waRC9",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl99_TSIeO8",
+                  "controlId": "control80_WA0ZV1",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl99_TSIeO8",
+                        "onGetTemplate": "getTemplate_uiControl99_TSIeO8"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl92_nsToXS",
+                  "controlId": "control72_cZIl0m",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl92_nsToXS",
+                        "onGetTemplate": "getTemplate_uiControl92_nsToXS"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl95_Svbpey",
+                  "controlId": "control76_gfcB85",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl95_Svbpey",
+                        "onGetTemplate": "getTemplate_uiControl95_Svbpey"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl96_SkB3kh",
+                  "controlId": "control77_zUt7Ti",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl96_SkB3kh",
+                        "onGetTemplate": "getTemplate_uiControl96_SkB3kh"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl100_8eTyZZ",
+                  "display": {
+                    "type": "grid",
+                    "adapterId": "grid",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  },
+                  "layout": [
+                    {
+                      "id": "uiControl100_8eTyZZrow0",
+                      "display": {
+                        "cols": 3,
+                        "type": "col",
+                        "adapterId": "col",
+                        "adapter": {
+                          "templateType": ""
+                        }
+                      },
+                      "layout": [
+                        {
+                          "id": "uiControl101_zrgfih",
+                          "controlId": "control81_T2FxJi",
+                          "display": {
+                            "adapterId": "clickable",
+                            "type": "button",
+                            "amStyle": "primary",
+                            "amSize": "xs",
+                            "adapter": {
+                              "templateType": ""
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "uiControl100_8eTyZZrow1",
+                      "display": {
+                        "cols": 3,
+                        "type": "col",
+                        "adapterId": "col",
+                        "adapter": {
+                          "templateType": ""
+                        }
+                      },
+                      "layout": [
+                        {
+                          "id": "uiControl102_QumxCm",
+                          "controlId": "control82_vDSiDi",
+                          "display": {
+                            "adapterId": "clickable",
+                            "type": "button",
+                            "amStyle": "secondary",
+                            "amSize": "xs",
+                            "adapter": {
+                              "templateType": ""
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "uiControl89_E7rME3footer",
+              "display": {
+                "type": "cardFooter",
+                "adapterId": "cardFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl94_qrvK2e",
+          "controlId": "control74_UU6Lfs",
+          "display": {
+            "adapterId": "dialog",
+            "type": "dialog",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl94_qrvK2ebody",
+              "display": {
+                "type": "dialogBody",
+                "adapterId": "dialogBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl97_eqGMhH",
+                  "controlId": "control78_cdlAmv",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl97_eqGMhH",
+                        "onGetTemplate": "getTemplate_uiControl97_eqGMhH"
+                      }
+                    }
+                  }
+                },
+                {
+                  "id": "uiControl98_inEgOK",
+                  "controlId": "control79_0nOmxt",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "amStyle": "secondary",
+                    "amSize": "xs",
+                    "text": "关闭",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl94_qrvK2efooter",
+              "display": {
+                "type": "dialogFooter",
+                "adapterId": "dialogFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context8_1cCrvG": [
+          "宁夏回族自治区安全生产综合监管信息平台"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context8_1cCrvG": [
+          "218.95.181.41:8081/ajjwork/index.jsp?nId=2&index=3&mhType=1"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context8_1cCrvG": [
+          [
+            "mainFrame",
+            "topFrame"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context8_1cCrvG": [
+          []
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context8_1cCrvG": [
+          [
+            "-/-/FRAME"
+          ]
+        ]
+      }
+    }
+  }
+}

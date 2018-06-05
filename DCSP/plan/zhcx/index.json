@@ -1,0 +1,406 @@
+{
+  "version": "0.1",
+  "id": "zhcx",
+  "targetURL": "http://218.95.181.41:8081/ajjwork/main/sggl/sgBaseinfo.do?method=sgBaseinfoList",
+  "jsFile": "index.js",
+  "chineseName": "综合查询页面",
+  "description": "",
+  "controls": {
+    "control14_pKNFWi": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TD.pad-3 SPAN.word-6"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "header",
+      "roles": "element,header",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "header"
+    },
+    "control20_CT4Zs2": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "TD.pad-3 SPAN.word-6"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/SPAN[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control20_CT4Zs2"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control21_p7CqKu": {
+      "location": {
+        "data": {
+          "tagName": "SPAN"
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": {
+              "text": [
+                "查询条件"
+              ],
+              "visText": [
+                "查询条件"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "TD.tab-tit SPAN.span-1 SPAN.word-2"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/SPAN[1]/SPAN[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "content": true,
+      "monitored": false,
+      "frameXPath": "",
+      "componentType": "content"
+    }
+  },
+  "contexts": {
+    "context10_xl504x": {
+      "controls": [
+        "control14_pKNFWi",
+        "control20_CT4Zs2",
+        "control21_p7CqKu"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow19_xbtQTo": {
+      "toContexts": [
+        {
+          "toContextId": "context10_xl504x"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page10_xIsyH3": {
+      "contextId": "context10_xl504x",
+      "layout": [
+        {
+          "id": "uiControl24_215Mq9",
+          "controlId": "control14_pKNFWi",
+          "display": {
+            "adapterId": "header",
+            "type": "header",
+            "amStyle": "primary",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl24_215Mq9headerLeft",
+              "display": {
+                "type": "headerLeft",
+                "adapterId": "headerLeft",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl30_U48BuX",
+                  "controlId": "control20_CT4Zs2",
+                  "display": {
+                    "adapterId": "custom",
+                    "type": "custom",
+                    "adapter": {
+                      "templateType": "react",
+                      "events": {
+                        "onDoAction": "doAction_uiControl30_U48BuX",
+                        "onGetTemplate": "getTemplate_uiControl30_U48BuX"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl24_215Mq9headerRight",
+              "display": {
+                "type": "headerRight",
+                "adapterId": "headerRight",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl31_6OaRpu",
+          "display": {
+            "type": "card",
+            "adapterId": "card",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl31_6OaRpuheader",
+              "display": {
+                "type": "cardHeader",
+                "text": "",
+                "adapterId": "cardHeader",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            },
+            {
+              "id": "uiControl31_6OaRpubody",
+              "display": {
+                "type": "cardBody",
+                "adapterId": "cardBody",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl34_owX6Hq",
+                  "controlId": "control21_p7CqKu",
+                  "display": {
+                    "adapterId": "content",
+                    "type": "content",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl31_6OaRpufooter",
+              "display": {
+                "type": "cardFooter",
+                "adapterId": "cardFooter",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context10_xl504x": [
+          "宁夏回族自治区安全生产综合监管信息平台"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context10_xl504x": [
+          "218.95.181.41:8081/ajjwork/main/sggl/sgBaseinfo.do?method=sgBaseinfoList"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context10_xl504x": [
+          [
+            "_myDP",
+            "_selectDiv",
+            "_tree",
+            "button",
+            "causeThing",
+            "companyNatrue",
+            "companySize",
+            "endDeath",
+            "endEconomyLoss",
+            "endHappenDate",
+            "endInjured",
+            "endTerribleInjured",
+            "happenCompany",
+            "harmThing",
+            "industry",
+            "industryName",
+            "isTipoff",
+            "manageSort",
+            "nodeLevel",
+            "query_content",
+            "registerType",
+            "sgIdentity",
+            "sgLevel",
+            "sgPlace",
+            "sgType",
+            "startDeath",
+            "startEconomyLoss",
+            "startHappenDate",
+            "startInjured",
+            "startTerribleInjured",
+            "submitCompany",
+            "tt",
+            "unsafeAction",
+            "unsafeState"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context10_xl504x": [
+          [
+            "border-",
+            "dialog-content",
+            "easyui-linkbutton",
+            "icon-cancel",
+            "icon-ok",
+            "icon-search",
+            "input",
+            "input_txt",
+            "int-text",
+            "intbut-",
+            "l-btn",
+            "l-btn-left",
+            "l-btn-text",
+            "mar-",
+            "pad-",
+            "page",
+            "pagination",
+            "panel",
+            "panel-body",
+            "panel-body-noborder",
+            "panel-body-noheader",
+            "panel-header",
+            "panel-header-noborder",
+            "panel-icon",
+            "panel-title",
+            "panel-tool",
+            "panel-tool-close",
+            "panel-with-icon",
+            "selt",
+            "span-",
+            "tab",
+            "tab-tit",
+            "td-",
+            "tdcolor-",
+            "window",
+            "window-body",
+            "window-header",
+            "window-shadow",
+            "word-",
+            "ztree"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context10_xl504x": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/-/TABLE",
+            "-/DIV/DIV",
+            "-/DIV/IFRAME",
+            "-/TABLE/TBODY",
+            "A/SPAN/SPAN",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/TABLE/TBODY",
+            "FORM/TABLE/TBODY",
+            "TABLE/TBODY/TR",
+            "TBODY/TR/FORM",
+            "TBODY/TR/TD",
+            "TD/DIV/TABLE",
+            "TD/FORM/TABLE",
+            "TD/SELECT/OPTION",
+            "TD/SPAN/IMG",
+            "TD/SPAN/SPAN",
+            "TD/TABLE/TBODY",
+            "TD/UL/INPUT-button",
+            "TD/UL/INPUT-text",
+            "TR/TD/DIV",
+            "TR/TD/FORM",
+            "TR/TD/INPUT-button",
+            "TR/TD/INPUT-hidden",
+            "TR/TD/INPUT-text",
+            "TR/TD/SELECT",
+            "TR/TD/SPAN",
+            "TR/TD/TABLE",
+            "TR/TD/UL"
+          ]
+        ]
+      }
+    }
+  }
+}
