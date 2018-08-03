@@ -1,0 +1,57 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "component_match_mode": "polling",
+    "resource_inject": [],
+    "resource_filter": [
+      {
+        "url_match": [
+          "^http:\\/\\/123\\.125\\.21\\.40.*"
+        ],
+        "charset": "utf-8",
+        "Accept-Language": "zh-Hans-CN",
+        "replaces": [
+          {
+            "regexp": "\\btop\\b",
+            "sub_str": "_ysp_top"
+          }
+        ]
+      }
+    ]
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://DC_leave/plan/login/index.json",
+      "matcher": [
+        "^http:\\/\\/123\\.125\\.21\\.40\\/dachanoa\\/login\\.jsp"
+      ],
+      "demo": [
+        "http://123.125.21.40/dachanoa/login.jsp"
+      ]
+    },
+    {
+      "title": "menu",
+      "url": "adapter://DC_leave/plan/menu/index.json",
+      "matcher": [
+        "^http:\\/\\/123\\.125\\.21\\.40\\/dachanoa\\/homepage\\.html"
+      ],
+      "demo": []
+    }
+  ],
+  "name": "大成POC",
+  "default_url": "http://123.125.21.40/dachanoa/login.jsp",
+  "scope": "DC_leave",
+  "start_url": "enterplorer://DC_leave/local/index.html",
+  "update_time": 1533282788930,
+  "runtime_env": "1webview"
+}

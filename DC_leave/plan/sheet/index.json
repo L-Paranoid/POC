@@ -1,0 +1,646 @@
+{
+  "version": "0.1",
+  "id": "sheet",
+  "targetURL": "http://123.125.21.40/dachanoa/homepage.html",
+  "jsFile": "index.js",
+  "requires": {
+    "menu": "../menu/index.json",
+    "selectPerson": "../selectPerson/index.json",
+    "petition": "../petition/index.json"
+  },
+  "chineseName": "申请单",
+  "description": "",
+  "firstPaintEnable": false,
+  "controls": {
+    "control10_CAVy76": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "表单编号："
+              ],
+              "visText": [
+                "表单编号："
+              ]
+            }
+          },
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "ext-gen6",
+              "tagName": "BODY",
+              "prefix": "",
+              "suffix": "/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]",
+              "ratio": 0.903
+            }
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[2]/TD[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              0,
+              102,
+              153
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "表单编号：",
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>",
+      "customJS": "if(elem.textContent.indexOf(\"编号\")!==-1){return true}"
+    },
+    "control12_fWZ8Sf": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "ext-gen6",
+              "tagName": "BODY",
+              "prefix": "",
+              "suffix": "/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]",
+              "ratio": 0.903
+            }
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "intendedRole": "button",
+      "userEvents": "back",
+      "roles": "element,button",
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control14_Z6RT8A": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"eformSignTable\"]"
+            }
+          ],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 3,
+            "value": "descendant::TABLE[@id=\"eformSignTable\"]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              10
+            ],
+            "value": "TD.position TABLE.tab03 TABLE.tab06"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control14_Z6RT8A"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control15_ZyA8bh": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"replyForm\"]/table"
+            },
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"askForLeaveEFormForm\"]/table[3]"
+            }
+          ],
+          "force": true
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::FORM[@id=\"replyForm\"]/TABLE[1]",
+              "descendant::FORM[@id=\"replyForm\"]//TABLE"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              10
+            ],
+            "value": "TD.position TABLE.tab03 TABLE.tab01left"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[3]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control15_ZyA8bh"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control20_XRgW0e": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"ext-gen6\"]/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[13]"
+            }
+          ],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::FORM[@id=\"askForLeaveEFormForm\"]/TABLE[1]/TBODY[1]/TR[12]"
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              2,
+              15
+            ],
+            "value": "TABLE.tab03 TABLE.tab01left TR.line02"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[1]/TBODY[1]/TR[12]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control20_XRgW0e"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control23_9mNWVc": {
+      "location": {
+        "data": {
+          "tagName": "BODY"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"ext-gen6\"]"
+            }
+          ],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "BODY.body01.ext-safari.ext-mac"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control23_9mNWVc"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control24_3EXEDT": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "userData": {
+          "data": [
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"replyForm\"]/table/tbody/tr[7]"
+            },
+            {
+              "method": "XPath",
+              "value": "//*[@id=\"askForLeaveEFormForm\"]/table[3]/tbody/tr[9]"
+            }
+          ],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": "descendant::FORM[@id=\"askForLeaveEFormForm\"]/TABLE[3]/TBODY[1]/TR[9]"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/FORM[1]/TABLE[3]/TBODY[1]/TR[9]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control24_3EXEDT"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>"
+    },
+    "control17_9Gtg6q": {
+      "location": {
+        "data": {
+          "tagName": "TD"
+        },
+        "locators": [
+          {
+            "id": "text",
+            "prob": 3,
+            "value": {
+              "text": [
+                "签呈"
+              ],
+              "visText": [
+                "签呈"
+              ]
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              2
+            ],
+            "value": "TABLE.tab03 TABLE.tab01left TD.t01"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[2]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/TABLE[1]/TBODY[1]/TR[1]/TD[1]"
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "roles": "element",
+      "text": "签呈",
+      "frameXPath": "//frame[@name='mainFrame']<<IFRAME>>//frame[@name='mainFrameright']<<IFRAME>>",
+      "customJS": "if(elem.textContent.indexOf('签呈') == -1){return true}return false;"
+    }
+  },
+  "contexts": {
+    "context3_IDb722": {
+      "controls": [
+        "control12_fWZ8Sf",
+        "control14_Z6RT8A",
+        "control15_ZyA8bh",
+        "control20_XRgW0e",
+        "control23_9mNWVc",
+        "control24_3EXEDT"
+      ],
+      "anchors": [
+        "control10_CAVy76",
+        "control17_9Gtg6q"
+      ],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow9_nZKMQT": {
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        },
+        {
+          "toContextId": "context9_WXgoUw",
+          "toModelId": "petition"
+        }
+      ]
+    },
+    "flow10_GgRRf2": {
+      "fromContextId": "context3_IDb722",
+      "fromAction": "click",
+      "fromControlId": "control12_fWZ8Sf",
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        }
+      ]
+    },
+    "flow11_owWDT3": {
+      "fromContextId": "context3_IDb722",
+      "fromAction": "doAction",
+      "fromControlId": "control15_ZyA8bh",
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        },
+        {
+          "toContextId": "context1_lmIltE",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow19_foS4aG": {
+      "fromContextId": "context3_IDb722",
+      "fromAction": "doAction",
+      "fromControlId": "control20_XRgW0e",
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        }
+      ]
+    },
+    "flow20_coKhsu": {
+      "fromContextId": "context3_IDb722",
+      "fromAction": "doAction",
+      "fromControlId": "control23_9mNWVc",
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        },
+        {
+          "toContextId": "context5_pfFBB3",
+          "toModelId": "selectPerson"
+        }
+      ]
+    },
+    "flow22_rSnTvp": {
+      "fromContextId": "context3_IDb722",
+      "fromAction": "doAction",
+      "fromControlId": "control24_3EXEDT",
+      "toContexts": [
+        {
+          "toContextId": "context3_IDb722"
+        },
+        {
+          "toContextId": "context1_lmIltE",
+          "toModelId": "menu"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page3_0DZXVy": {
+      "contextId": "context3_IDb722",
+      "layout": [
+        {
+          "id": "uiControl10_HgvH3r",
+          "display": {
+            "title": "请假申请单",
+            "type": "header",
+            "adapterId": "header",
+            "adapter": {
+              "templateType": ""
+            }
+          },
+          "layout": [
+            {
+              "id": "uiControl10_HgvH3rheaderLeft",
+              "display": {
+                "type": "headerLeft",
+                "adapterId": "headerLeft",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": [
+                {
+                  "id": "uiControl12_FTkyD0",
+                  "controlId": "control12_fWZ8Sf",
+                  "display": {
+                    "adapterId": "clickable",
+                    "type": "button",
+                    "text": " 返回         ",
+                    "adapter": {
+                      "templateType": ""
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "uiControl10_HgvH3rheaderRight",
+              "display": {
+                "type": "headerRight",
+                "adapterId": "headerRight",
+                "adapter": {
+                  "templateType": ""
+                }
+              },
+              "layout": []
+            }
+          ]
+        },
+        {
+          "id": "uiControl24_XWkhcf",
+          "controlId": "control23_9mNWVc",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl24_XWkhcf",
+                "onGetTemplate": "getTemplate_uiControl24_XWkhcf"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl21_41bnAA",
+          "controlId": "control20_XRgW0e",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl21_41bnAA",
+                "onGetTemplate": "getTemplate_uiControl21_41bnAA"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl7_PTb8Jl",
+          "controlId": "control14_Z6RT8A",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl7_PTb8Jl",
+                "onGetTemplate": "getTemplate_uiControl7_PTb8Jl"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl13_7lZgRR",
+          "controlId": "control15_ZyA8bh",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl13_7lZgRR",
+                "onGetTemplate": "getTemplate_uiControl13_7lZgRR"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl2_EPPILT",
+          "controlId": "control24_3EXEDT",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl2_EPPILT",
+                "onGetTemplate": "getTemplate_uiControl2_EPPILT"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context3_IDb722": [
+          "大成OA系统"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context3_IDb722": [
+          "123.125.21.40/dachanoa/homepage.html"
+        ],
+        "context5_pfFBB3": [
+          "123.125.21.40/dachanoa/picker/identity.html?pickField=proposer&single=true&dutyStatus=N&orgId=internal&status=0&lowestJobLevel=",
+          "123.125.21.40/dachanoa/picker/identity.html?pickField=deputy&single=true&dutyStatus=N&orgId=internal&status=0&lowestJobLevel="
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context3_IDb722": [
+          []
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context3_IDb722": [
+          []
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context3_IDb722": [
+          [
+            "-/-/FRAME"
+          ]
+        ]
+      }
+    }
+  }
+}

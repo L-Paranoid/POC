@@ -1,0 +1,215 @@
+{
+  "version": "0.1",
+  "id": "doYCL",
+  "targetURL": "http://123.125.21.40/dachanoa/homepage.html",
+  "jsFile": "index.js",
+  "requires": {
+    "menu": "../menu/index.json"
+  },
+  "chineseName": "已处理",
+  "description": "已处理",
+  "controls": {
+    "control11_LRqE7x": {
+      "location": {
+        "data": {
+          "tagName": "A"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "a/@href",
+            "prob": 3,
+            "value": {
+              "pathname": "/dachanoa/menu/middle.jsp"
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              0,
+              25
+            ],
+            "value": "TABLE.Subsys A.Home"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[2]/TABLE[1]/TBODY[1]/TR[1]/TD[1]/A[1]"
+          },
+          {
+            "id": "style/color",
+            "value": [
+              63,
+              167,
+              221
+            ]
+          },
+          {
+            "id": "elderLevel",
+            "value": {
+              "level": 0
+            }
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control11_LRqE7x"
+      },
+      "intendedRole": "custom",
+      "roles": "element,link,custom",
+      "ignoreVisibility": true,
+      "monitored": true,
+      "frameXPath": "//frame[@name='topFrame']<<IFRAME>>"
+    },
+    "control28_zpTJ9u": {
+      "location": {
+        "data": {
+          "tagName": "HTML"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "ordinal": [
+              0,
+              5
+            ],
+            "value": "/HTML[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control28_zpTJ9u"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": ""
+    }
+  },
+  "contexts": {
+    "context6_4WRTWB": {
+      "controls": [
+        "control11_LRqE7x",
+        "control28_zpTJ9u"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow24_8XZSXC": {
+      "toContexts": [
+        {
+          "toContextId": "context6_4WRTWB"
+        },
+        {
+          "toContextId": "context1_lmIltE",
+          "toModelId": "menu"
+        }
+      ]
+    },
+    "flow25_kK4G8e": {
+      "fromContextId": "context6_4WRTWB",
+      "fromAction": "doAction",
+      "fromControlId": "control11_LRqE7x",
+      "toContexts": [
+        {
+          "toContextId": "context6_4WRTWB"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page6_TT2cgi": {
+      "contextId": "context6_4WRTWB",
+      "layout": [
+        {
+          "id": "uiControl9_fhqTvA",
+          "controlId": "control11_LRqE7x",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl9_fhqTvA",
+                "onGetTemplate": "getTemplate_uiControl9_fhqTvA"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl27_C3PWtW",
+          "controlId": "control28_zpTJ9u",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl27_C3PWtW",
+                "onGetTemplate": "getTemplate_uiControl27_C3PWtW"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context6_4WRTWB": [
+          "大成OA系统"
+        ],
+        "context1_lmIltE": [
+          "大成OA系统",
+          "Untitled Document"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context6_4WRTWB": [
+          "123.125.21.40/dachanoa/homepage.html"
+        ],
+        "context1_lmIltE": [
+          "123.125.21.40/dachanoa/homepage.html",
+          "123.125.21.40/dachanoa/menu/middle.jsp"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context6_4WRTWB": [
+          []
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context6_4WRTWB": [
+          []
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context6_4WRTWB": [
+          [
+            "-/-/FRAME"
+          ]
+        ]
+      }
+    }
+  }
+}

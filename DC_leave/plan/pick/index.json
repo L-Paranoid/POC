@@ -1,0 +1,64 @@
+{
+  "version": "0.1",
+  "id": "pick",
+  "targetURL": "http://123.125.21.40/dachanoa/picker/identity.html?pickField=identTable0_row[2].replyers[0]&single=true&dutyStatus=N&orgId=internal&status=0&excludeEmp=4f335ea1b04611df859a07a7e4e3f1e7,",
+  "jsFile": "index.js",
+  "chineseName": "选人页面",
+  "description": "",
+  "controls": {},
+  "contexts": {
+    "context10_3EJw3W": {
+      "controls": [],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {},
+  "pages": {
+    "page10_Ufblfq": {
+      "contextId": "context10_3EJw3W",
+      "layout": []
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context10_3EJw3W": [
+          "选择员工"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context10_3EJw3W": [
+          "123.125.21.40/dachanoa/picker/identity.html?pickField=identTable0_row[2].replyers[0]&single=true&dutyStatus=N&orgId=internal&status=0&excludeEmp=4f335ea1b04611df859a07a7e4e3f1e7,"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context10_3EJw3W": [
+          [
+            "leftFrame"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context10_3EJw3W": [
+          []
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context10_3EJw3W": [
+          [
+            "-/-/FRAME"
+          ]
+        ]
+      }
+    }
+  }
+}
