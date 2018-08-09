@@ -3,6 +3,25 @@
 (function (win, ysp) {
 
   var utils = ysp.utils;
+  // var topWin = top;
+  // topWin.Iosback=function(){
+  //   debugger;
+  //   ysp.appMain.back();
+  // }
+  var _setupWebViewJavascriptBridge = function (callback) {
+      if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+      if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+      window.WVJBCallbacks = [callback];
+      var WVJBIframe = document.createElement("iframe");
+      WVJBIframe.style.display = "none";
+      WVJBIframe.src = "wvjbscheme://__BRIDGE_LOADED__";
+      document.documentElement.appendChild(WVJBIframe);
+      setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+  };
+  _setupWebViewJavascriptBridge(function(bridge) {
+          bridge.registerHandler("Iosback", function(data) {})
+  })
+                                                            
   ysp.customHelper = {};
   utils.extend(ysp.customHelper, {
     /* 适配中定制的公共代码放在这里 */
@@ -17,6 +36,7 @@
     // 以下两个方法用于修改原页面中的错误, 但执行时机不同
     // 当目标页面加载完onload时执行, aWin为当前页面的window对象, doc为当前页面的document对象
     onTargetLoad: function(aWin, doc){
+      
 
     },
 
@@ -44,3 +64,4 @@
   });
 
 })(window, ysp);
+

@@ -364,23 +364,27 @@ div[data-ysp-modelid = "toDo"] {
         display: inline-block;
         label{
           width: 30%;
-          float: left;
-          margin: 0 0;
+          margin:0;
+          float: left;          
           font-size: 14px;
-        }
-        span{
-          width: 70%;
-          float: left;
-          font-size: 14px;
-        }
-        div:first-child{
-          // font-weight: 600;
-          //font-size: 20px;
-          color:#4796ed;
-          label,span{
+          height: 38px;
+          &:first-child{           
             font-size: 18px !important;
           }
         }
+        span{
+          height: 38px;
+          display: block;
+          margin:0;
+          width: 70%;
+          float: left;
+          font-size: 14px;
+          &:nth-child(2){
+            color:#4796ed;
+            font-size: 18px !important;
+          }
+        }
+        
       }
     }
   }

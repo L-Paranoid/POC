@@ -244,20 +244,24 @@ div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body {
 }
 div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body label {
   width: 30%;
+  margin: 0;
   float: left;
-  margin: 0 0;
   font-size: 14px;
+  height: 38px;
+}
+div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body label:first-child {
+  font-size: 18px !important;
 }
 div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body span {
+  height: 38px;
+  display: block;
+  margin: 0;
   width: 70%;
   float: left;
   font-size: 14px;
 }
-div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body div:first-child {
+div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body span:nth-child(2) {
   color: #4796ed;
-}
-div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body div:first-child label,
-div[data-ysp-modelid="toDo"] .ysp_entirety .ysp_cards .ysp_cards-body div:first-child span {
   font-size: 18px !important;
 }
 div[data-ysp-modelid="toDo"] .ysp_page {

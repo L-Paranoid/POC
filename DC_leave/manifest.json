@@ -52,6 +52,6 @@
   "default_url": "http://123.125.21.40/dachanoa/login.jsp",
   "scope": "DC_leave",
   "start_url": "enterplorer://DC_leave/local/index.html",
-  "update_time": 1533282788930,
+  "update_time": 1533520207571,
   "runtime_env": "1webview"
 }
