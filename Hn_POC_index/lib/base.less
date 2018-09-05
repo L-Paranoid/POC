@@ -28,7 +28,7 @@
     }
   .titleapps{
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -37,7 +37,7 @@
       width: 33.3%;
       text-align: center;
       font-size: 14px;
-      // font-weight: bold;
+      // font-weight: bold;//2018-9-5ltt
       >div:nth-child(1){
         width: 50px;
         height: 50px;
@@ -627,4 +627,25 @@
      }
   }
   
+}
+.ysp-hn-hander-tt{
+  height: 40px;
+  line-height: 40px;
+  background: #506f83;
+  padding:0 10px;
+  span{
+    color: #fff;
+    display: inline-block;
+    &:first-child{
+      width:20%;
+      background: url(img/visitcalendar-next-icon.png) no-repeat;
+      background-size: 15%;
+    	padding: 0 0 0 15px;
+    	background-position-y: 11px;
+    }
+    &:last-child{
+      width: 70%;
+      text-align: center;
+    }
+  }
 }

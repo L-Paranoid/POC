@@ -29,7 +29,7 @@
     getData_control3_mRinee: function (elem) {
       if (!elem) {
         return;
-      }var data = { title: elem.querySelector('div').textContent, content: [] };var lis = elem.querySelectorAll('ul>li');for (var i = 0; i < lis.length; i++) {
+      }var data = { title: elem.querySelector('div').textContent, content: [] };var lis = elem.querySelectorAll('ul>li');for (var i = 1; i < lis.length; i++) {
         data.content.push({ text: lis[i].querySelector('div[id]').querySelector('div').querySelector('div').textContent.trim(), index: i });
       }return data;
     },
