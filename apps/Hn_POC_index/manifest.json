@@ -1,0 +1,42 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": []
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "login",
+      "url": "adapter://Hn_POC_index/plan/login/index.json",
+      "matcher": [
+        "^https:\\/\\/performancemanager15\\.sapsf\\.cn\\/sf\\/start\\/#\\/login"
+      ],
+      "demo": [
+        "https://performancemanager15.sapsf.cn/sf/start/#/login"
+      ]
+    },
+    {
+      "title": "Hn_index",
+      "url": "adapter://Hn_POC_index/plan/Hn_index/index.json",
+      "matcher": [
+        "^https:\\/\\/performancemanager15\\.sapsf\\.cn\\/sf\\/start\\/\\?_s\\.crb=9V2TWel5HG%252bl0xbvzK9ILfnQOcg%253d#Shell-home"
+      ],
+      "demo": [
+        "https://performancemanager15.sapsf.cn/sf/start/?_s.crb=9V2TWel5HG%252bl0xbvzK9ILfnQOcg%253d#Shell-home"
+      ]
+    }
+  ],
+  "name": "汉能poc",
+  "default_url": "https://performancemanager15.sapsf.cn/sf/start/",
+  "scope": "Hn_POC_index",
+  "start_url": "enterplorer://Hn_POC_index/local/index.html",
+  "update_time": 1536112780748
+}
