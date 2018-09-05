@@ -4,7 +4,8 @@
   "targetURL": "https://performancemanager15.sapsf.cn/sf/start/?_s.crb=9V2TWel5HG%252bl0xbvzK9ILfnQOcg%253d#Shell-home",
   "jsFile": "index.js",
   "requires": {
-    "Newleave": "../Newleave/index.json"
+    "Newleave": "../Newleave/index.json",
+    "workflow": "../workflow/index.json"
   },
   "chineseName": "汉能首页",
   "description": "",
@@ -178,7 +179,15 @@
       "fromContextId": "context1_0Asxv7",
       "fromAction": "doAction",
       "fromControlId": "control1_hHLPGe",
-      "toContexts": []
+      "toContexts": [
+        {
+          "toContextId": "context1_0Asxv7"
+        },
+        {
+          "toContextId": "context5_4Jn51E",
+          "toModelId": "workflow"
+        }
+      ]
     },
     "flow3_9c4Okd": {
       "fromContextId": "context1_0Asxv7",
