@@ -1,0 +1,318 @@
+{
+  "version": "0.1",
+  "id": "login",
+  "targetURL": "https://performancemanager15.sapsf.cn/sf/start/#/login",
+  "jsFile": "index.js",
+  "requires": {
+    "Hn_index": "../Hn_index/index.json"
+  },
+  "chineseName": "登录页",
+  "description": "",
+  "controls": {
+    "control0_NhA9Pq": {
+      "location": {
+        "data": {
+          "tagName": "DIV"
+        },
+        "userData": {
+          "data": [],
+          "force": false
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 2,
+            "value": [
+              "descendant::DIV[@id=\"bizXLoginApp\"]//DIV[@id=\"login\"]//SECTION[@id=\"login-cont\"]/DIV[1]",
+              "descendant::DIV[@id=\"login\"]//SECTION[@id=\"login-cont\"]/DIV[1]",
+              "descendant::SECTION[@id=\"login-cont\"]/DIV[1]"
+            ]
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "ordinal": [
+              1,
+              2
+            ],
+            "value": "DIV.sapMNavItem.sapMPage.sapMPageBgStandard.sapMPageBusyCoversAll SECTION.sapMPageEnableScrolling DIV.mainAppContent.sapUiVlt.sapuiVlt"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/DIV[6]/DIV[1]/DIV[3]/DIV[3]/SECTION[1]/DIV[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_NhA9Pq"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context0_2pHL1d": {
+      "controls": [
+        "control0_NhA9Pq"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_ToMa57": {
+      "toContexts": [
+        {
+          "toContextId": "context0_2pHL1d"
+        }
+      ]
+    },
+    "flow1_xX9Opw": {
+      "fromContextId": "context0_2pHL1d",
+      "fromAction": "doAction",
+      "fromControlId": "control0_NhA9Pq",
+      "toContexts": [
+        {
+          "toContextId": "context0_2pHL1d"
+        },
+        {
+          "toContextId": "context1_0Asxv7",
+          "toModelId": "Hn_index"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_LdZ3De": {
+      "contextId": "context0_2pHL1d",
+      "layout": [
+        {
+          "id": "uiControl0_14xtTC",
+          "controlId": "control0_NhA9Pq",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl0_14xtTC",
+                "onGetTemplate": "getTemplate_uiControl0_14xtTC"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_2pHL1d": [
+          "SuccessFactors 登录"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_2pHL1d": [
+          "performancemanager15.sapsf.cn/sf/start/"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_2pHL1d": [
+          [
+            "__button",
+            "__button-content",
+            "__button-img",
+            "__button-inner",
+            "__container",
+            "__html",
+            "__icon",
+            "__image",
+            "__indicator",
+            "__indicator-busy-area",
+            "__indicator-busyIndicator",
+            "__indicator-label",
+            "__indicator-label-bdi",
+            "__input",
+            "__input-inner",
+            "__input-labelledby",
+            "__jsview",
+            "__layout",
+            "__link",
+            "__text",
+            "bizXLoginApp",
+            "bizXLoginApp-BG",
+            "bodyContent",
+            "companyCheck",
+            "companyCheck-cont",
+            "dynamic_copyright",
+            "dynamic_header",
+            "footer",
+            "login",
+            "login-cont",
+            "loginForm",
+            "sap-ui-invisible-__button",
+            "sap-ui-preserve",
+            "sap-ui-static",
+            "sfLoadBlockerLayer",
+            "versionInfo",
+            "version_info_link"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_2pHL1d": [
+          [
+            "bizLoginForm",
+            "bizXFooter",
+            "bizxLogin",
+            "companyCheckPage",
+            "companyIDText",
+            "copyrightText",
+            "dynamic_header",
+            "fullButton",
+            "globalLogin",
+            "globalLoginBgOverlay",
+            "globalLoginFooter",
+            "globalLoginFormInputs",
+            "globalLoginLogoContainer",
+            "globalLoginLogoImg",
+            "globalLoginLogoURL",
+            "hasAligned",
+            "helpButtonAlign",
+            "hiddenAriaContent",
+            "inputIcon",
+            "inputWithHelp",
+            "link",
+            "loadingIcon",
+            "loginApp",
+            "loginFormInputs",
+            "loginMessage",
+            "mainAppContent",
+            "mobileActivationIcon",
+            "mobileActivationLink",
+            "mobileLinkContainer",
+            "password",
+            "sapMApp",
+            "sapMAppBG",
+            "sapMBtn",
+            "sapMBtnBase",
+            "sapMBtnContent",
+            "sapMBtnCustomIcon",
+            "sapMBtnEmphasized",
+            "sapMBtnHoverable",
+            "sapMBtnIcon",
+            "sapMBtnIconFirst",
+            "sapMBtnIconLeft",
+            "sapMBtnInner",
+            "sapMBtnInverted",
+            "sapMBtnText",
+            "sapMBtnTransparent",
+            "sapMBusyIndicator",
+            "sapMBusyIndicatorBusyArea",
+            "sapMFocusable",
+            "sapMImg",
+            "sapMImgFocusable",
+            "sapMInput",
+            "sapMInputBase",
+            "sapMInputBaseInner",
+            "sapMInputBaseWidthPadding",
+            "sapMInputDivWrapper",
+            "sapMLabel",
+            "sapMLabelMaxWidth",
+            "sapMLnk",
+            "sapMLnkMaxWidth",
+            "sapMNav",
+            "sapMNavItem",
+            "sapMNavItemHidden",
+            "sapMPage",
+            "sapMPageBgStandard",
+            "sapMPageBusyCoversAll",
+            "sapMPageEnableScrolling",
+            "sapUiForcedHidden",
+            "sapUiGlobalBackgroundColor",
+            "sapUiGlobalBackgroundImage",
+            "sapUiHLayout",
+            "sapUiHLayoutChildWrapper",
+            "sapUiHLayoutNoWrap",
+            "sapUiHidden",
+            "sapUiHiddenPlaceholder",
+            "sapUiIcon",
+            "sapUiIconMirrorInRTL",
+            "sapUiInvisibleText",
+            "sapUiJSView",
+            "sapUiLocalBusy",
+            "sapUiLocalBusyIndicator",
+            "sapUiLocalBusyIndicatorAnimStandard",
+            "sapUiLocalBusyIndicatorAnimation",
+            "sapUiLocalBusyIndicatorFade",
+            "sapUiLocalBusyIndicatorSizeMedium",
+            "sapUiSelectable",
+            "sapUiView",
+            "sapUiViewDisplayBlock",
+            "sapUiVlt",
+            "sapUiVltCell",
+            "sapuiVlt",
+            "sapuiVltCell",
+            "skipnav",
+            "surjContainer",
+            "text",
+            "username",
+            "versionInfoLink"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_2pHL1d": [
+          [
+            "-/-/A",
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/DIV/A",
+            "-/DIV/BR",
+            "-/DIV/DIV",
+            "-/DIV/H3",
+            "-/DIV/IMG",
+            "-/DIV/SMALL",
+            "-/DIV/SPAN",
+            "-/DIV/STRONG",
+            "BUTTON/SPAN/SPAN",
+            "DIV/BUTTON/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/BUTTON",
+            "DIV/DIV/DIV",
+            "DIV/DIV/FORM",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-password",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LABEL",
+            "DIV/DIV/SECTION",
+            "DIV/DIV/SPAN",
+            "DIV/FORM/BUTTON",
+            "DIV/FORM/DIV",
+            "DIV/FORM/INPUT-hidden",
+            "DIV/FORM/INPUT-submit",
+            "DIV/LABEL/BDI",
+            "DIV/SECTION/DIV",
+            "DIV/SPAN/A",
+            "FORM/BUTTON/SPAN",
+            "FORM/DIV/DIV",
+            "SECTION/DIV/DIV",
+            "SPAN/SPAN/BDI"
+          ]
+        ]
+      }
+    }
+  }
+}
