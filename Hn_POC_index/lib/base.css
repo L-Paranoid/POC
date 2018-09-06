@@ -135,6 +135,32 @@ Header button {
 .ysp-leavedeil .leave_other > div {
   padding: 5px 10px;
 }
+/*请假详细*/
+.table1layout input {
+  margin: 0;
+}
+.table1layout > div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-top: 5px;
+  min-height: 44px;
+  padding-right: 10px;
+}
+.table1layout > div > div:nth-child(1) {
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+.table1layout > div > div:nth-child(2) {
+  width: 75%;
+  height: 100%;
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+}
+.table1layout > div > div:nth-child(2) input {
+  border: 0;
+}
 /*日历表*/
 .ysp-visitcalendar-wrapper {
   height: 320px;
